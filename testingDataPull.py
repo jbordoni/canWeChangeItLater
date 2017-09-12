@@ -22,5 +22,10 @@ while results['next']:
 
 for album in albums:
 	print album['name']
+	#print album['genres']
+	#print album['popularity']
+	#print album['tracks']
+	print album['type']
+
 
 
