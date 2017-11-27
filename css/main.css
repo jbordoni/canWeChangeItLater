@@ -1,0 +1,26 @@
+#timelineDiv {
+
+	float:left;
+	width: 20%;
+	height:100%;
+
+}
+
+#divContainer {
+
+	width: 70%;
+	height:100%;
+
+}
+
+#countryListDiv {
+
+	float:right;
+	width: 10%;
+	height:100%;
+
+}
+
+/*body {
+	display:inline-block;
+}*/
