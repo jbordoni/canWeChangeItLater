@@ -1,0 +1,3 @@
+curl -v -H 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJOMzNQN1ZHV1VSIiwiaWF0IjoiMTUwODEwNTM0OCIsImV4cCI6IjE1MTQ1ODU0MzAifQ.9BUDhETVWD7eecqjnzK6XaZYTfjKt_IXKDFs4xav6JaZdc8avMvHETWs13_HhuDYHtCXCEyiTIjAIIsRGj1-fA' "https://api.music.apple.com/v1/storefronts" > storefronts.json
+
+curl -v -H 'Authorization: Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJOMzNQN1ZHV1VSIiwiaWF0IjoiMTUwODEwNTM0OCIsImV4cCI6IjE1MTQ1ODU0MzAifQ.9BUDhETVWD7eecqjnzK6XaZYTfjKt_IXKDFs4xav6JaZdc8avMvHETWs13_HhuDYHtCXCEyiTIjAIIsRGj1-fA' "https://api.music.apple.com/v1/catalog/{jp}/charts?types={songs}" > jp.json
