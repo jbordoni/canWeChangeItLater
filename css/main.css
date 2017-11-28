@@ -23,7 +23,7 @@
 
 #audioFeaturesScatterDiv {
 	float:right;
-	width:60%;
+	width:65%;
 	height:40%;
 }
 
@@ -42,6 +42,16 @@ body {
 
 .axis line {
     shape-rendering: crispEdges;
+}
+
+.scatterTooltip {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  pointer-events: none;
+  background-color: #FFE900;
+  font-family: sans-serif, verdana;
+  font-size:80%;
 }
 
 /*body {

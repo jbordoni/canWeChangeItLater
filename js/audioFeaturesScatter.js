@@ -2,7 +2,7 @@
 
 	audioFeaturesScatter = {};
 
-	audioFeaturesScatter.initiate = function(divID, yAxisSelectorID, xAxisSelectorID, updateButtonID){
+	audioFeaturesScatter.initiate = function(divID, yAxisSelectorID, xAxisSelectorID, colorSelectorID, updateButtonID){
 		
 		let div = document.getElementById(divID);
 		let childNodes = div.childNodes; 
@@ -19,12 +19,24 @@
 		let countryCode = "Global";
 		//let xAxisProperty = "energy";
 
-		let xAxisProperty = audioFeaturesScatter.getSelectedOption(xAxisSelectorID);
+		let result = audioFeaturesScatter.getSelectedOption(xAxisSelectorID);
+		let xAxisProperty = result[0];
+		let xAxisPropertyText = result[1];
 		console.log(xAxisProperty);
 
 		if(xAxisProperty=="")
 		{
 			xAxisProperty = "valence";
+			xAxisPropertyText = "Valence";
+		}
+
+		let colorResult = audioFeaturesScatter.getSelectedOption(colorSelectorID);
+		colorProperty = colorResult[0]
+		colorPropertyText =colorResult[1];
+
+		if(colorProperty==""){
+			colorProperty = "energy";
+			colorPropertyText = "Energy";
 		}
 
 		let songs = {}; 
@@ -33,7 +45,7 @@
               d3.json("datasets/audioFeaturesHashMap.json", function(error2, audioFeaturesData){
               	//console.log(weeksData==null);
               	//console.log(audioFeaturesData==null);
-              	audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty);
+              	audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText,  colorProperty, colorPropertyText);
               })
         });
 
@@ -44,11 +56,11 @@
 		var node = d3.select('#'+selectorID).node();
 		var i = node.selectedIndex;
 		//console.log("I am here");
-		//console.log("value is" + node[i].value);
-		return node[i].value;
+		//console.log("value is" + node[i].innerHTML);
+		return [node[i].value, node[i].innerHTML];
 	}
 
-	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty){
+	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText, colorProperty, colorPropertyText){
 
 		//console.log(audioFeaturesData);
 		//console.log("I am here");
@@ -56,9 +68,13 @@
 		//console.log(weeksData[0]);
 		//console.log(audioFeaturesData[0]);
 
+		//console.log(audioFeaturesData[xAxisProperty])
+		//console.log(audioFeaturesScatter[0]);
+
 		let computedData = [];
 		let xAxisPropertyValueArr = [];
 		let yAxisPropertyValueArr = [];
+		let colorPropertyValueArr = [];
 
 		for(var key in weeksData){
 			if(weeksData.hasOwnProperty(key)){
@@ -66,28 +82,27 @@
 				//return
 				obj = weeksData[key]
 				obj[xAxisProperty] = audioFeaturesData[key][xAxisProperty];
+				obj[colorProperty] = audioFeaturesData[key][colorProperty];
 				computedData.push(obj);
 				xAxisPropertyValueArr.push(audioFeaturesData[key][xAxisProperty]*10000);
 				yAxisPropertyValueArr.push(obj["weeksOnChart"]);
+				colorPropertyValueArr.push(obj[colorProperty]*1000)
+				if(obj["weeksOnChart"]==0){
+					console.log(obj);
+				}
 			}
 		}
-
-
-
-		//console.log(divID);
 		let div = document.getElementById(divID);
-		//console.log(div.id);
-
 		let divWidth = div.offsetWidth; 
-		console.log(divWidth);
+		//console.log(divWidth);
 		let divHeight = div.offsetHeight;
-		console.log(divHeight);
+		//console.log(divHeight);
 
 
-		console.log(computedData.length);
+		/*console.log(computedData.length);
 		console.log(yAxisPropertyValueArr.length);
 		console.log(xAxisPropertyValueArr.length);
-		console.log(d3.min(xAxisPropertyValueArr), d3.max(xAxisPropertyValueArr));
+		console.log(d3.min(xAxisPropertyValueArr), d3.max(xAxisPropertyValueArr));*/
 
 		let xPadding = 0.1*divWidth; 
 		let yPadding = 0.1*divHeight; 
@@ -106,10 +121,29 @@
 		var yAxis = d3.axisLeft();
 		yAxis.scale(yScale);
 
+
+		//var colorScale = 
+		/*var tooltip = d3.select("#"+divID)
+		    .attr("class", "tooltip")
+		    .style("opacity", 0);*/
+
+		
 		var svg = d3.select("#"+divID)
 					.append("svg")
 					.attr("width", divWidth)
 					.attr("height", divHeight);
+
+		var tooltip = d3.select('body').append("div")	
+		    .attr("class", "scatterTooltip")				
+		    .style("opacity", 0);
+
+		var colorScale = d3.scaleQuantize()
+							.range(["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"])
+							.domain([d3.min(colorPropertyValueArr), d3.max(colorPropertyValueArr)]);
+		
+
+		/*var colorScale = d3.scaleLinear()
+							.domain()*/
 
 		//need to fix scale for decimal values 
 		svg.append("g")
@@ -132,7 +166,26 @@
 			.attr("cy", function(d){
 				return yScale(d["weeksOnChart"]);
 			})
-			.attr("r", 5);
+			.attr("r", 5)
+			.style("fill", function(d){
+				return colorScale(d[colorProperty]*1000);
+			})
+			.on("mouseover", function(d){
+				//console.log("Mouseover");
+				tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+				tooltip.html(d["songName"]+"<br/>"+"Weeks On Charts: "+d["weeksOnChart"]+
+					"<br/>"+xAxisPropertyText+": "+d[xAxisProperty]+
+					"<br/>"+colorPropertyText+": "+d[colorProperty])
+				.style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+			})
+			.on("mouseout", function(d){
+				tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+			});
 	}
 
 })(); 
