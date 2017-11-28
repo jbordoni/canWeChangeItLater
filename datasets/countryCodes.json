@@ -17,8 +17,8 @@
 	"es":"Spain", 
 	"fi":"Finland", 
 	"fr":"France",
-	"gb":"United Kingdom"
-	"global:"Global", 
+	"gb":"United Kingdom",
+	"global":"Global", 
 	"gr":"Greece", 
 	"hk":"Hong Kong", 
 	"id":"Indonesia", 
@@ -38,4 +38,5 @@
 	"sg":"Singapore", 
 	"th":"Thailand",
 	"tw":"Taiwan", 
+	"us":"United States"
 }
