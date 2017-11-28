@@ -1,6 +1,6 @@
 var bubbleChart;
-var height = 1000
-var width = 1000
+var height = 1200;
+var width = 1200;
 
 
 function show()
@@ -16,7 +16,7 @@ function show()
 
 function showBubbleMap(rawdata)
 {
-	console.log(rawdata[0].X)
+	console.log("Hello")
    
     var initialScaleDataX =[]
     var initialScaleDataY = []
@@ -27,6 +27,8 @@ function showBubbleMap(rawdata)
         initialScaleDataY[i] = (rawdata[i].Y)*1000
     }
    
+   	xpadding = 0.01*width;
+   	ypadding = 0.01*height;
 
  	var newScaledDataX = [];
  	var newScaledDataY = [];
@@ -39,28 +41,13 @@ function showBubbleMap(rawdata)
 
  	var linearScaleX = d3.scaleLinear()
                             .domain([minDataPointX,maxDataPointX])
-                            .range([0,500]);
+                            .range([0+xpadding,500-xpadding]);
 
     var linearScaleY = d3.scaleLinear()
                             .domain([minDataPointY,maxDataPointY])
-                            .range([0,500]);
-
-
-    /*
-	for (var i = 0; i < initialScaleDataX.length; i++) {
-		newScaledDataX[i] = linearScaleX(initialScaleDataX[i]);
-		newScaledDataY[i] = linearScaleY(initialScaleDataY[i]);
-	
-     }
-
-    rawdata.X = newScaledDataX
-    rawdata.Y = newScaledDataY
-
-    console.log(rawdata.X)
-    console.log(rawdata.Y)
-    console.log(rawdata)
-     */
+                            .range([0+ypadding,500-ypadding]);
     
+  
 
    
 	bubbleChart.selectAll("circle")
@@ -71,9 +58,10 @@ function showBubbleMap(rawdata)
     .style("fill", "green")
     .attr("r",function(d){return d.Radius})
 	.attr("cy",function(d){return 500-linearScaleX((d.X) *1000)})
-	.attr("cx",function(d){return linearScaleY((d.Y)*1000)})
+	.attr("cx",function(d){return  linearScaleY((d.Y)*1000)})
 	.attr("text",function(d){return d.Country})
-	
+	 
+
 
 }
 
