@@ -35,6 +35,16 @@ body {
     shape-rendering: crispEdges;
 }
 
+.scatterTooltip {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  pointer-events: none;
+  background-color: #FFE900;
+  font-family: sans-serif, verdana;
+  font-size:12px;
+}
+
 /*body {
 	display:inline-block;
 }*/

@@ -19,7 +19,9 @@
 		let countryCode = "Global";
 		//let xAxisProperty = "energy";
 
-		let xAxisProperty = audioFeaturesScatter.getSelectedOption(xAxisSelectorID);
+		let result = audioFeaturesScatter.getSelectedOption(xAxisSelectorID);
+		let xAxisProperty = result[0];
+		let xAxisPropertyText = result[1];
 		console.log(xAxisProperty);
 
 		if(xAxisProperty=="")
@@ -33,7 +35,7 @@
               d3.json("datasets/audioFeaturesHashMap.json", function(error2, audioFeaturesData){
               	//console.log(weeksData==null);
               	//console.log(audioFeaturesData==null);
-              	audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty);
+              	audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText);
               })
         });
 
@@ -44,11 +46,11 @@
 		var node = d3.select('#'+selectorID).node();
 		var i = node.selectedIndex;
 		//console.log("I am here");
-		//console.log("value is" + node[i].value);
-		return node[i].value;
+		//console.log("value is" + node[i].innerHTML);
+		return [node[i].value, node[i].innerHTML];
 	}
 
-	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty){
+	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText){
 
 		//console.log(audioFeaturesData);
 		//console.log("I am here");
@@ -69,6 +71,9 @@
 				computedData.push(obj);
 				xAxisPropertyValueArr.push(audioFeaturesData[key][xAxisProperty]*10000);
 				yAxisPropertyValueArr.push(obj["weeksOnChart"]);
+				if(obj["weeksOnChart"]==0){
+					console.log(obj);
+				}
 			}
 		}
 
@@ -106,10 +111,18 @@
 		var yAxis = d3.axisLeft();
 		yAxis.scale(yScale);
 
+		/*var tooltip = d3.select("#"+divID)
+		    .attr("class", "tooltip")
+		    .style("opacity", 0);*/
+
 		var svg = d3.select("#"+divID)
 					.append("svg")
 					.attr("width", divWidth)
 					.attr("height", divHeight);
+
+		var tooltip = d3.select('body').append("div")	
+		    .attr("class", "scatterTooltip")				
+		    .style("opacity", 0);
 
 		//need to fix scale for decimal values 
 		svg.append("g")
@@ -132,7 +145,21 @@
 			.attr("cy", function(d){
 				return yScale(d["weeksOnChart"]);
 			})
-			.attr("r", 5);
+			.attr("r", 5)
+			.on("mouseover", function(d){
+				console.log("Mouseover");
+				tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+				tooltip.html(d["songName"]+"<br/>"+"Weeks On Charts: "+d["weeksOnChart"]+"<br/>"+xAxisPropertyText+": "+d[xAxisProperty])
+				.style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+			})
+			.on("mouseout", function(d){
+				tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+			});
 	}
 
 })(); 

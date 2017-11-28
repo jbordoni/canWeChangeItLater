@@ -69,7 +69,7 @@ for csvFile in csvFiles:
 						obj['songName'] = splitted[1].rstrip().replace('"','')
 						obj['artistName'] = splitted[2].rstrip().replace('"','')
 						obj['track_href'] = splitted[4].rstrip()
-						obj['weeksOnChart'] = 0
+						obj['weeksOnChart'] = 1
 						#print obj
 						hmap[urlRemainder] = obj
 						#sys.exit()
