@@ -61,6 +61,18 @@
         </select>
       </div>
       <div style="display: table-cell; width: 150;">
+        <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter">
+          <option value="valence">Valence</option>
+          <option value="energy">Energy</option>
+          <option value="liveness">Liveness</option>
+          <option value="tempo">Tempo</option>
+          <option value="speechiness">Speechiness</option>
+          <option value="acousticness">Acousticness</option>
+          <option value="danceability">Danceability</option>
+          <option value="loudness">Loudness</option>
+        </select>
+      </div>
+      <div style="display: table-cell; width: 150;">
         <button id="updateAudioFeatScatter" onclick="updateClickedScatter()">Update</button>
       </div>
     </div>
@@ -90,7 +102,7 @@
 
   function updateClickedScatter(){
     audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
-    "xdropdownScatter", "updateAudioFeatScatter");
+    "xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
   }
   
 
