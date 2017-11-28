@@ -38,7 +38,15 @@
   <div id="divContainer">
 
     <div id = "bubbleMap">
-      <button id="show" onclick="show()">Show</button>
+      <!--<button id="show" onclick="show()">Show</button>-->
+
+      <div style="display: table-cell; width: 120;">
+        <label for="dropDownAudioFeatures">Audio Features: </label>
+        <select id="dropDownAudioFeatures" onchange="show(1)">
+          <option val="valence">Valence</option>
+          <option val="energy">Energy</option>
+        </select>
+      </div>
     </div>
 
     <div id="audioFeaturesScatterDiv">
@@ -81,6 +89,8 @@
 
       }
   });*/
+
+  show(0);
 
   function updateClickedScatter(){
     audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
