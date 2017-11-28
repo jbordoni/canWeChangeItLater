@@ -41,7 +41,23 @@
       <button id="show" onclick="show()">Show</button>
     </div>
 
-    <div id="audioFeaturesScatterDiv"></div>
+    <div id="audioFeaturesScatterDiv">
+
+      <div style="display: table-cell; width: 120;">
+        <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
+          <option val="weeksOnCharts">Weeks On Charts</option>
+        </select>
+      </div>
+      <div style="display: table-cell; width: 150;">
+        <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter">
+          <option value="valence">Valence</option>
+          <option value="energy">Energy</option>
+        </select>
+      </div>
+      <div style="display: table-cell; width: 150;">
+        <button id="updateAudioFeatScatter" onclick="updateClickedScatter()">Update</button>
+      </div>
+    </div>
 
   </div>
 
@@ -66,7 +82,11 @@
       }
   });*/
 
-  audioFeaturesScatter.initiate("audioFeaturesScatterDiv");
+  function updateClickedScatter(){
+    audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
+    "xdropdownScatter", "updateAudioFeatScatter");
+  }
+  
 
 </script>
 </html>

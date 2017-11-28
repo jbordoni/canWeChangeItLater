@@ -40,6 +40,10 @@ body {
 	height:100vh;
 }
 
+.axis line {
+    shape-rendering: crispEdges;
+}
+
 /*body {
 	display:inline-block;
 }*/

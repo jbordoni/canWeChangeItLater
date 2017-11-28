@@ -2,9 +2,31 @@
 
 	audioFeaturesScatter = {};
 
-	audioFeaturesScatter.initiate = function(divID){
+	audioFeaturesScatter.initiate = function(divID, yAxisSelectorID, xAxisSelectorID, updateButtonID){
+		
+		let div = document.getElementById(divID);
+		let childNodes = div.childNodes; 
+
+		//clear existing SVG element if any 
+		for(var i=0; i<childNodes.length; i++)
+		{
+			let el = childNodes[i];
+			if(el instanceof SVGElement){
+				$(el).remove();
+			}
+		}
+
 		let countryCode = "Global";
-		let xAxisProperty = "energy";
+		//let xAxisProperty = "energy";
+
+		let xAxisProperty = audioFeaturesScatter.getSelectedOption(xAxisSelectorID);
+		console.log(xAxisProperty);
+
+		if(xAxisProperty=="")
+		{
+			xAxisProperty = "valence";
+		}
+
 		let songs = {}; 
 
 		d3.json("datasets/week-score/weeksOnChart-"+countryCode+"-Last.json", function(error, weeksData){                  
@@ -13,8 +35,17 @@
               	//console.log(audioFeaturesData==null);
               	audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty);
               })
-          });
+        });
 
+	}
+
+	audioFeaturesScatter.getSelectedOption = function(selectorID){
+		//console.log(selectorID);
+		var node = d3.select('#'+selectorID).node();
+		var i = node.selectedIndex;
+		//console.log("I am here");
+		//console.log("value is" + node[i].value);
+		return node[i].value;
 	}
 
 	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty){
@@ -43,9 +74,9 @@
 
 
 
-		console.log(divID);
+		//console.log(divID);
 		let div = document.getElementById(divID);
-		console.log(div.id);
+		//console.log(div.id);
 
 		let divWidth = div.offsetWidth; 
 		console.log(divWidth);
@@ -65,14 +96,31 @@
 		xScale.domain([d3.min(xAxisPropertyValueArr), d3.max(xAxisPropertyValueArr)])
 				.range([0+xPadding, divWidth-xPadding]);
 
+		var xAxis = d3.axisBottom();
+		xAxis.scale(xScale);
+
 		var yScale = d3.scaleLinear()
 					.domain([d3.min(yAxisPropertyValueArr), d3.max(yAxisPropertyValueArr)])
-					.range([0+yPadding, divHeight-yPadding]);
+					.range([divHeight-(yPadding), 0+yPadding]);
+
+		var yAxis = d3.axisLeft();
+		yAxis.scale(yScale);
 
 		var svg = d3.select("#"+divID)
 					.append("svg")
 					.attr("width", divWidth)
 					.attr("height", divHeight);
+
+		//need to fix scale for decimal values 
+		svg.append("g")
+		    .attr("class", "axis")
+		    .attr("transform", "translate(0," + (divHeight-yPadding) + ")")
+		    .call(xAxis);
+
+		svg.append("g")
+		   .attr("class", "axis")
+		   .attr("transform", "translate(" + xPadding + ",0)")
+		   .call(yAxis);
 
 		svg.selectAll("circle")
 			.data(computedData)
@@ -85,8 +133,6 @@
 				return yScale(d["weeksOnChart"]);
 			})
 			.attr("r", 5);
-
-
 	}
 
 })(); 
