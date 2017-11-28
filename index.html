@@ -33,26 +33,37 @@
   </div>
 
   <div id="divContainer">
+
+    <div id="audioFeaturesScatterDiv">
+    </div>
   </div>
 
   <div id="countryListDiv">
   </div>
 </body>
 
-<script type="text/javascript">
-      /*var globalDataList;
-      d3.csv("datasets/cars.csv", function(error, data) {
-          globalDataList = data;
-          if(error)
-          { console.log(error); }
-          else
-          {
-              //check why this doesn't get loaded using a browser
-              d3.json("datasets/cars_datatypes.json", function(error, datatypes){                  
-                  loadIndex(data, datatypes, "buttonsColumnDiv", "chartsContainerDiv");
-              });
+<script type="text/javascript" src="js/audioFeaturesScatter.js"></script>
 
-          }
-      });*/
+<script type="text/javascript">
+  /*var globalDataList;
+  d3.csv("datasets/cars.csv", function(error, data) {
+      globalDataList = data;
+      if(error)
+      { console.log(error); }
+      else
+      {
+          //check why this doesn't get loaded using a browser
+          d3.json("datasets/cars_datatypes.json", function(error, datatypes){                  
+              loadIndex(data, datatypes, "buttonsColumnDiv", "chartsContainerDiv");
+          });
+
+      }
+  });*/
+
+  audioFeaturesScatter.initiate("audioFeaturesScatterDiv");
+
+      
+
+
 </script>
 </html>

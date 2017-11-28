@@ -21,6 +21,16 @@
 
 }
 
+#audioFeaturesScatterDiv {
+	float:right;
+	width:60%;
+	height:40%;
+}
+
+body {
+	height:100vh;
+}
+
 /*body {
 	display:inline-block;
 }*/
