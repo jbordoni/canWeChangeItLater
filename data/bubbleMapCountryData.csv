@@ -1,0 +1,40 @@
+Country Code,Country,X,Y,Radius
+ar,Argentina,-34,-64,10
+at,Austria,47.33,13.33,10
+au,Australia,-25,135,10
+be,Belgium,50.83,4,10
+bo,Bolivia,-17,-65,10
+br,Brazil,-10,-55,10
+ca,Canada,60,-96,10
+ch,Switzerland,47,8,10
+cl,Chile,-30,-71,10
+co,Colombia,4,-72,10
+cr,Costa Rica,10,-84,10
+cz,Czech Republic,49.75,15,10
+de,Germany,51.5,10.5,10
+dk,Denmark,56,10,10
+ec,Ecuador,-2,-77.5,10
+es,Spain,40,-4,10
+fi,Finland,64,26,10
+fr,France,46,2,10
+gb,United Kingdom,54,-4,10
+gr,Greece,39,22,10
+hk,Hong Kong,22.25,114.167,10
+id,Indonesia,-5,120,10
+ie,Ireland,53,-8,10
+is,Iceland,65,-18,10
+it,Italy,42.83,12.83,10
+jp,Japan,36,138,10
+mx,Mexico,23,-102,10
+my,Malayasia,2.5,112.5,10
+nl,Netherlands,52.5,5.75,10
+no,Norway,62,10,10
+nz,New Zealand,-42,174,10
+pe,Peru,13,-85,10
+ph,Philippines,13,122,10
+pt,Portugal,39.5,-8,10
+se,Sweden,62,5,10
+sg,Singapore,1.37,103.8,10
+th,Thailand,15,100,10
+tw,Taiwan,24,121,10
+us,United States,-6,35,10
