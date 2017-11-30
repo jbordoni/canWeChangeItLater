@@ -112,13 +112,16 @@ function initiateShowBubbleMap(rawdata)
 				tooltip.html("Country : " + d.Country)
 				.style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
-			})
-			.on("mouseout", function(d){
+	})
+	.on("mouseout", function(d){
 				d3.select(this).attr('stroke',"yellow");
 				tooltip.transition()
                .duration(500)
                .style("opacity", 0);
-			});
+	})
+	.on('click',function(d,i){
+		//call scatterplot
+		});
 
 
    
