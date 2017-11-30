@@ -1,15 +1,13 @@
 var bubbleChart;
-var height = 1200;
-var width = 1200;
+var bubbleChartSVGGroup;
+//var height = 1200;
+//var width = 1200;
 var flag = 0
 
 function show(flag)
 {
 	
 	console.log("Inside show")
-	
-	
-
 	if(flag==1)
 	{
 		let div = document.getElementById('bubbleMap');
@@ -25,8 +23,15 @@ function show(flag)
 		}
 	}
 
-    bubbleChart = d3.select('#divContainer').select('#bubbleMap').append('svg').attr("height", height).attr("width", width);
-	bubbleMap = bubbleChart.append('g');
+	let bubbleChartDiv = document.getElementById("bubbleMap");
+	bubbleChartDivHeight = bubbleChartDiv.offsetHeight; 
+	bubbleChartDivWidth = bubbleChartDiv.offsetWidth;
+
+    bubbleChart = d3.select('#bubbleMap')
+    			.append('svg')
+    			.attr("height", bubbleChartDivHeight)
+    			.attr("width", bubbleChartDivWidth);
+	bubbleChartSVGGroup = bubbleChart.append('g');
 
 	d3.csv('data/bubbleMapCountryData.csv', initiateShowBubbleMap);
 }
@@ -46,7 +51,18 @@ function initiateShowBubbleMap(rawdata)
 
 function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 	var selectedFeature = document.getElementById('dropDownAudioFeatures').value;
-	console.log(selectedFeature);
+	//console.log(selectedFeature);
+
+	let nodeIdx = document.getElementById('dropDownAudioFeatures').selectedIndex;
+	console.log(nodeIdx);
+	let selectedFeatureText = document.getElementById('dropDownAudioFeatures')[nodeIdx].innerHTML;
+
+	let bubbleChartDiv = document.getElementById("bubbleMap");
+	let height = bubbleChartDiv.offsetHeight; 
+	let width = bubbleChartDiv.offsetWidth;
+
+	console.log(height, width);
+	//let height = 
 
 	//console.log()
 
@@ -89,13 +105,13 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
         initialScaleDataY[i] = (rawdata[i].Y)*1000
     }
    
-   	xpadding = 0.01*height;
-   	ypadding = 0.05*width;
+   	xpadding = 0.17*height;
+   	ypadding = 0.09*width;
 
  	var newScaledDataX = [];
  	var newScaledDataY = [];
  	var minDataPointX = d3.min(initialScaleDataX);
- 	var maxDataPointX = d3.max(initialScaleDataY);
+ 	var maxDataPointX = d3.max(initialScaleDataX);
 
  	var minDataPointY = d3.min(initialScaleDataY);
  	var maxDataPointY = d3.max(initialScaleDataY);
@@ -103,15 +119,15 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 
  	var linearScaleX = d3.scaleLinear()
                             .domain([minDataPointX,maxDataPointX])
-                            .range([0 + xpadding,500-xpadding]);
+                            .range([height-xpadding, 0 + xpadding]);
 
     var linearScaleY = d3.scaleLinear()
                             .domain([minDataPointY,maxDataPointY])
-                            .range([0 + ypadding,500-ypadding]);
+                            .range([0 + ypadding,width-ypadding]);
 
     var radiusScale = d3.scaleLinear()
     					.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
-    					.range([10, 50]);
+    					.range([5, 30]);
     
     var tooltip = d3.select('body').append("div")	
 		    .attr("class", "bubbleMapTooltip")				
@@ -119,12 +135,12 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
    
 
    
-	bubbleChart.selectAll("circle")
+	bubbleChartSVGGroup.selectAll("circle")
 	.data(rawdata)
 	.enter()
 	.append("circle")
 	.attr("stroke", "yellow")
-    .attr("fill", "gray")
+    .attr("fill", "#666666")
     .attr("r",function(d){ 
     	//console.log(d.Code);
     	//console.log(countryValues[d.Code]);
@@ -141,7 +157,7 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 		}
 		else 
 			return 0})*/
-	.attr("cy",function(d){return 500-linearScaleX((d.X) *1000)})
+	.attr("cy",function(d){return linearScaleX((d.X) *1000)})
 	.attr("cx",function(d){return  linearScaleY((d.Y)*1000)})
 	.attr("text",function(d){return d.Country})
 	.attr("id", "hello")
@@ -151,7 +167,8 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
-				tooltip.html("Country : " + d.Country)
+				tooltip.html("Country : " + d.Country+
+							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]/1000.0).toFixed(2)))
 				.style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
 	})
