@@ -164,6 +164,7 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 	.on("mouseover", function(d){
 				console.log("Inside Mouseover");
 				d3.select(this).attr('stroke',"orange")
+				d3.select(this).attr("fill", "#333333")
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
@@ -174,6 +175,7 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 	})
 	.on("mouseout", function(d){
 				d3.select(this).attr('stroke',"yellow");
+				d3.select(this).attr("fill","#666666")
 				tooltip.transition()
                .duration(500)
                .style("opacity", 0);
