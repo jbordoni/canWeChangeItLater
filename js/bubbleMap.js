@@ -65,7 +65,9 @@ function showBubbleMap(rawdata)
                             .domain([minDataPointY,maxDataPointY])
                             .range([0+ypadding,500-ypadding]);
     
-    
+    var tooltip = d3.select('body').append("div")	
+		    .attr("class", "scatterTooltip")				
+		    .style("opacity", 0);
    
 
    
@@ -73,8 +75,8 @@ function showBubbleMap(rawdata)
 	.data(rawdata)
 	.enter()
 	.append("circle")
-	.style("stroke", "gray")
-    .style("fill", "green")
+	.attr("stroke", "yellow")
+    .attr("fill", "gray")
     .attr("r",function(d){ 
     	if (selectedFeature == "Valence")
     	{	
@@ -91,7 +93,26 @@ function showBubbleMap(rawdata)
 	.attr("cy",function(d){return 500-linearScaleX((d.X) *1000)})
 	.attr("cx",function(d){return  linearScaleY((d.Y)*1000)})
 	.attr("text",function(d){return d.Country})
+	.attr("id", "hello")
+	.on("mouseover", function(d){
+				console.log("Inside Mouseover");
+				d3.select(this).attr('stroke',"orange")
+				tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+				tooltip.html("Country : " + d.Country)
+				.style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+			})
+			.on("mouseout", function(d){
+				d3.select(this).attr('stroke',"yellow");
+				tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+			});
 
+
+   
 
 	 
 
