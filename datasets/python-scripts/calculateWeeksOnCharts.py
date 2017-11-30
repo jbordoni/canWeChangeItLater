@@ -18,74 +18,79 @@ dataFolder = os.path.join(datasetsFolder, "spotify-charts-data")
 
 writeToFolder = os.path.join(datasetsFolder, "week-score")
 
-country = "global"
+countryList = os.listdir(dataFolder);
 
-countryFolderRead = os.path.join(dataFolder, country)
+#country = "global"
 
-hmap = {}
+#countryFolderRead = os.path.join(dataFolder, country)
 
+for country in countryList:
+	hmap = {}
+	if country[0]==".":
+		continue
+	countryFolderRead = os.path.join(dataFolder, country)
 
-csvFiles = os.listdir(countryFolderRead)
-for csvFile in csvFiles:
-	if csvFile[0]==".":
-		pass
-	else:
-		csvFilePath = os.path.join(countryFolderRead, csvFile)
-		content = None
-		with open(csvFilePath, "r") as f:
-			content = f.readlines()
+	csvFiles = os.listdir(countryFolderRead)
+	for csvFile in csvFiles:
+		if csvFile[0]==".":
+			pass
+		else:
+			csvFilePath = os.path.join(countryFolderRead, csvFile)
+			content = None
+			with open(csvFilePath, "r") as f:
+				content = f.readlines()
 
-		#print len(content)
-		#sys.exit()
-
-		for line in content[1:]: #ignore header
-			#print line
-			
-			splitted = line.split(",")
-			#print splitted
-			#print len(splitted)
-
-			#print pos, name, artist, streams, url
-			url = splitted[len(splitted)-1]
-
-			urlRemainderSplit = url.split("/")
-			urlRemainder = urlRemainderSplit[len(urlRemainderSplit)-1]
-			urlRemainder = urlRemainder.rstrip()
-			#print "Remainder is", urlRemainder
-			#print "Checking ", urlRemainder.isalnum()
-			
+			#print len(content)
 			#sys.exit()
 
-			if "<" in urlRemainder or ">" in urlRemainder or " " in urlRemainder:
-				pass
-			else:
-				#print "I am here"
-				#print urlRemainder
-
-			 	if len(splitted)==5:
-					#print "I am here"
-					if urlRemainder not in hmap:
-						obj = {} 
-						obj['songName'] = splitted[1].rstrip().replace('"','')
-						obj['artistName'] = splitted[2].rstrip().replace('"','')
-						obj['track_href'] = splitted[4].rstrip()
-						obj['weeksOnChart'] = 1
-						#print obj
-						hmap[urlRemainder] = obj
-						#sys.exit()
-						
-					else:
-						hmap[urlRemainder]['weeksOnChart'] = hmap[urlRemainder]['weeksOnChart']+1
+			for line in content[1:]: #ignore header
+				#print line
 				
+				splitted = line.split(",")
+				#print splitted
+				#print len(splitted)
 
-		#break
+				#print pos, name, artist, streams, url
+				url = splitted[len(splitted)-1]
 
-print len(hmap)
+				urlRemainderSplit = url.split("/")
+				urlRemainder = urlRemainderSplit[len(urlRemainderSplit)-1]
+				urlRemainder = urlRemainder.rstrip()
+				#print "Remainder is", urlRemainder
+				#print "Checking ", urlRemainder.isalnum()
+				
+				#sys.exit()
 
-pickle.dump(hmap, open("weeksOnChart-Global-Last.pickle", "wb"))
+				if "<" in urlRemainder or ">" in urlRemainder or " " in urlRemainder:
+					pass
+				else:
+					#print "I am here"
+					#print urlRemainder
 
-with open("weeksOnChart-Global-Last.json", "w") as fp:
-	json.dump(hmap, fp, indent=4)
+				 	if len(splitted)==5:
+						#print "I am here"
+						if urlRemainder not in hmap:
+							obj = {} 
+							obj['songName'] = splitted[1].rstrip().replace('"','')
+							obj['artistName'] = splitted[2].rstrip().replace('"','')
+							obj['track_href'] = splitted[4].rstrip()
+							obj['weeksOnChart'] = 1
+							#print obj
+							hmap[urlRemainder] = obj
+							#sys.exit()
+							
+						else:
+							hmap[urlRemainder]['weeksOnChart'] = hmap[urlRemainder]['weeksOnChart']+1
+					
+
+			#break
+
+	print len(hmap)
+
+	pickle.dump(hmap, open("weeksOnChart-"+country+"-Last.pickle", "wb"))
+
+	with open("weeksOnChart-"+country+"-Last.json", "w") as fp:
+		json.dump(hmap, fp, indent=4)
 
 
 

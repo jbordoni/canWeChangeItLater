@@ -56,37 +56,40 @@
 
     <div id="audioFeaturesScatterDiv">
 
-      <div style="display: table-cell; width: 120;">
-        <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
-          <option val="weeksOnCharts">Weeks On Charts</option>
-        </select>
-      </div>
-      <div style="display: table-cell; width: 150;">
-        <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter">
-          <option value="valence">Valence</option>
-          <option value="energy">Energy</option>
-          <option value="liveness">Liveness</option>
-          <option value="tempo">Tempo</option>
-          <option value="speechiness">Speechiness</option>
-          <option value="acousticness">Acousticness</option>
-          <option value="danceability">Danceability</option>
-          <option value="loudness">Loudness</option>
-        </select>
-      </div>
-      <div style="display: table-cell; width: 150;">
-        <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter">
-          <option value="valence">Valence</option>
-          <option value="energy">Energy</option>
-          <option value="liveness">Liveness</option>
-          <option value="tempo">Tempo</option>
-          <option value="speechiness">Speechiness</option>
-          <option value="acousticness">Acousticness</option>
-          <option value="danceability">Danceability</option>
-          <option value="loudness">Loudness</option>
-        </select>
-      </div>
-      <div style="display: table-cell; width: 150;">
-        <button id="updateAudioFeatScatter" onclick="updateClickedScatter()">Update</button>
+      <div class="dropdownMenuContainer">
+        <div style="display: table-cell; width: 120;">
+          <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
+            <option val="weeksOnCharts">Weeks On Charts</option>
+          </select>
+        </div>
+        <div style="display: table-cell; width: 150;">
+          <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter">
+            <option value="valence">Valence</option>
+            <option value="energy">Energy</option>
+            <option value="liveness">Liveness</option>
+            <option value="tempo">Tempo</option>
+            <option value="speechiness">Speechiness</option>
+            <option value="acousticness">Acousticness</option>
+            <option value="danceability">Danceability</option>
+            <option value="loudness">Loudness</option>
+          </select>
+        </div>
+        <div style="display: table-cell; width: 150;">
+          <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter">
+            <option value="none">None</option>
+            <option value="valence">Valence</option>
+            <option value="energy">Energy</option>
+            <option value="liveness">Liveness</option>
+            <option value="tempo">Tempo</option>
+            <option value="speechiness">Speechiness</option>
+            <option value="acousticness">Acousticness</option>
+            <option value="danceability">Danceability</option>
+            <option value="loudness">Loudness</option>
+          </select>
+        </div>
+        <div style="display: table-cell; width: 150;">
+          <button id="updateAudioFeatScatter" onclick="updateClickedScatter()">Update</button>
+        </div>
       </div>
     </div>
     <div id = "LifeOfMusicLineChart">
@@ -103,9 +106,13 @@
 
 <script type="text/javascript">
 
+  var globalCountryCode = "Global";
+
   show(0);
 
   function updateClickedScatter(){
+    console.log(globalCountryCode);
+
     audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
     "xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
   }

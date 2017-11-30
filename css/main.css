@@ -45,8 +45,12 @@
 	text-align: center;
 	border-top: 7px solid yellow;
 	padding-top: 2%;
+}
 
+.dropdownMenuContainer { 
 
+	margin-left:10%;
+	width:100%;
 }
 
 #LifeOfMusicLineChart{
