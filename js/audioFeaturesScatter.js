@@ -76,6 +76,10 @@
 		let yAxisPropertyValueArr = [];
 		let colorPropertyValueArr = [];
 
+		let xAxisPropertyValueArrNotMultiplied = [];
+
+
+		//iterate through complete json object
 		for(var key in weeksData){
 			if(weeksData.hasOwnProperty(key)){
 				//console.log(key);
@@ -85,6 +89,7 @@
 				obj[colorProperty] = audioFeaturesData[key][colorProperty];
 				computedData.push(obj);
 				xAxisPropertyValueArr.push(audioFeaturesData[key][xAxisProperty]*10000);
+				xAxisPropertyValueArrNotMultiplied.push(audioFeaturesData[key][xAxisProperty]);
 				yAxisPropertyValueArr.push(obj["weeksOnChart"]);
 				colorPropertyValueArr.push(obj[colorProperty]*1000)
 				if(obj["weeksOnChart"]==0){
@@ -107,16 +112,26 @@
 		let xPadding = 0.1*divWidth; 
 		let yPadding = 0.1*divHeight; 
 
+		let svgWidth = divWidth - 0.1*divWidth; 
+		let svgHeight = divHeight - 0.1*divHeight; 
+
+
 		var xScale = d3.scaleLinear();
 		xScale.domain([d3.min(xAxisPropertyValueArr), d3.max(xAxisPropertyValueArr)])
-				.range([0+xPadding, divWidth-xPadding]);
+				.range([0+xPadding, svgWidth-xPadding]);
+
+		var xScaleForDisplay = d3.scaleLinear();
+		xScaleForDisplay.domain([d3.min(xAxisPropertyValueArrNotMultiplied), d3.max(xAxisPropertyValueArrNotMultiplied)])
+						.range([0+xPadding, svgWidth-xPadding])
+						.tickFormat(d3.format(",.2f"));
 
 		var xAxis = d3.axisBottom();
-		xAxis.scale(xScale);
+		xAxis.scale(xScaleForDisplay);
+				//.tickFormat(d3.format(",.2f"));
 
 		var yScale = d3.scaleLinear()
 					.domain([d3.min(yAxisPropertyValueArr), d3.max(yAxisPropertyValueArr)])
-					.range([divHeight-(yPadding), 0+yPadding]);
+					.range([svgHeight-(yPadding), 0+yPadding]);
 
 		var yAxis = d3.axisLeft();
 		yAxis.scale(yScale);
@@ -127,11 +142,14 @@
 		    .attr("class", "tooltip")
 		    .style("opacity", 0);*/
 
+		//svgPadding = {"top":}
+
+		
 		
 		var svg = d3.select("#"+divID)
 					.append("svg")
-					.attr("width", divWidth)
-					.attr("height", divHeight);
+					.attr("width", svgWidth)
+					.attr("height", svgHeight);
 
 		var tooltip = d3.select('body').append("div")	
 		    .attr("class", "scatterTooltip")				
@@ -145,16 +163,32 @@
 		/*var colorScale = d3.scaleLinear()
 							.domain()*/
 
-		//need to fix scale for decimal values 
 		svg.append("g")
 		    .attr("class", "axis")
-		    .attr("transform", "translate(0," + (divHeight-yPadding) + ")")
+		    .attr("transform", "translate(0," + (svgHeight-yPadding) + ")")
 		    .call(xAxis);
+
+		svg.append("text")
+			.attr("class", "axisLabelScatter")
+			.attr("transform",
+	            "translate(" + (svgWidth/2) + " ," + 
+	                           (svgHeight) + ")")
+		      .style("text-anchor", "middle")
+		      .text(xAxisPropertyText);
+
 
 		svg.append("g")
 		   .attr("class", "axis")
 		   .attr("transform", "translate(" + xPadding + ",0)")
 		   .call(yAxis);
+
+		svg.append("text")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 0)
+	      .attr("x",0 - (svgHeight / 2))
+	      .attr("dy", "1em")
+	      .style("text-anchor", "middle")
+	      .text("Weeks on Charts");   
 
 		svg.selectAll("circle")
 			.data(computedData)
@@ -186,6 +220,8 @@
                .duration(500)
                .style("opacity", 0);
 			});
+
+
 	}
 
 })(); 

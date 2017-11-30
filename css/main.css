@@ -23,8 +23,10 @@
 
 #audioFeaturesScatterDiv {
 	float:right;
-	width:65%;
+	width:70%;
 	height:40%;
+	border-top: 7px solid crimson;
+	padding-top:5%;
 }
 
 #bubbleMap{
@@ -50,8 +52,10 @@ body {
   height: 10%;
   pointer-events: none;
   background-color: #FFE900;
-  font-family: sans-serif, verdana;
   font-size:80%;
+}
+
+.axisLabelScatter {
 }
 
 /*body {

@@ -23,8 +23,6 @@ function show(flag)
 				$(el).remove();
 			}
 		}
-
-
 	}
 
     bubbleChart = d3.select('#divContainer').select('#bubbleMap').append('svg').attr("height", height).attr("width", width);
@@ -33,13 +31,8 @@ function show(flag)
 	d3.csv('data/bubbleMapCountryData.csv', showBubbleMap);
 }
 
-
-
 function showBubbleMap(rawdata)
 {
-
-
-
 	var selectedFeature = document.getElementById('dropDownAudioFeatures').value
 	console.log(selectedFeature)
    
