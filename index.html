@@ -100,9 +100,13 @@
 
 <script type="text/javascript">
 
+  var globalCountryCode = "Global";
+
   show(0);
 
   function updateClickedScatter(){
+    console.log(globalCountryCode);
+    
     audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
     "xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
   }

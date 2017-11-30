@@ -16,7 +16,14 @@
 			}
 		}
 
-		let countryCode = "Global";
+		/*8let countryCode="";
+		if(countryCodeGiven==null){
+			globalCountryCode = "Global";
+		}
+		else{
+			globalCountryCode = countryCodeGiven;
+		}*/
+		
 		//let xAxisProperty = "energy";
 
 		let result = audioFeaturesScatter.getSelectedOption(xAxisSelectorID);
@@ -24,6 +31,7 @@
 		let xAxisPropertyText = result[1];
 		console.log(xAxisProperty);
 
+		//set default
 		if(xAxisProperty=="")
 		{
 			xAxisProperty = "valence";
@@ -34,6 +42,7 @@
 		colorProperty = colorResult[0]
 		colorPropertyText =colorResult[1];
 
+		//set default
 		if(colorProperty==""){
 			colorProperty = "energy";
 			colorPropertyText = "Energy";
@@ -41,11 +50,15 @@
 
 		let songs = {}; 
 
-		d3.json("datasets/week-score/weeksOnChart-"+countryCode+"-Last.json", function(error, weeksData){                  
+		d3.json("datasets/week-score/weeksOnChart-"+globalCountryCode+"-Last.json", function(error, weeksData){                  
               d3.json("datasets/audioFeaturesHashMap.json", function(error2, audioFeaturesData){
               	//console.log(weeksData==null);
               	//console.log(audioFeaturesData==null);
-              	audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText,  colorProperty, colorPropertyText);
+              	d3.json("datasets/countryCodes.json", function(error3, countryCodeData){
+              		audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText,  
+              			colorProperty, colorPropertyText, countryCodeData);
+
+              	})
               })
         });
 
@@ -60,7 +73,7 @@
 		return [node[i].value, node[i].innerHTML];
 	}
 
-	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText, colorProperty, colorPropertyText){
+	audioFeaturesScatter.populateDiv = function(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText, colorProperty, colorPropertyText, countryCodeData){
 
 		//console.log(audioFeaturesData);
 		//console.log("I am here");
@@ -71,6 +84,9 @@
 		//console.log(audioFeaturesData[xAxisProperty])
 		//console.log(audioFeaturesScatter[0]);
 
+		let countrySelectedText = countryCodeData[globalCountryCode];
+		console.log(countrySelectedText);
+
 		let computedData = [];
 		let xAxisPropertyValueArr = [];
 		let yAxisPropertyValueArr = [];
@@ -79,24 +95,40 @@
 		let xAxisPropertyValueArrNotMultiplied = [];
 
 
+
+
 		//iterate through complete json object
 		for(var key in weeksData){
 			if(weeksData.hasOwnProperty(key)){
 				//console.log(key);
 				//return
 				obj = weeksData[key]
-				obj[xAxisProperty] = audioFeaturesData[key][xAxisProperty];
-				obj[colorProperty] = audioFeaturesData[key][colorProperty];
-				computedData.push(obj);
-				xAxisPropertyValueArr.push(audioFeaturesData[key][xAxisProperty]*10000);
-				xAxisPropertyValueArrNotMultiplied.push(audioFeaturesData[key][xAxisProperty]);
-				yAxisPropertyValueArr.push(obj["weeksOnChart"]);
-				colorPropertyValueArr.push(obj[colorProperty]*1000)
-				if(obj["weeksOnChart"]==0){
-					console.log(obj);
+				if(key in audioFeaturesData && key!=undefined && key!=null){
+					if(audioFeaturesData[key][xAxisProperty]!=null){
+						obj[xAxisProperty] = audioFeaturesData[key][xAxisProperty];
+						obj[colorProperty] = audioFeaturesData[key][colorProperty];
+						computedData.push(obj);
+						xAxisPropertyValueArr.push(audioFeaturesData[key][xAxisProperty]*10000);
+						xAxisPropertyValueArrNotMultiplied.push(audioFeaturesData[key][xAxisProperty]);
+						yAxisPropertyValueArr.push(obj["weeksOnChart"]);
+						colorPropertyValueArr.push(obj[colorProperty]*1000)
+						if(obj["weeksOnChart"]==0){
+							console.log(obj);
+						}
+					}
+					
 				}
+				
 			}
 		}
+
+		//console.log("Check error");
+
+		/*console.log(xAxisPropertyValueArr.length);
+		console.log(xAxisPropertyValueArrNotMultiplied.length);
+		console.log(computedData.length);*/
+
+
 		let div = document.getElementById(divID);
 		let divWidth = div.offsetWidth; 
 		//console.log(divWidth);

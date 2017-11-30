@@ -1,0 +1,7727 @@
+(dp0
+S'0mel2N9Ws9r4yLQn5QE21Y'
+p1
+(dp2
+S'artistName'
+p3
+S'Sam Smith'
+p4
+sS'weeksOnChart'
+p5
+I5
+sS'track_href'
+p6
+S'https://open.spotify.com/track/0mel2N9Ws9r4yLQn5QE21Y'
+p7
+sS'songName'
+p8
+S'Too Good At Goodbyes'
+p9
+ssS'60a0Rd6pjrkxjPbaKzXjfq'
+p10
+(dp11
+g3
+S'Linkin Park'
+p12
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq'
+p13
+sg8
+S'In The End'
+p14
+ssS'0prNGof3XqfTvNDxHonvdK'
+p15
+(dp16
+g3
+S'Alessia Cara'
+p17
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/0prNGof3XqfTvNDxHonvdK'
+p18
+sg8
+S'Scars To Your Beautiful'
+p19
+ssS'7cvw9YXDn35Ra6xCrIqVNZ'
+p20
+(dp21
+g3
+S'Luis Fonsi'
+p22
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7cvw9YXDn35Ra6xCrIqVNZ'
+p23
+sg8
+S'Llegaste T\xc3\xba'
+p24
+ssS'6HUnnBwYZqcED1eQztxMBN'
+p25
+(dp26
+g3
+S'Martin Jensen'
+p27
+sg5
+I18
+sg6
+S'https://open.spotify.com/track/6HUnnBwYZqcED1eQztxMBN'
+p28
+sg8
+S'Solo Dance'
+p29
+ssS'2aksifNn5ph8igDOkPBA02'
+p30
+(dp31
+g3
+S'Rihanna'
+p32
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/2aksifNn5ph8igDOkPBA02'
+p33
+sg8
+S'Love On The Brain'
+p34
+ssS'7wGoVu4Dady5GV0Sv4UIsx'
+p35
+(dp36
+g3
+S'Post Malone'
+p37
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7wGoVu4Dady5GV0Sv4UIsx'
+p38
+sg8
+S'rockstar'
+p39
+ssS'5ou59ERA2f7ffyAxAcZyVz'
+p40
+(dp41
+g3
+S'Lady Gaga'
+p42
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5ou59ERA2f7ffyAxAcZyVz'
+p43
+sg8
+S'Perfect Illusion'
+p44
+ssS'1CnPYaKxTVb4LWOtiGOm0m'
+p45
+(dp46
+g3
+S'Jon Bellion'
+p47
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/1CnPYaKxTVb4LWOtiGOm0m'
+p48
+sg8
+S'All Time Low'
+p49
+ssS'4OZEu0Vwq0RB2LAq14v99n'
+p50
+(dp51
+g3
+S'DJ Snake'
+p52
+sg5
+I28
+sg6
+S'https://open.spotify.com/track/4OZEu0Vwq0RB2LAq14v99n'
+p53
+sg8
+S'Middle'
+p54
+ssS'70lnL3QaSOIIyMa2X9aVRL'
+p55
+(dp56
+g3
+S'Shakira'
+p57
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/70lnL3QaSOIIyMa2X9aVRL'
+p58
+sg8
+S'Perro Fiel'
+p59
+ssS'46HdsiK0uR26B2dY9QPzda'
+p60
+(dp61
+g3
+S'Prince Royce'
+p62
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/46HdsiK0uR26B2dY9QPzda'
+p63
+sg8
+S'Deja vu'
+p64
+ssS'17nOaHsTn06jxuU9NpHuFU'
+p65
+(dp66
+g3
+S'Bad Bunny'
+p67
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/17nOaHsTn06jxuU9NpHuFU'
+p68
+sg8
+S'Pa Ti'
+p69
+ssS'46lFttIf5hnUZMGvjK0Wxo'
+p70
+(dp71
+g3
+S'Galantis'
+p72
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/46lFttIf5hnUZMGvjK0Wxo'
+p73
+sg8
+S'Runaway (U & I)'
+p74
+ssS'2bJvI42r8EF3wxjOuDav4r'
+p75
+(dp76
+g3
+S'Pitbull'
+p77
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/2bJvI42r8EF3wxjOuDav4r'
+p78
+sg8
+S'Time of Our Lives'
+p79
+ssS'7tr2za8SQg2CI8EDgrdtNl'
+p80
+(dp81
+g3
+S'Calvin Harris'
+p82
+sg5
+I22
+sg6
+S'https://open.spotify.com/track/7tr2za8SQg2CI8EDgrdtNl'
+p83
+sg8
+S'Slide'
+p84
+ssS'1TxgZRcy3kZ7JaEp88MDbC'
+p85
+(dp86
+g3
+S'CNCO'
+p87
+sg5
+I22
+sg6
+S'https://open.spotify.com/track/1TxgZRcy3kZ7JaEp88MDbC'
+p88
+sg8
+S'Tan F\xc3\xa1cil'
+p89
+ssS'1HXM2hwghFTsbOA54isSP2'
+p90
+(dp91
+g3
+S'Alkaline'
+p92
+sg5
+I28
+sg6
+S'https://open.spotify.com/track/1HXM2hwghFTsbOA54isSP2'
+p93
+sg8
+S'Love Yuh Everything'
+p94
+ssS'4pLwZjInHj3SimIyN9SnOz'
+p95
+(dp96
+g3
+S'Ariana Grande'
+p97
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/4pLwZjInHj3SimIyN9SnOz'
+p98
+sg8
+S'Side To Side'
+p99
+ssS'4qknM1pQz53QOyfDVTjcM9'
+p100
+(dp101
+g3
+S'Shakira'
+p102
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/4qknM1pQz53QOyfDVTjcM9'
+p103
+sg8
+S'Me Enamor\xc3\xa9'
+p104
+ssS'3E2Zh20GDCR9B1EYjfXWyv'
+p105
+(dp106
+g3
+S'AJR'
+p107
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/3E2Zh20GDCR9B1EYjfXWyv'
+p108
+sg8
+S'Weak'
+p109
+ssS'2Gl0FzuLxflY6nPifJp5Dr'
+p110
+(dp111
+g3
+S'Kygo'
+p112
+sg5
+I15
+sg6
+S'https://open.spotify.com/track/2Gl0FzuLxflY6nPifJp5Dr'
+p113
+sg8
+S'First Time'
+p114
+ssS'2K2YkSn2utzsRntEClbyB8'
+p115
+(dp116
+g3
+S'Cultura Prof\xc3\xa9tica'
+p117
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/2K2YkSn2utzsRntEClbyB8'
+p118
+sg8
+S'Ilegal'
+p119
+ssS'4BHzQ9C00ceJxfG16AlNWb'
+p120
+(dp121
+g3
+S'Adele'
+p122
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/4BHzQ9C00ceJxfG16AlNWb'
+p123
+sg8
+S'Send My Love (To Your New Lover)'
+p124
+ssS'4Km5HrUvYTaSUfiSGPJeQR'
+p125
+(dp126
+g3
+S'Migos'
+p127
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/4Km5HrUvYTaSUfiSGPJeQR'
+p128
+sg8
+S'Bad and Boujee (feat. Lil Uzi Vert)'
+p129
+ssS'50PWlIBU7PlGGwzgN8TiFJ'
+p130
+(dp131
+g3
+S'Lady Gaga'
+p132
+sg5
+I38
+sg6
+S'https://open.spotify.com/track/50PWlIBU7PlGGwzgN8TiFJ'
+p133
+sg8
+S'Million Reasons'
+p134
+ssS'2RttW7RAu5nOAfq6YFvApB'
+p135
+(dp136
+g3
+S'Ed Sheeran'
+p137
+sg5
+I28
+sg6
+S'https://open.spotify.com/track/2RttW7RAu5nOAfq6YFvApB'
+p138
+sg8
+S'Happier'
+p139
+ssS'7BEI30TTNhwnkCyNUDmFrr'
+p140
+(dp141
+g3
+S'Daddy Yankee'
+p142
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/7BEI30TTNhwnkCyNUDmFrr'
+p143
+sg8
+S'Hula Hoop'
+p144
+ssS'3EmmCZoqpWOTY1g2GBwJoR'
+p145
+(dp146
+g3
+S'Steve Aoki'
+p147
+sg5
+I24
+sg6
+S'https://open.spotify.com/track/3EmmCZoqpWOTY1g2GBwJoR'
+p148
+sg8
+S'Just Hold On'
+p149
+ssS'2Ce5IyMlVRVvN997ZJjJJA'
+p150
+(dp151
+g3
+S'Future'
+p152
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/2Ce5IyMlVRVvN997ZJjJJA'
+p153
+sg8
+S'Selfish'
+p154
+ssS'6Zosz8w6CmdGMZM6p4JlbQ'
+p155
+(dp156
+g3
+S'Danny Ocean'
+p157
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/6Zosz8w6CmdGMZM6p4JlbQ'
+p158
+sg8
+S'Me Reh\xc3\xbaso'
+p159
+ssS'3eFJqPe8VUYrABbFjSauuj'
+p160
+(dp161
+g3
+S''
+p162
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3eFJqPe8VUYrABbFjSauuj'
+p163
+sg8
+g162
+ssS'3iDPALl8BoUbuXZgy6EOWY'
+p164
+(dp165
+g3
+S'Gigolo Y La Exce'
+p166
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/3iDPALl8BoUbuXZgy6EOWY'
+p167
+sg8
+S'Sexto Sentido (feat. Bad Bunny)'
+p168
+ssS'5kRPPEWFJIMox5qIkQkiz5'
+p169
+(dp170
+g3
+S'Harry Styles'
+p171
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/5kRPPEWFJIMox5qIkQkiz5'
+p172
+sg8
+S'Sweet Creature'
+p173
+ssS'03h8eaVgdJJ14cCKiO4ONX'
+p174
+(dp175
+g3
+S'Joey Montana'
+p176
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/03h8eaVgdJJ14cCKiO4ONX'
+p177
+sg8
+S'Hola'
+p178
+ssS'4iYRa2btalAzPZoSYfROqF'
+p179
+(dp180
+g3
+S'Kendrick Lamar'
+p181
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4iYRa2btalAzPZoSYfROqF'
+p182
+sg8
+S'XXX. FEAT. U2.'
+p183
+ssS'4xlrALxuaCf9yZBHJeTSG6'
+p184
+(dp185
+g3
+S'Jonas Blue'
+p186
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/4xlrALxuaCf9yZBHJeTSG6'
+p187
+sg8
+S'Mama'
+p188
+ssS'3RXkboS74UYzN14xTqzPyY'
+p189
+(dp190
+g3
+g162
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3RXkboS74UYzN14xTqzPyY'
+p191
+sg8
+g162
+ssS'7FfpP3YZ6fOWMdxkIAtud9'
+p192
+(dp193
+g3
+S'Farruko'
+p194
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/7FfpP3YZ6fOWMdxkIAtud9'
+p195
+sg8
+S'Krippy Kush'
+p196
+ssS'3pzjHKrQSvXGHQ98dx18HI'
+p197
+(dp198
+g3
+S'Justin Bieber'
+p199
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/3pzjHKrQSvXGHQ98dx18HI'
+p200
+sg8
+S'What Do You Mean?'
+p201
+ssS'000xQL6tZNLJzIrtIgxqSl'
+p202
+(dp203
+g3
+S'ZAYN'
+p204
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/000xQL6tZNLJzIrtIgxqSl'
+p205
+sg8
+S'Still Got Time'
+p206
+ssS'2FBUoWkIuQXwayw2RNo5l6'
+p207
+(dp208
+g3
+S'Drake'
+p209
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/2FBUoWkIuQXwayw2RNo5l6'
+p210
+sg8
+S'Hotline Bling'
+p211
+ssS'1D3ODoXHBLpdxolZRHWV1j'
+p212
+(dp213
+g3
+S'Jonas Blue'
+p214
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/1D3ODoXHBLpdxolZRHWV1j'
+p215
+sg8
+S'By Your Side'
+p216
+ssS'1CKd1PnqfYx0H12V9MSaIY'
+p217
+(dp218
+g3
+S'Zedd'
+p219
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/1CKd1PnqfYx0H12V9MSaIY'
+p220
+sg8
+S'Get Low (with Liam Payne)'
+p221
+ssS'5c4tB0saSkNHX5CyDosuF7'
+p222
+(dp223
+g3
+S'Burak Yeter'
+p224
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/5c4tB0saSkNHX5CyDosuF7'
+p225
+sg8
+S'Tuesday'
+p226
+ssS'4QsPTKvdpgkA7mBAvclZTa'
+p227
+(dp228
+g3
+S'Maluma'
+p229
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/4QsPTKvdpgkA7mBAvclZTa'
+p230
+sg8
+S'El Perdedor - The Remix'
+p231
+ssS'4yN6xPLopmTLvc27pO9LIE'
+p232
+(dp233
+g3
+S'Nicky Jam'
+p234
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/4yN6xPLopmTLvc27pO9LIE'
+p235
+sg8
+S'Si T\xc3\xba La Ves'
+p236
+ssS'5CtI0qwDJkDQGwXD1H1cLb'
+p237
+(dp238
+g3
+S'Luis Fonsi'
+p239
+sg5
+I26
+sg6
+S'https://open.spotify.com/track/5CtI0qwDJkDQGwXD1H1cLb'
+p240
+sg8
+S'Despacito - Remix'
+p241
+ssS'7m9OqQk4RVRkw9JJdeAw96'
+p242
+(dp243
+g3
+S'XXXTENTACION'
+p244
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/7m9OqQk4RVRkw9JJdeAw96'
+p245
+sg8
+S'Jocelyn Flores'
+p246
+ssS'53968oKecrFxkErocab2Al'
+p247
+(dp248
+g3
+S"Guns N' Roses"
+p249
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/53968oKecrFxkErocab2Al'
+p250
+sg8
+S'November Rain'
+p251
+ssS'0Nhu3zSYbEz32IYiobV75e'
+p252
+(dp253
+g3
+S'Halsey'
+p254
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/0Nhu3zSYbEz32IYiobV75e'
+p255
+sg8
+S'Now Or Never'
+p256
+ssS'12H7K15h3aC5vRCaca65el'
+p257
+(dp258
+g3
+S'Marc Anthony'
+p259
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/12H7K15h3aC5vRCaca65el'
+p260
+sg8
+S'Tu Amor Me Hace Bien - Salsa Version'
+p261
+ssS'1a5Yu5L18qNxVhXx38njON'
+p262
+(dp263
+g3
+S'Alok'
+p264
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/1a5Yu5L18qNxVhXx38njON'
+p265
+sg8
+S'Hear Me Now'
+p266
+ssS'1Eck97uRMlprKOOJN9oO1E'
+p267
+(dp268
+g3
+S'G-Eazy'
+p269
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/1Eck97uRMlprKOOJN9oO1E'
+p270
+sg8
+S'Good Life (with G-Eazy & Kehlani)'
+p271
+ssS'2ekn2ttSfGqwhhate0LSR0'
+p272
+(dp273
+g3
+S'Dua Lipa'
+p274
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/2ekn2ttSfGqwhhate0LSR0'
+p275
+sg8
+S'New Rules'
+p276
+ssS'1sCxVKWImDZSZKvG0U9B23'
+p277
+(dp278
+g3
+S'Selena Gomez'
+p279
+sg5
+I18
+sg6
+S'https://open.spotify.com/track/1sCxVKWImDZSZKvG0U9B23'
+p280
+sg8
+S'Bad Liar'
+p281
+ssS'6jmngk8Fwup05JZ6kgXEGX'
+p282
+(dp283
+g3
+S'Imagine Dragons'
+p284
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6jmngk8Fwup05JZ6kgXEGX'
+p285
+sg8
+S'Walking The Wire'
+p286
+ssS'00i0O74dXdaKKdCrqHnfXm'
+p287
+(dp288
+g3
+S'Ricky Martin'
+p289
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/00i0O74dXdaKKdCrqHnfXm'
+p290
+sg8
+S'La Mordidita'
+p291
+ssS'7oVEtyuv9NBmnytsCIsY5I'
+p292
+(dp293
+g3
+S'Linkin Park'
+p294
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7oVEtyuv9NBmnytsCIsY5I'
+p295
+sg8
+S'BURN IT DOWN'
+p296
+ssS'3dQDid3IUNhZy1OehIfYfE'
+p297
+(dp298
+g3
+S'Wisin'
+p299
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/3dQDid3IUNhZy1OehIfYfE'
+p300
+sg8
+S'Vacaciones'
+p301
+ssS'4VrWlk8IQxevMvERoX08iC'
+p302
+(dp303
+g3
+S'Sia'
+p304
+sg5
+I24
+sg6
+S'https://open.spotify.com/track/4VrWlk8IQxevMvERoX08iC'
+p305
+sg8
+S'Chandelier'
+p306
+ssS'6O6M7pJLABmfBRoGZMu76Y'
+p307
+(dp308
+g3
+S'The Chainsmokers'
+p309
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/6O6M7pJLABmfBRoGZMu76Y'
+p310
+sg8
+S'Roses'
+p311
+ssS'2Zw7rSucHm0MIph9gmNiSn'
+p312
+(dp313
+g3
+S'Alejandro Fernandez'
+p314
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/2Zw7rSucHm0MIph9gmNiSn'
+p315
+sg8
+S'Quiero Que Vuelvas'
+p316
+ssS'3n58u3LOFw8mITLvfPvQBz'
+p317
+(dp318
+g3
+S'Cosculluela'
+p319
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/3n58u3LOFw8mITLvfPvQBz'
+p320
+sg8
+S'Manicomio'
+p321
+ssS'7vGuf3Y35N4wmASOKLUVVU'
+p322
+(dp323
+g3
+S'Marshmello'
+p324
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/7vGuf3Y35N4wmASOKLUVVU'
+p325
+sg8
+S'Silence'
+p326
+ssS'0xXhgLXfEHnWJHVgRvFvdn'
+p327
+(dp328
+g3
+S'Reik'
+p329
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0xXhgLXfEHnWJHVgRvFvdn'
+p330
+sg8
+S'Creo en Ti'
+p331
+ssS'2TFk6az4XvctrRVDHKlhE1'
+p332
+(dp333
+g3
+S'MAYKEL'
+p334
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/2TFk6az4XvctrRVDHKlhE1'
+p335
+sg8
+S'Guapa'
+p336
+ssS'3KiktyOxQd2Z0bmnabgRq2'
+p337
+(dp338
+g3
+S'Ed Sheeran'
+p339
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3KiktyOxQd2Z0bmnabgRq2'
+p340
+sg8
+S"I'm A Mess"
+p341
+ssS'5hEM0JchdVzQ5PwvSfITeX'
+p342
+(dp343
+g3
+S'Piso 21'
+p344
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5hEM0JchdVzQ5PwvSfITeX'
+p345
+sg8
+S'Me Llamas (feat. Maluma) - Remix'
+p346
+ssS'7129iqBafaphfc3WPCGC0L'
+p347
+(dp348
+g3
+S'Lukas Graham'
+p349
+sg5
+I40
+sg6
+S'https://open.spotify.com/track/7129iqBafaphfc3WPCGC0L'
+p350
+sg8
+S'7 Years'
+p351
+ssS'4WjH9Bzt3kx7z8kl0awxh4'
+p352
+(dp353
+g3
+S'Major Lazer'
+p354
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/4WjH9Bzt3kx7z8kl0awxh4'
+p355
+sg8
+S'Lean On (feat. M\xc3\x98 & DJ Snake)'
+p356
+ssS'57p8CBvPOxrvyCbn6ttl5r'
+p357
+(dp358
+g3
+S'Skrillex'
+p359
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/57p8CBvPOxrvyCbn6ttl5r'
+p360
+sg8
+S'Would You Ever'
+p361
+ssS'43jBqV3j3Xi1g6wO0bhIMd'
+p362
+(dp363
+g3
+S'Sage The Gemini'
+p364
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/43jBqV3j3Xi1g6wO0bhIMd'
+p365
+sg8
+S'Now and Later'
+p366
+ssS'7oolFzHipTMg2nL7shhdz2'
+p367
+(dp368
+g3
+S'Ed Sheeran'
+p369
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/7oolFzHipTMg2nL7shhdz2'
+p370
+sg8
+S'Eraser'
+p371
+ssS'4Yf5bqU3NK4kNOypcrLYwU'
+p372
+(dp373
+g3
+S'Linkin Park'
+p374
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4Yf5bqU3NK4kNOypcrLYwU'
+p375
+sg8
+S'Faint'
+p376
+ssS'7fURZRPkB2S70sYR1naKTK'
+p377
+(dp378
+g3
+S'Soundgarden'
+p379
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7fURZRPkB2S70sYR1naKTK'
+p380
+sg8
+S'Black Hole Sun'
+p381
+ssS'3B7udSGy2PfgoCniMSb523'
+p382
+(dp383
+g3
+S'Ed Sheeran'
+p384
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/3B7udSGy2PfgoCniMSb523'
+p385
+sg8
+S'I See Fire'
+p386
+ssS'0BIHTu5MBTa73q5MsTwfIQ'
+p387
+(dp388
+g3
+S'F\xc3\xa1tima Pinto'
+p389
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/0BIHTu5MBTa73q5MsTwfIQ'
+p390
+sg8
+S'Feel Something'
+p391
+ssS'7BKLCZ1jbUBVqRi2FVlTVw'
+p392
+(dp393
+g3
+S'The Chainsmokers'
+p394
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw'
+p395
+sg8
+S'Closer'
+p396
+ssS'3NdDpSvN911VPGivFlV5d0'
+p397
+(dp398
+g3
+S'ZAYN'
+p399
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/3NdDpSvN911VPGivFlV5d0'
+p400
+sg8
+S'I Don\xe2\x80\x99t Wanna Live Forever (Fifty Shades Darker) - From Fifty Shades Darker (Original Motion Picture Soundtrack)'
+p401
+ssS'1iRvhKiXRElIH2Uf4gd95P'
+p402
+(dp403
+g3
+S'Jesse & Joy'
+p404
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/1iRvhKiXRElIH2Uf4gd95P'
+p405
+sg8
+S'Dueles'
+p406
+ssS'0gb1J5UrTpzaU1s3nupgCd'
+p407
+(dp408
+g3
+S'Galantis'
+p409
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/0gb1J5UrTpzaU1s3nupgCd'
+p410
+sg8
+S'No Money'
+p411
+ssS'1UZOjK1BwmwWU14Erba9CZ'
+p412
+(dp413
+g3
+S'Miley Cyrus'
+p414
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/1UZOjK1BwmwWU14Erba9CZ'
+p415
+sg8
+S'Malibu'
+p416
+ssS'7lRsNbdOGykkMAgsqs4R1C'
+p417
+(dp418
+g3
+S'Nacho'
+p419
+sg5
+I26
+sg6
+S'https://open.spotify.com/track/7lRsNbdOGykkMAgsqs4R1C'
+p420
+sg8
+S'B\xc3\xa1ilame'
+p421
+ssS'2eMwDehkIC1j68U6FA3Eiq'
+p422
+(dp423
+g3
+S'Lil Uzi Vert'
+p424
+sg5
+I18
+sg6
+S'https://open.spotify.com/track/2eMwDehkIC1j68U6FA3Eiq'
+p425
+sg8
+S'XO TOUR Llif3'
+p426
+ssS'3CRDbSIZ4r5MsZ0YwxuEkn'
+p427
+(dp428
+g3
+S'Twenty One Pilots'
+p429
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/3CRDbSIZ4r5MsZ0YwxuEkn'
+p430
+sg8
+S'Stressed Out'
+p431
+ssS'6mICuAdrwEjh6Y6lroV2Kg'
+p432
+(dp433
+g3
+S'Shakira'
+p434
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/6mICuAdrwEjh6Y6lroV2Kg'
+p435
+sg8
+S'Chantaje'
+p436
+ssS'6F609ICg9Spjrw1epsAnpa'
+p437
+(dp438
+g3
+S'Drake'
+p439
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/6F609ICg9Spjrw1epsAnpa'
+p440
+sg8
+S'Controlla'
+p441
+ssS'02IJFWVjLSM811RsySQusA'
+p442
+(dp443
+g3
+S'Melendi'
+p444
+sg5
+I15
+sg6
+S'https://open.spotify.com/track/02IJFWVjLSM811RsySQusA'
+p445
+sg8
+S'Destino o Casualidad'
+p446
+ssS'7gHs73wELdeycvS48JfIos'
+p447
+(dp448
+g3
+S'Alan Walker'
+p449
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/7gHs73wELdeycvS48JfIos'
+p450
+sg8
+S'Faded'
+p451
+ssS'0s6yB0ZFl1LvYHAnGhXFga'
+p452
+(dp453
+g3
+S'Alejandro Sanz'
+p454
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/0s6yB0ZFl1LvYHAnGhXFga'
+p455
+sg8
+S'Deja Que Te Bese'
+p456
+ssS'00lNx0OcTJrS3MKHcB80HY'
+p457
+(dp458
+g3
+S'Jax Jones'
+p459
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/00lNx0OcTJrS3MKHcB80HY'
+p460
+sg8
+S"You Don't Know Me - Radio Edit"
+p461
+ssS'7JNh1cfm0eXjqFVOzKLyau'
+p462
+(dp463
+g3
+S'Becky G'
+p464
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/7JNh1cfm0eXjqFVOzKLyau'
+p465
+sg8
+S'Mayores'
+p466
+ssS'0fg8CqpjdojMyXLNzM2PaJ'
+p467
+(dp468
+g3
+S'Major Lazer'
+p469
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/0fg8CqpjdojMyXLNzM2PaJ'
+p470
+sg8
+S'Run Up (feat. PARTYNEXTDOOR & Nicki Minaj)'
+p471
+ssS'3noN1TxpjbjjmKqssghvg8'
+p472
+(dp473
+g3
+S'Cosculluela'
+p474
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/3noN1TxpjbjjmKqssghvg8'
+p475
+sg8
+S'Si Me Dices Que Si (feat. Nicky Jam)'
+p476
+ssS'6gTJaPuj8DT8RjuDJyBgzP'
+p477
+(dp478
+g3
+S'Ed Sheeran'
+p479
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6gTJaPuj8DT8RjuDJyBgzP'
+p480
+sg8
+S"Don't"
+p481
+ssS'3umS4y3uQDkqekNjVpiRUs'
+p482
+(dp483
+g3
+S'Nicky Jam'
+p484
+sg5
+I39
+sg6
+S'https://open.spotify.com/track/3umS4y3uQDkqekNjVpiRUs'
+p485
+sg8
+S'El Amante'
+p486
+ssS'6uFsE1JgZ20EXyU0JQZbUR'
+p487
+(dp488
+g3
+S'Taylor Swift'
+p489
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/6uFsE1JgZ20EXyU0JQZbUR'
+p490
+sg8
+S'Look What You Made Me Do'
+p491
+ssS'6SIrNxmmdbv1KUbFBu1PaN'
+p492
+(dp493
+g3
+S'Ozuna'
+p494
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/6SIrNxmmdbv1KUbFBu1PaN'
+p495
+sg8
+S'Bebe (feat. Anuel AA)'
+p496
+ssS'4xBjsLUSjcx2h7PcRikpQp'
+p497
+(dp498
+g3
+S'Camila Cabello'
+p499
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4xBjsLUSjcx2h7PcRikpQp'
+p500
+sg8
+S'OMG'
+p501
+ssS'7GX5flRQZVHRAGd6B4TmDO'
+p502
+(dp503
+g3
+S'Lil Uzi Vert'
+p504
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/7GX5flRQZVHRAGd6B4TmDO'
+p505
+sg8
+S'XO TOUR Llif3'
+p506
+ssS'5V3mdRI2yQxbSsJGDPc5lD'
+p507
+(dp508
+g3
+S'System Of A Down'
+p509
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5V3mdRI2yQxbSsJGDPc5lD'
+p510
+sg8
+S'Chop Suey!'
+p511
+ssS'3WHqVVRvPDWz033iPs04md'
+p512
+(dp513
+g3
+S'Enzo Ortiz'
+p514
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/3WHqVVRvPDWz033iPs04md'
+p515
+sg8
+S'6 AM (Remix)'
+p516
+ssS'0CokSRCu5hZgPxcZBaEzVE'
+p517
+(dp518
+g3
+S'Macklemore'
+p519
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/0CokSRCu5hZgPxcZBaEzVE'
+p520
+sg8
+S'Glorious (feat. Skylar Grey)'
+p521
+ssS'4z3GJkrtH97Bj6fRta983T'
+p522
+(dp523
+g3
+S'Carlos Vives'
+p524
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/4z3GJkrtH97Bj6fRta983T'
+p525
+sg8
+S'Robarte un Beso'
+p526
+ssS'75ZvA4QfFiZvzhj2xkaWAh'
+p527
+(dp528
+g3
+S'Post Malone'
+p529
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/75ZvA4QfFiZvzhj2xkaWAh'
+p530
+sg8
+S'I Fall Apart'
+p531
+ssS'4kflIGfjdZJW4ot2ioixTB'
+p532
+(dp533
+g3
+S'Adele'
+p534
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/4kflIGfjdZJW4ot2ioixTB'
+p535
+sg8
+S'Someone Like You'
+p536
+ssS'7hDc8b7IXETo14hHIHdnhd'
+p537
+(dp538
+g3
+S'Drake'
+p539
+sg5
+I30
+sg6
+S'https://open.spotify.com/track/7hDc8b7IXETo14hHIHdnhd'
+p540
+sg8
+S'Passionfruit'
+p541
+ssS'2webQDZmtGioeu3zUUi9We'
+p542
+(dp543
+g3
+S'Sebastian Yatra'
+p544
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/2webQDZmtGioeu3zUUi9We'
+p545
+sg8
+S'Traicionera - Remix'
+p546
+ssS'3RiPr603aXAoi4GHyXx0uy'
+p547
+(dp548
+g3
+S'Coldplay'
+p549
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/3RiPr603aXAoi4GHyXx0uy'
+p550
+sg8
+S'Hymn For The Weekend'
+p551
+ssS'0tICYNayWWhH9GPeFrfjfD'
+p552
+(dp553
+g3
+S'Kungs'
+p554
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/0tICYNayWWhH9GPeFrfjfD'
+p555
+sg8
+S"This Girl (Kungs Vs. Cookin' On 3 Burners) - Kungs Vs. Cookin' On 3 Burners"
+p556
+ssS'2LTlO3NuNVN70lp2ZbVswF'
+p557
+(dp558
+g3
+S'Kendrick Lamar'
+p559
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/2LTlO3NuNVN70lp2ZbVswF'
+p560
+sg8
+S'FEEL.'
+p561
+ssS'0XLOf9LhyazPX9Ld8jPiUq'
+p562
+(dp563
+g3
+S'Selena Gomez'
+p564
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/0XLOf9LhyazPX9Ld8jPiUq'
+p565
+sg8
+S'Fetish (feat. Gucci Mane)'
+p566
+ssS'2eAAEa8pxKF7My0EO4rFgR'
+p567
+(dp568
+g3
+S'Dua Lipa'
+p569
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/2eAAEa8pxKF7My0EO4rFgR'
+p570
+sg8
+S'Blow Your Mind (Mwah)'
+p571
+ssS'0PE1dlvMZeBqEbm4BtVVSZ'
+p572
+(dp573
+g3
+S'Gente De Zona'
+p574
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/0PE1dlvMZeBqEbm4BtVVSZ'
+p575
+sg8
+S'Si No Vuelves'
+p576
+ssS'20ZAJdsKB5IGbGj4ilRt2o'
+p577
+(dp578
+g3
+S'Ozuna'
+p579
+sg5
+I35
+sg6
+S'https://open.spotify.com/track/20ZAJdsKB5IGbGj4ilRt2o'
+p580
+sg8
+S'Dile Que Tu Me Quieres'
+p581
+ssS'3xXBsjrbG1xQIm1xv1cKOt'
+p582
+(dp583
+g3
+S'Linkin Park'
+p584
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3xXBsjrbG1xQIm1xv1cKOt'
+p585
+sg8
+S'One More Light'
+p586
+ssS'3A7qX2QjDlPnazUsRk5y0M'
+p587
+(dp588
+g3
+S'David Guetta'
+p589
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/3A7qX2QjDlPnazUsRk5y0M'
+p590
+sg8
+S'2U (feat. Justin Bieber)'
+p591
+ssS'37jHVkkXeTA1WD9Gpq3fcL'
+p592
+(dp593
+g3
+S'Alex Badilla'
+p594
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/37jHVkkXeTA1WD9Gpq3fcL'
+p595
+sg8
+S'Voy a Brillar'
+p596
+ssS'2OALaHcDdKkjYEpAr0Qzab'
+p597
+(dp598
+g3
+S'Avicii'
+p599
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/2OALaHcDdKkjYEpAr0Qzab'
+p600
+sg8
+S'Lonely Together (feat. Rita Ora)'
+p601
+ssS'56lBX2WHqfGuoeZxZvUnVj'
+p602
+(dp603
+g3
+S'Imagine Dragons'
+p604
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/56lBX2WHqfGuoeZxZvUnVj'
+p605
+sg8
+S'Thunder'
+p606
+ssS'5nCtCCB5i1OfbADvynNw0i'
+p607
+(dp608
+g3
+S'Ed Sheeran'
+p609
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/5nCtCCB5i1OfbADvynNw0i'
+p610
+sg8
+S'Shape of You (Latin Remix) [feat. Zion & Lennox]'
+p611
+ssS'5qqabIl2vWzo9ApSC317sa'
+p612
+(dp613
+g3
+S'Oasis'
+p614
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/5qqabIl2vWzo9ApSC317sa'
+p615
+sg8
+S'Wonderwall - Remastered'
+p616
+ssS'4IWAyPf1KMq7JCyGeCjTeH'
+p617
+(dp618
+g3
+S'Imagine Dragons'
+p619
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4IWAyPf1KMq7JCyGeCjTeH'
+p620
+sg8
+S'Whatever It Takes'
+p621
+ssS'7fwXWKdDNI5IutOMc5OKYw'
+p622
+(dp623
+g3
+S'J Balvin'
+p624
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/7fwXWKdDNI5IutOMc5OKYw'
+p625
+sg8
+S'Mi Gente (feat. Beyonc\xc3\xa9)'
+p626
+ssS'6YZdkObH88npeKrrkb8Ggf'
+p627
+(dp628
+g3
+S'Enrique Iglesias'
+p629
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/6YZdkObH88npeKrrkb8Ggf'
+p630
+sg8
+S'DUELE EL CORAZON'
+p631
+ssS'6nsLzJfvp5OLd4mgqUJkpq'
+p632
+(dp633
+g3
+S'Avicii'
+p634
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6nsLzJfvp5OLd4mgqUJkpq'
+p635
+sg8
+S'Waiting For Love'
+p636
+ssS'7LEydI5NfjY6mZfKwYIptZ'
+p637
+(dp638
+g3
+S'Fifth Harmony'
+p639
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7LEydI5NfjY6mZfKwYIptZ'
+p640
+sg8
+S'Down'
+p641
+ssS'3FiE2d325mIOc4YjkSLVJR'
+p642
+(dp643
+g3
+S'Ariana Grande'
+p644
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/3FiE2d325mIOc4YjkSLVJR'
+p645
+sg8
+S'Everyday'
+p646
+ssS'2bjwRfXMk4uRgOD9IBYl9h'
+p647
+(dp648
+g3
+S'Drake'
+p649
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/2bjwRfXMk4uRgOD9IBYl9h'
+p650
+sg8
+S'Portland'
+p651
+ssS'0Zbbxnx4SGGHoIow4PpISP'
+p652
+(dp653
+g3
+S'Kygo'
+p654
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0Zbbxnx4SGGHoIow4PpISP'
+p655
+sg8
+S'Stargazing'
+p656
+ssS'1OmcAT5Y8eg5bUPv9qJT4R'
+p657
+(dp658
+g3
+S'Post Malone'
+p659
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/1OmcAT5Y8eg5bUPv9qJT4R'
+p660
+sg8
+S'rockstar'
+p661
+ssS'0azC730Exh71aQlOt9Zj3y'
+p662
+(dp663
+g3
+S'Calvin Harris'
+p664
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/0azC730Exh71aQlOt9Zj3y'
+p665
+sg8
+S'This Is What You Came For'
+p666
+ssS'2jyjhRf6DVbMPU5zxagN2h'
+p667
+(dp668
+g3
+S'Passenger'
+p669
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/2jyjhRf6DVbMPU5zxagN2h'
+p670
+sg8
+S'Let Her Go'
+p671
+ssS'7i2DJ88J7jQ8K7zqFX2fW8'
+p672
+(dp673
+g3
+S'Halsey'
+p674
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/7i2DJ88J7jQ8K7zqFX2fW8'
+p675
+sg8
+S'Now Or Never'
+p676
+ssS'6stYbAJgTszHAHZMPxWWCY'
+p677
+(dp678
+g3
+S'IAmChino'
+p679
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/6stYbAJgTszHAHZMPxWWCY'
+p680
+sg8
+S'Ay Mi Dios'
+p681
+ssS'6uo91eeAS7gijiChXPz7Mu'
+p682
+(dp683
+g3
+S'Rvssian'
+p684
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6uo91eeAS7gijiChXPz7Mu'
+p685
+sg8
+S'Privado'
+p686
+ssS'5sNESr6pQfIhL3krM8CtZn'
+p687
+(dp688
+g3
+S'JAY Z'
+p689
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5sNESr6pQfIhL3krM8CtZn'
+p690
+sg8
+S'Numb / Encore'
+p691
+ssS'68EMU2RD1ECNeOeJ5qAXCV'
+p692
+(dp693
+g3
+S'Charlie Puth'
+p694
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/68EMU2RD1ECNeOeJ5qAXCV'
+p695
+sg8
+S"We Don't Talk Anymore (feat. Selena Gomez)"
+p696
+ssS'19CAKZdXVNyZrfmF60RAj3'
+p697
+(dp698
+g3
+S'Romeo Santos'
+p699
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/19CAKZdXVNyZrfmF60RAj3'
+p700
+sg8
+S'Imitadora'
+p701
+ssS'77a9893yxuz36cBUmBzA8E'
+p702
+(dp703
+g3
+S'Carlos Vives'
+p704
+sg5
+I23
+sg6
+S'https://open.spotify.com/track/77a9893yxuz36cBUmBzA8E'
+p705
+sg8
+S'Al Filo de Tu Amor'
+p706
+ssS'6vSwxzO2Qf4BinHSXRwZJe'
+p707
+(dp708
+g3
+S'Ed Sheeran'
+p709
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6vSwxzO2Qf4BinHSXRwZJe'
+p710
+sg8
+S'Tenerife Sea'
+p711
+ssS'21tuvt3CXIsNquc32v8jpc'
+p712
+(dp713
+g3
+S'Audioslave'
+p714
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/21tuvt3CXIsNquc32v8jpc'
+p715
+sg8
+S'Show Me How to Live'
+p716
+ssS'3DXncPQOG4VBw3QHh3S817'
+p717
+(dp718
+g3
+S'DJ Khaled'
+p719
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/3DXncPQOG4VBw3QHh3S817'
+p720
+sg8
+S"I'm the One"
+p721
+ssS'2q6tgiA9tpb6DMguABwCWE'
+p722
+(dp723
+g3
+S'John Legend'
+p724
+sg5
+I40
+sg6
+S'https://open.spotify.com/track/2q6tgiA9tpb6DMguABwCWE'
+p725
+sg8
+S'All of Me'
+p726
+ssS'4VuS959DSpr82t3qBqCrWG'
+p727
+(dp728
+g3
+S'Ed Sheeran'
+p729
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/4VuS959DSpr82t3qBqCrWG'
+p730
+sg8
+S'Supermarket Flowers'
+p731
+ssS'7bJwvubZZaoGE1AGEfu8Fi'
+p732
+(dp733
+g3
+S'Ariana Grande'
+p734
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/7bJwvubZZaoGE1AGEfu8Fi'
+p735
+sg8
+S'One Last Time'
+p736
+ssS'6VHdcVbiKLYYOcMbIqBcuK'
+p737
+(dp738
+g3
+S'Cali Y El Dandee'
+p739
+sg5
+I38
+sg6
+S'https://open.spotify.com/track/6VHdcVbiKLYYOcMbIqBcuK'
+p740
+sg8
+S'Lumbra'
+p741
+ssS'0Zx8khUcEfCFK2AEoIhC92'
+p742
+(dp743
+g3
+S'Snakehips'
+p744
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/0Zx8khUcEfCFK2AEoIhC92'
+p745
+sg8
+S"Don't Leave"
+p746
+ssS'3mxWDt0eKXfl4C1e4oIP0J'
+p747
+(dp748
+g3
+S'Ozuna'
+p749
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/3mxWDt0eKXfl4C1e4oIP0J'
+p750
+sg8
+S'Se Prepar\xc3\xb3'
+p751
+ssS'7MMRoGvm7uhoUVhGvHJ3yW'
+p752
+(dp753
+g3
+S'Manuel Turizo'
+p754
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/7MMRoGvm7uhoUVhGvHJ3yW'
+p755
+sg8
+S'Una Lady Como T\xc3\xba - Remix'
+p756
+ssS'61HHDBLqF3AmSvLfHKNGd2'
+p757
+(dp758
+g3
+S'Karol G'
+p759
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/61HHDBLqF3AmSvLfHKNGd2'
+p760
+sg8
+S'Ahora Me Llama'
+p761
+ssS'7Fl3wSxRqBljyQH8dJSz9c'
+p762
+(dp763
+g3
+S'Gente De Zona'
+p764
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/7Fl3wSxRqBljyQH8dJSz9c'
+p765
+sg8
+S'Traidora'
+p766
+ssS'1lxswgIpzV6HhENRvkflES'
+p767
+(dp768
+g3
+S'Farruko'
+p769
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/1lxswgIpzV6HhENRvkflES'
+p770
+sg8
+S'Chillax'
+p771
+ssS'10nQ3Pj0o1XotcikgJPVKD'
+p772
+(dp773
+g3
+S'Bad Bunny'
+p774
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/10nQ3Pj0o1XotcikgJPVKD'
+p775
+sg8
+S'Tu No Metes Cabra'
+p776
+ssS'3QHMxEOAGD51PDlbFPHLyJ'
+p777
+(dp778
+g3
+S'Marc Anthony'
+p779
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/3QHMxEOAGD51PDlbFPHLyJ'
+p780
+sg8
+S'Vivir Mi Vida'
+p781
+ssS'7ofxPmTNMj2GP07g1VZa0O'
+p782
+(dp783
+g3
+S'Alex Sensation'
+p784
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/7ofxPmTNMj2GP07g1VZa0O'
+p785
+sg8
+S'Que Va'
+p786
+ssS'5tf1VVWniHgryyumXyJM7w'
+p787
+(dp788
+g3
+S'Robin Schulz'
+p789
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5tf1VVWniHgryyumXyJM7w'
+p790
+sg8
+S'Sugar (feat. Francesco Yates)'
+p791
+ssS'6WMYFEd4MJDIjJARHnOxoN'
+p792
+(dp793
+g3
+S'Major Lazer'
+p794
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6WMYFEd4MJDIjJARHnOxoN'
+p795
+sg8
+S'Buscando Huellas (feat. J Balvin & Sean Paul)'
+p796
+ssS'2XlHu0HcujBCkWMdIAvrqt'
+p797
+(dp798
+g3
+S'Drake'
+p799
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/2XlHu0HcujBCkWMdIAvrqt'
+p800
+sg8
+S'Blem'
+p801
+ssS'3BY2mafsbsoKGqS380Xnuz'
+p802
+(dp803
+g3
+S'Don Omar'
+p804
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/3BY2mafsbsoKGqS380Xnuz'
+p805
+sg8
+S'Te Quiero Pa\xc2\xb4Mi'
+p806
+ssS'0EpFfFZpCuqYFzHvxOtrZS'
+p807
+(dp808
+g3
+S'Yandel'
+p809
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/0EpFfFZpCuqYFzHvxOtrZS'
+p810
+sg8
+S'Encantadora - Remix'
+p811
+ssS'5LYQSNHZxEA880URXFHg6h'
+p812
+(dp813
+g3
+S'Lana Del Rey'
+p814
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/5LYQSNHZxEA880URXFHg6h'
+p815
+sg8
+S'Lust for Life (with The Weeknd)'
+p816
+ssS'5hYTyyh2odQKphUbMqc5gN'
+p817
+(dp818
+g3
+S'Alessia Cara'
+p819
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/5hYTyyh2odQKphUbMqc5gN'
+p820
+sg8
+S"How Far I'll Go - From Moana"
+p821
+ssS'72jbDTw1piOOj770jWNeaG'
+p822
+(dp823
+g3
+S'The Chainsmokers'
+p824
+sg5
+I34
+sg6
+S'https://open.spotify.com/track/72jbDTw1piOOj770jWNeaG'
+p825
+sg8
+S'Paris'
+p826
+ssS'2h1IPjP471JJRSShTHRUhi'
+p827
+(dp828
+g3
+S'Ariana Grande'
+p829
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/2h1IPjP471JJRSShTHRUhi'
+p830
+sg8
+S'Dangerous Woman'
+p831
+ssS'0dA2Mk56wEzDgegdC6R17g'
+p832
+(dp833
+g3
+S'Zedd'
+p834
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/0dA2Mk56wEzDgegdC6R17g'
+p835
+sg8
+S'Stay (with Alessia Cara)'
+p836
+ssS'5mxTOMM0NiRud8VdBxbA2o'
+p837
+(dp838
+g3
+S'Ed Sheeran'
+p839
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5mxTOMM0NiRud8VdBxbA2o'
+p840
+sg8
+S'Bloodstream'
+p841
+ssS'3Ytr1SUCUi6J3L9dRFx5iH'
+p842
+(dp843
+g3
+S'Major Lazer'
+p844
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/3Ytr1SUCUi6J3L9dRFx5iH'
+p845
+sg8
+S'Know No Better (feat. Quavo)'
+p846
+ssS'7nZmah2llfvLDiUjm0kiyz'
+p847
+(dp848
+g3
+S'Justin Bieber'
+p849
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/7nZmah2llfvLDiUjm0kiyz'
+p850
+sg8
+S'Friends (with BloodPop\xc2\xae)'
+p851
+ssS'6BdAwMv1YorLfkBWlE493X'
+p852
+(dp853
+g3
+S'Romeo Santos'
+p854
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/6BdAwMv1YorLfkBWlE493X'
+p855
+sg8
+S'H\xc3\xa9roe Favorito'
+p856
+ssS'5Hiu520lWG4YPrMugnNnkP'
+p857
+(dp858
+g3
+S'Tommy Torres'
+p859
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/5Hiu520lWG4YPrMugnNnkP'
+p860
+sg8
+S'Tu y Yo (feat. Daddy Yankee)'
+p861
+ssS'2LsbizbOeNa4x6qsi2jAMb'
+p862
+(dp863
+g3
+S'Jarabe De Palo'
+p864
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/2LsbizbOeNa4x6qsi2jAMb'
+p865
+sg8
+S'La flaca'
+p866
+ssS'7MHN1aCFtLXjownGhvEQlF'
+p867
+(dp868
+g3
+S'Manuel Turizo'
+p869
+sg5
+I21
+sg6
+S'https://open.spotify.com/track/7MHN1aCFtLXjownGhvEQlF'
+p870
+sg8
+S'Una Lady Como T\xc3\xba'
+p871
+ssS'22eADXu8DfOAUEDw4vU8qy'
+p872
+(dp873
+g3
+S'Chris Jeday'
+p874
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/22eADXu8DfOAUEDw4vU8qy'
+p875
+sg8
+S'Ahora Dice'
+p876
+ssS'0OMRAvrtLWE2TvcXorRiB9'
+p877
+(dp878
+g3
+S'Gente De Zona'
+p879
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/0OMRAvrtLWE2TvcXorRiB9'
+p880
+sg8
+S'La Gozadera'
+p881
+ssS'2dfHh7ECGxfNqZTQno09Vk'
+p882
+(dp883
+g3
+S'Ed Sheeran'
+p884
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/2dfHh7ECGxfNqZTQno09Vk'
+p885
+sg8
+S"Hearts Don't Break Around Here"
+p886
+ssS'6lanRgr6wXibZr8KgzXxBl'
+p887
+(dp888
+g3
+S'Christina Perri'
+p889
+sg5
+I40
+sg6
+S'https://open.spotify.com/track/6lanRgr6wXibZr8KgzXxBl'
+p890
+sg8
+S'A Thousand Years'
+p891
+ssS'0H7cz1bR7w9PulJL7Na774'
+p892
+(dp893
+g3
+S'Felipe Pel\xc3\xa1ez'
+p894
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/0H7cz1bR7w9PulJL7Na774'
+p895
+sg8
+S'Vivo Pensando En Ti'
+p896
+ssS'7l9CE3wmEGOUYw1j4ETjnL'
+p897
+(dp898
+g3
+S'Gorillaz'
+p899
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/7l9CE3wmEGOUYw1j4ETjnL'
+p900
+sg8
+S'Saturnz Barz (feat. Popcaan)'
+p901
+ssS'0NiXXAI876aGImAd6rTj8w'
+p902
+(dp903
+g3
+S'Jonas Blue'
+p904
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/0NiXXAI876aGImAd6rTj8w'
+p905
+sg8
+S'Mama'
+p906
+ssS'343YBumqHu19cGoGARUTsd'
+p907
+(dp908
+g3
+S'Drake'
+p909
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/343YBumqHu19cGoGARUTsd'
+p910
+sg8
+S'Fake Love'
+p911
+ssS'5HDPtsnyb3maFmPL8LLUTG'
+p912
+(dp913
+g3
+S'Ed Sheeran'
+p914
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/5HDPtsnyb3maFmPL8LLUTG'
+p915
+sg8
+S'New Man'
+p916
+ssS'2q5VkfuJpCHJiFkMqNsenl'
+p917
+(dp918
+g3
+S'Jencarlos'
+p919
+sg5
+I26
+sg6
+S'https://open.spotify.com/track/2q5VkfuJpCHJiFkMqNsenl'
+p920
+sg8
+S'Bajito'
+p921
+ssS'4PymlxptfDiofHNvixDiRj'
+p922
+(dp923
+g3
+S'Tanya Stephens'
+p924
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/4PymlxptfDiofHNvixDiRj'
+p925
+sg8
+S'Unapologetic'
+p926
+ssS'6WbADFqMvR8N5u0BvtsWQE'
+p927
+(dp928
+g3
+S'Avicii'
+p929
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/6WbADFqMvR8N5u0BvtsWQE'
+p930
+sg8
+S'Without You (feat. Sandro Cavazza)'
+p931
+ssS'0QetVR4wwvyiTezQeFNdeZ'
+p932
+(dp933
+g3
+S'Ozuna'
+p934
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/0QetVR4wwvyiTezQeFNdeZ'
+p935
+sg8
+S'En La Intimidad'
+p936
+ssS'75JFxkI2RXiU7L9VXzMkle'
+p937
+(dp938
+g3
+S'Coldplay'
+p939
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/75JFxkI2RXiU7L9VXzMkle'
+p940
+sg8
+S'The Scientist'
+p941
+ssS'4pdPtRcBmOSQDlJ3Fk945m'
+p942
+(dp943
+g3
+S'DJ Snake'
+p944
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/4pdPtRcBmOSQDlJ3Fk945m'
+p945
+sg8
+S'Let Me Love You'
+p946
+ssS'1I8tHoNBFTuoJAlh4hfVVE'
+p947
+(dp948
+g3
+S'Kygo'
+p949
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/1I8tHoNBFTuoJAlh4hfVVE'
+p950
+sg8
+S'Firestone'
+p951
+ssS'4OaTpLJIa2harufGxfOPUu'
+p952
+(dp953
+g3
+S'Xantos'
+p954
+sg5
+I33
+sg6
+S'https://open.spotify.com/track/4OaTpLJIa2harufGxfOPUu'
+p955
+sg8
+S'Bailame Despacio'
+p956
+ssS'5N8nNuTmIzkZOfcxXlygUw'
+p957
+(dp958
+g3
+S'J Balvin'
+p959
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/5N8nNuTmIzkZOfcxXlygUw'
+p960
+sg8
+S'Ginza'
+p961
+ssS'3QwBODjSEzelZyVjxPOHdq'
+p962
+(dp963
+g3
+S'Zion & Lennox'
+p964
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/3QwBODjSEzelZyVjxPOHdq'
+p965
+sg8
+S'Otra Vez (feat. J Balvin)'
+p966
+ssS'1OAiWI2oPmglaOiv9fdioU'
+p967
+(dp968
+g3
+S'Coldplay'
+p969
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/1OAiWI2oPmglaOiv9fdioU'
+p970
+sg8
+S'Hymn For The Weekend - Seeb Remix'
+p971
+ssS'209gZgcfLq2aUuu51vOWBl'
+p972
+(dp973
+g3
+S'CNCO'
+p974
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/209gZgcfLq2aUuu51vOWBl'
+p975
+sg8
+S'Hey DJ'
+p976
+ssS'3jHCXrZNz8fQEEf4BpWCAj'
+p977
+(dp978
+g3
+S'Justin Bieber'
+p979
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3jHCXrZNz8fQEEf4BpWCAj'
+p980
+sg8
+S'Purpose'
+p981
+ssS'1Vej0qeQ3ioKwpI6FUbRv1'
+p982
+(dp983
+g3
+S'Linkin Park'
+p984
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1Vej0qeQ3ioKwpI6FUbRv1'
+p985
+sg8
+S'Papercut'
+p986
+ssS'01vHGJRvJ6EZW9KO8NtZpi'
+p987
+(dp988
+g3
+S'Maluma'
+p989
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/01vHGJRvJ6EZW9KO8NtZpi'
+p990
+sg8
+S'Un Polvo'
+p991
+ssS'2a1o6ZejUi8U3wzzOtCOYw'
+p992
+(dp993
+g3
+S'Don Omar'
+p994
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw'
+p995
+sg8
+S'Danza Kuduro'
+p996
+ssS'5OOkp4U9P9oL23maHFHL1h'
+p997
+(dp998
+g3
+S'Desiigner'
+p999
+sg5
+I22
+sg6
+S'https://open.spotify.com/track/5OOkp4U9P9oL23maHFHL1h'
+p1000
+sg8
+S'Panda'
+p1001
+ssS'6urlj8N8TL3MK0ATNGIZYW'
+p1002
+(dp1003
+g3
+S'Major Lazer'
+p1004
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6urlj8N8TL3MK0ATNGIZYW'
+p1005
+sg8
+S'Buscando Huellas (feat. J Balvin & Sean Paul)'
+p1006
+ssS'3qmvK8QARSPkFTuKeIXSbs'
+p1007
+(dp1008
+g3
+S'Linkin Park'
+p1009
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3qmvK8QARSPkFTuKeIXSbs'
+p1010
+sg8
+S'Bleed It Out'
+p1011
+ssS'79cuOz3SPQTuFrp8WgftAu'
+p1012
+(dp1013
+g3
+S'Shawn Mendes'
+p1014
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/79cuOz3SPQTuFrp8WgftAu'
+p1015
+sg8
+S"There's Nothing Holdin' Me Back"
+p1016
+ssS'0lmdsH1MIoLsMymnNpd6HU'
+p1017
+(dp1018
+g3
+S'Dante Klein'
+p1019
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/0lmdsH1MIoLsMymnNpd6HU'
+p1020
+sg8
+S'Let Me Hold You (Turn Me On)'
+p1021
+ssS'7AtlMCIauSQZqiXSlbBPW6'
+p1022
+(dp1023
+g3
+S'J Balvin'
+p1024
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/7AtlMCIauSQZqiXSlbBPW6'
+p1025
+sg8
+S'Bobo'
+p1026
+ssS'3eR23VReFzcdmS7TYCrhCe'
+p1027
+(dp1028
+g3
+S'Kygo'
+p1029
+sg5
+I33
+sg6
+S'https://open.spotify.com/track/3eR23VReFzcdmS7TYCrhCe'
+p1030
+sg8
+S"It Ain't Me (with Selena Gomez)"
+p1031
+ssS'5P45f6HakSHDwdFj5dO5K5'
+p1032
+(dp1033
+g3
+S'Wisin'
+p1034
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/5P45f6HakSHDwdFj5dO5K5'
+p1035
+sg8
+S'Esc\xc3\xa1pate Conmigo - Remix'
+p1036
+ssS'772io14jrMTxGJbijtDccQ'
+p1037
+(dp1038
+g3
+S'Juan Mag\xc3\xa1n'
+p1039
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/772io14jrMTxGJbijtDccQ'
+p1040
+sg8
+S'Baila Conmigo'
+p1041
+ssS'66hayvUbTotekKU3H4ta1f'
+p1042
+(dp1043
+g3
+S'Skrillex'
+p1044
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/66hayvUbTotekKU3H4ta1f'
+p1045
+sg8
+S'Where Are \xc3\x9c Now (with Justin Bieber)'
+p1046
+ssS'58IL315gMSTD37DOZPJ2hf'
+p1047
+(dp1048
+g3
+S'Daddy Yankee'
+p1049
+sg5
+I30
+sg6
+S'https://open.spotify.com/track/58IL315gMSTD37DOZPJ2hf'
+p1050
+sg8
+S'Shaky Shaky'
+p1051
+ssS'77KHmKnBmVGTjRCeMVXpWH'
+p1052
+(dp1053
+g3
+S'Kevin Roldan'
+p1054
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/77KHmKnBmVGTjRCeMVXpWH'
+p1055
+sg8
+S'Ruleta Rusa'
+p1056
+ssS'1AhDOtG9vPSOmsWgNW0BEY'
+p1057
+(dp1058
+g3
+S'Queen'
+p1059
+sg5
+I37
+sg6
+S'https://open.spotify.com/track/1AhDOtG9vPSOmsWgNW0BEY'
+p1060
+sg8
+S'Bohemian Rhapsody - Remastered 2011'
+p1061
+ssS'5bZtRlMBU76vHuDOb1GM5u'
+p1062
+(dp1063
+g3
+S'Jonas Blue'
+p1064
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/5bZtRlMBU76vHuDOb1GM5u'
+p1065
+sg8
+S'Perfect Strangers'
+p1066
+ssS'1KT0xdIjm7t053xByACrrg'
+p1067
+(dp1068
+g3
+S'Ariana Grande'
+p1069
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1KT0xdIjm7t053xByACrrg'
+p1070
+sg8
+S'\xe7\xbe\x8e\xe5\xa5\xb3\xe3\x81\xa8\xe9\x87\x8e\xe7\x8d\xa3'
+p1071
+ssS'0JiVRyTJcJnmlwCZ854K4p'
+p1072
+(dp1073
+g3
+S'Alan Walker'
+p1074
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/0JiVRyTJcJnmlwCZ854K4p'
+p1075
+sg8
+S'Alone'
+p1076
+ssS'2SSYqDX8KTgy01NlqtUo0F'
+p1077
+(dp1078
+g3
+S'Reik'
+p1079
+sg5
+I37
+sg6
+S'https://open.spotify.com/track/2SSYqDX8KTgy01NlqtUo0F'
+p1080
+sg8
+S'Ya Me Enter\xc3\xa9 (feat. Nicky Jam) - Urban Version'
+p1081
+ssS'3hRZsdTF5uyGA2uhNqEuhm'
+p1082
+(dp1083
+g3
+S'Niall Horan'
+p1084
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/3hRZsdTF5uyGA2uhNqEuhm'
+p1085
+sg8
+S'Too Much To Ask'
+p1086
+ssS'0bVtevEgtDIeRjCJbK3Lmv'
+p1087
+(dp1088
+g3
+S"Guns N' Roses"
+p1089
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0bVtevEgtDIeRjCJbK3Lmv'
+p1090
+sg8
+S'Welcome To The Jungle'
+p1091
+ssS'6sMPwcpYtxm1mlgYbp1B0t'
+p1092
+(dp1093
+g3
+S'Jacob Forever'
+p1094
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/6sMPwcpYtxm1mlgYbp1B0t'
+p1095
+sg8
+S'Hasta Que Se Seque el Malec\xc3\xb3n - Remix'
+p1096
+ssS'4aWmUDTfIPGksMNLV2rQP2'
+p1097
+(dp1098
+g3
+S'Luis Fonsi'
+p1099
+sg5
+I39
+sg6
+S'https://open.spotify.com/track/4aWmUDTfIPGksMNLV2rQP2'
+p1100
+sg8
+S'Despacito (Featuring Daddy Yankee)'
+p1101
+ssS'58zsLZPvfflaiIbNWoA22O'
+p1102
+(dp1103
+g3
+S"Rag'n'Bone Man"
+p1104
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/58zsLZPvfflaiIbNWoA22O'
+p1105
+sg8
+S'Human'
+p1106
+ssS'35QZaWQRkmnAVqBF1TLCxQ'
+p1107
+(dp1108
+g3
+S'Ed Sheeran'
+p1109
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/35QZaWQRkmnAVqBF1TLCxQ'
+p1110
+sg8
+S'Nancy Mulligan'
+p1111
+ssS'3PEgB3fkiojxms35ntsTgs'
+p1112
+(dp1113
+g3
+S'Axwell /\\ Ingrosso'
+p1114
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/3PEgB3fkiojxms35ntsTgs'
+p1115
+sg8
+S'More Than You Know'
+p1116
+ssS'25C5CowdsfXld2jJanbiex'
+p1117
+(dp1118
+g3
+S'Demi Lovato'
+p1119
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/25C5CowdsfXld2jJanbiex'
+p1120
+sg8
+S'Sorry Not Sorry'
+p1121
+ssS'6IcrwGdIvRsrImOnoYfG9Z'
+p1122
+(dp1123
+g3
+S'Wiz Khalifa'
+p1124
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6IcrwGdIvRsrImOnoYfG9Z'
+p1125
+sg8
+S'See You Again (feat. Charlie Puth) - From Furious 7'
+p1126
+ssS'2Z8WuEywRWYTKe1NybPQEW'
+p1127
+(dp1128
+g3
+S'Twenty One Pilots'
+p1129
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/2Z8WuEywRWYTKe1NybPQEW'
+p1130
+sg8
+S'Ride'
+p1131
+ssS'3rtxFFGZ10e2vYBo7PsPf2'
+p1132
+(dp1133
+g3
+S'Carlos Rivera'
+p1134
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3rtxFFGZ10e2vYBo7PsPf2'
+p1135
+sg8
+S'Que Lo Nuestro Se Quede Nuestro'
+p1136
+ssS'6JV2JOEocMgcZxYSZelKcc'
+p1137
+(dp1138
+g3
+S'Justin Timberlake'
+p1139
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/6JV2JOEocMgcZxYSZelKcc'
+p1140
+sg8
+S"CAN'T STOP THE FEELING! (Original Song from DreamWorks Animation's TROLLS)"
+p1141
+ssS'3GpvoKKWZyTwgbLEM9RmWM'
+p1142
+(dp1143
+g3
+S'Cali Y El Dandee'
+p1144
+sg5
+I41
+sg6
+S'https://open.spotify.com/track/3GpvoKKWZyTwgbLEM9RmWM'
+p1145
+sg8
+S'Por Fin Te Encontr\xc3\xa9'
+p1146
+ssS'6De0lHrwBfPfrhorm9q1Xl'
+p1147
+(dp1148
+g3
+S'Danny Ocean'
+p1149
+sg5
+I39
+sg6
+S'https://open.spotify.com/track/6De0lHrwBfPfrhorm9q1Xl'
+p1150
+sg8
+S'Me Reh\xc3\xbaso'
+p1151
+ssS'07dYGGSrzPeg6a3KZjWX65'
+p1152
+(dp1153
+g3
+S'Justin Bieber'
+p1154
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/07dYGGSrzPeg6a3KZjWX65'
+p1155
+sg8
+S'Boyfriend'
+p1156
+ssS'7aV2mflaASUmGhCErm7kBO'
+p1157
+(dp1158
+g3
+S'Nevada'
+p1159
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/7aV2mflaASUmGhCErm7kBO'
+p1160
+sg8
+S'The Mack'
+p1161
+ssS'0bYg9bo50gSsH3LtXe2SQn'
+p1162
+(dp1163
+g3
+S'Mariah Carey'
+p1164
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0bYg9bo50gSsH3LtXe2SQn'
+p1165
+sg8
+S'All I Want for Christmas Is You'
+p1166
+ssS'3rOSwuTsUlJp0Pu0MkN8r8'
+p1167
+(dp1168
+g3
+S'Future'
+p1169
+sg5
+I30
+sg6
+S'https://open.spotify.com/track/3rOSwuTsUlJp0Pu0MkN8r8'
+p1170
+sg8
+S'Mask Off'
+p1171
+ssS'7vFoFDWqTX0mHzLfrF1Cfy'
+p1172
+(dp1173
+g3
+S'OMI'
+p1174
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/7vFoFDWqTX0mHzLfrF1Cfy'
+p1175
+sg8
+S'Cheerleader - Felix Jaehn Remix Radio Edit'
+p1176
+ssS'1bdXMstfxFWYSkEFTnJMoN'
+p1177
+(dp1178
+g3
+S'Metallica'
+p1179
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1bdXMstfxFWYSkEFTnJMoN'
+p1180
+sg8
+S'Enter Sandman'
+p1181
+ssS'1qOLh0tI7trd1zdDKxYZTe'
+p1182
+(dp1183
+g3
+S'Hailee Steinfeld'
+p1184
+sg5
+I24
+sg6
+S'https://open.spotify.com/track/1qOLh0tI7trd1zdDKxYZTe'
+p1185
+sg8
+S'Starving'
+p1186
+ssS'7BqBn9nzAq8spo5e7cZ0dJ'
+p1187
+(dp1188
+g3
+S'Bruno Mars'
+p1189
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ'
+p1190
+sg8
+S'Just the Way You Are'
+p1191
+ssS'3HVr6jTVwBHBa2flM0eURR'
+p1192
+(dp1193
+g3
+S'Macklemore'
+p1194
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/3HVr6jTVwBHBa2flM0eURR'
+p1195
+sg8
+S'Glorious (feat. Skylar Grey)'
+p1196
+ssS'7taXf5odg9xCAZERYfyOkS'
+p1197
+(dp1198
+g3
+S'Jos\xc3\xa9 Feliciano'
+p1199
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7taXf5odg9xCAZERYfyOkS'
+p1200
+sg8
+S'Feliz Navidad'
+p1201
+ssS'1cG0umU5TKStygKsPFZ9pY'
+p1202
+(dp1203
+g3
+S'Robin Schulz'
+p1204
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/1cG0umU5TKStygKsPFZ9pY'
+p1205
+sg8
+S'Shed a Light'
+p1206
+ssS'6520aj0B4FSKGVuKNsOCOi'
+p1207
+(dp1208
+g3
+S'Katy Perry'
+p1209
+sg5
+I22
+sg6
+S'https://open.spotify.com/track/6520aj0B4FSKGVuKNsOCOi'
+p1210
+sg8
+S'Chained To The Rhythm'
+p1211
+ssS'4q8PHoRsPUB52LFylX8Ulz'
+p1212
+(dp1213
+g3
+S'Axwell /\\ Ingrosso'
+p1214
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/4q8PHoRsPUB52LFylX8Ulz'
+p1215
+sg8
+S'More Than You Know'
+p1216
+ssS'6EpRaXYhGOB3fj4V2uDkMJ'
+p1217
+(dp1218
+g3
+S'Liam Payne'
+p1219
+sg5
+I21
+sg6
+S'https://open.spotify.com/track/6EpRaXYhGOB3fj4V2uDkMJ'
+p1220
+sg8
+S'Strip That Down'
+p1221
+ssS'1wjzFQodRWrPcQ0AnYnvQ9'
+p1222
+(dp1223
+g3
+S'Lauv'
+p1224
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/1wjzFQodRWrPcQ0AnYnvQ9'
+p1225
+sg8
+S'I Like Me Better'
+p1226
+ssS'51PIvodunv6NmX5250zxAh'
+p1227
+(dp1228
+g3
+S'Lady Gaga'
+p1229
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/51PIvodunv6NmX5250zxAh'
+p1230
+sg8
+S'The Cure'
+p1231
+ssS'4N1c5rmWOzRmB9SMacr5wB'
+p1232
+(dp1233
+g3
+S'Abraham Mateo'
+p1234
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/4N1c5rmWOzRmB9SMacr5wB'
+p1235
+sg8
+S'Loco Enamorado'
+p1236
+ssS'7DM4BPaS7uofFul3ywMe46'
+p1237
+(dp1238
+g3
+S'Ricky Martin'
+p1239
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/7DM4BPaS7uofFul3ywMe46'
+p1240
+sg8
+S"Vente Pa' Ca"
+p1241
+ssS'4okba5wu9mMLXx79DXLKi3'
+p1242
+(dp1243
+g3
+S'Daddy Yankee'
+p1244
+sg5
+I36
+sg6
+S'https://open.spotify.com/track/4okba5wu9mMLXx79DXLKi3'
+p1245
+sg8
+S'La Rompe Corazones'
+p1246
+ssS'0qYTZCo5Bwh1nsUFGZP3zn'
+p1247
+(dp1248
+g3
+S'Maluma'
+p1249
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/0qYTZCo5Bwh1nsUFGZP3zn'
+p1250
+sg8
+S'Felices los 4'
+p1251
+ssS'5MFzQMkrl1FOOng9tq6R9r'
+p1252
+(dp1253
+g3
+S'Maroon 5'
+p1254
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5MFzQMkrl1FOOng9tq6R9r'
+p1255
+sg8
+S"Don't Wanna Know"
+p1256
+ssS'5Z3GHaZ6ec9bsiI5BenrbY'
+p1257
+(dp1258
+g3
+S'Khalid'
+p1259
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5Z3GHaZ6ec9bsiI5BenrbY'
+p1260
+sg8
+S'Young Dumb & Broke'
+p1261
+ssS'3FDrI0FLKzrYQiWxPhqV2W'
+p1262
+(dp1263
+g3
+S'Calvin Harris'
+p1264
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3FDrI0FLKzrYQiWxPhqV2W'
+p1265
+sg8
+S'Rollin'
+p1266
+ssS'0B7wvvmu9EISAwZnOpjhNI'
+p1267
+(dp1268
+g3
+S'Bruno Mars'
+p1269
+sg5
+I36
+sg6
+S'https://open.spotify.com/track/0B7wvvmu9EISAwZnOpjhNI'
+p1270
+sg8
+S'When I Was Your Man'
+p1271
+ssS'1WP1r7fuvRqZRnUaTi2I1Q'
+p1272
+(dp1273
+g3
+S'Shawn Mendes'
+p1274
+sg5
+I34
+sg6
+S'https://open.spotify.com/track/1WP1r7fuvRqZRnUaTi2I1Q'
+p1275
+sg8
+S'Stitches'
+p1276
+ssS'32OlwWuMpZ6b0aN2RZOeMS'
+p1277
+(dp1278
+g3
+S'Mark Ronson'
+p1279
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS'
+p1280
+sg8
+S'Uptown Funk'
+p1281
+ssS'1jYiIOC5d6soxkJP81fxq2'
+p1282
+(dp1283
+g3
+S'DJ Khaled'
+p1284
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1jYiIOC5d6soxkJP81fxq2'
+p1285
+sg8
+S"I'm the One"
+p1286
+ssS'0yyZN5ASdrYu0XYWFzfxUu'
+p1287
+(dp1288
+g3
+S'Jesse & Joy'
+p1289
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/0yyZN5ASdrYu0XYWFzfxUu'
+p1290
+sg8
+S'3 A.M.'
+p1291
+ssS'0IqKeD8ZSP72KbGYyzEcAs'
+p1292
+(dp1293
+g3
+S'Hozier'
+p1294
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/0IqKeD8ZSP72KbGYyzEcAs'
+p1295
+sg8
+S'Take Me To Church'
+p1296
+ssS'2yDaWqECegHdiFOuez5gdO'
+p1297
+(dp1298
+g3
+S'Farruko'
+p1299
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/2yDaWqECegHdiFOuez5gdO'
+p1300
+sg8
+S'Sunset'
+p1301
+ssS'6p3yxt0uJJshAS3CT0znQg'
+p1302
+(dp1303
+g3
+S'Natalia Lafourcade'
+p1304
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6p3yxt0uJJshAS3CT0znQg'
+p1305
+sg8
+S'T\xc3\xba S\xc3\xad Sabes Quererme'
+p1306
+ssS'7x5xYW5W42OGPAdHUyyguy'
+p1307
+(dp1308
+g3
+S'R. City'
+p1309
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/7x5xYW5W42OGPAdHUyyguy'
+p1310
+sg8
+S'Locked Away'
+p1311
+ssS'7zgqtptZvhf8GEmdsM2vp2'
+p1312
+(dp1313
+g3
+S'Taylor Swift'
+p1314
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7zgqtptZvhf8GEmdsM2vp2'
+p1315
+sg8
+S'...Ready For It?'
+p1316
+ssS'2uWg6P3lEsS1qQ2qg11TUx'
+p1317
+(dp1318
+g3
+S'Sebastian Yatra'
+p1319
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/2uWg6P3lEsS1qQ2qg11TUx'
+p1320
+sg8
+S'Devu\xc3\xa9lveme El Coraz\xc3\xb3n'
+p1321
+ssS'7DhYjNLksXZhbRQeheAums'
+p1322
+(dp1323
+g3
+S'Bacilos'
+p1324
+sg5
+I35
+sg6
+S'https://open.spotify.com/track/7DhYjNLksXZhbRQeheAums'
+p1325
+sg8
+S'Caraluna'
+p1326
+ssS'7jzpAD8q77nwEmSsqUeUjy'
+p1327
+(dp1328
+g3
+S'Reykon'
+p1329
+sg5
+I21
+sg6
+S'https://open.spotify.com/track/7jzpAD8q77nwEmSsqUeUjy'
+p1330
+sg8
+S'D\xc3\xa9jame te explico'
+p1331
+ssS'3S0OXQeoh0w6AY8WQVckRW'
+p1332
+(dp1333
+g3
+S'Jason Mraz'
+p1334
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/3S0OXQeoh0w6AY8WQVckRW'
+p1335
+sg8
+S"I'm Yours"
+p1336
+ssS'7AQim7LbvFVZJE3O8TYgf2'
+p1337
+(dp1338
+g3
+S'XXXTENTACION'
+p1339
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7AQim7LbvFVZJE3O8TYgf2'
+p1340
+sg8
+S'Fuck Love (feat. Trippie Redd)'
+p1341
+ssS'2C0KFbb4v9CNWR5c9jWcKC'
+p1342
+(dp1343
+g3
+S'Gorillaz'
+p1344
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/2C0KFbb4v9CNWR5c9jWcKC'
+p1345
+sg8
+S'Andromeda (feat. DRAM)'
+p1346
+ssS'6O8I0ffpEtyMQmMYo0bj4N'
+p1347
+(dp1348
+g3
+S'Justin Bieber'
+p1349
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6O8I0ffpEtyMQmMYo0bj4N'
+p1350
+sg8
+S'Children'
+p1351
+ssS'2FIm6YsSGL5acOqSuJDh5s'
+p1352
+(dp1353
+g3
+S'Arcangel'
+p1354
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/2FIm6YsSGL5acOqSuJDh5s'
+p1355
+sg8
+S'Me Acostumbre (feat. Bad Bunny)'
+p1356
+ssS'13X0XdLMOdtbXVtAj2ox4h'
+p1357
+(dp1358
+g3
+S'Piso 21'
+p1359
+sg5
+I24
+sg6
+S'https://open.spotify.com/track/13X0XdLMOdtbXVtAj2ox4h'
+p1360
+sg8
+S'Bes\xc3\xa1ndote'
+p1361
+ssS'5edBgVtRD0fvWk140Sl21T'
+p1362
+(dp1363
+g3
+S'OneRepublic'
+p1364
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5edBgVtRD0fvWk140Sl21T'
+p1365
+sg8
+S'Counting Stars'
+p1366
+ssS'6r46lnXFbE9fr2d3KNaGbe'
+p1367
+(dp1368
+g3
+S'Romeo Santos'
+p1369
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/6r46lnXFbE9fr2d3KNaGbe'
+p1370
+sg8
+S'Imitadora'
+p1371
+ssS'0PDUDa38GO8lMxLCRc4lL1'
+p1372
+(dp1373
+g3
+S'ZAYN'
+p1374
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/0PDUDa38GO8lMxLCRc4lL1'
+p1375
+sg8
+S'PILLOWTALK'
+p1376
+ssS'7LABrQFfRYcZUqUwng0Heb'
+p1377
+(dp1378
+g3
+S'Yandel'
+p1379
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/7LABrQFfRYcZUqUwng0Heb'
+p1380
+sg8
+S'Encantadora'
+p1381
+ssS'1OAh8uOEOvTDqkKFsKksCi'
+p1382
+(dp1383
+g3
+S'DJ Khaled'
+p1384
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/1OAh8uOEOvTDqkKFsKksCi'
+p1385
+sg8
+S'Wild Thoughts'
+p1386
+ssS'3VRk65lHSwqd90TAkQqhvB'
+p1387
+(dp1388
+g3
+S'Katy Perry'
+p1389
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/3VRk65lHSwqd90TAkQqhvB'
+p1390
+sg8
+S'Swish Swish'
+p1391
+ssS'5eqK0tbzUPo2SoeZsov04s'
+p1392
+(dp1393
+g3
+S'21 Savage'
+p1394
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5eqK0tbzUPo2SoeZsov04s'
+p1395
+sg8
+S'Bank Account'
+p1396
+ssS'2om3P5fecPpTjUJZfbFmZF'
+p1397
+(dp1398
+g3
+S'Cultura Prof\xc3\xa9tica'
+p1399
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/2om3P5fecPpTjUJZfbFmZF'
+p1400
+sg8
+S'Ilegal'
+p1401
+ssS'09S64DUkxIX9EwIaULu6yN'
+p1402
+(dp1403
+g3
+S'Maluma'
+p1404
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/09S64DUkxIX9EwIaULu6yN'
+p1405
+sg8
+S'Sin Contrato'
+p1406
+ssS'2naJy8SKJ27gj6ZhRPDKaz'
+p1407
+(dp1408
+g3
+S'Rvssian'
+p1409
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/2naJy8SKJ27gj6ZhRPDKaz'
+p1410
+sg8
+S'Si Tu Lo Dejas'
+p1411
+ssS'4sPmO7WMQUAf45kwMOtONw'
+p1412
+(dp1413
+g3
+S'Adele'
+p1414
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/4sPmO7WMQUAf45kwMOtONw'
+p1415
+sg8
+S'Hello'
+p1416
+ssS'1j4kHkkpqZRBwE0A4CN4Yv'
+p1417
+(dp1418
+g3
+S'ZAYN'
+p1419
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/1j4kHkkpqZRBwE0A4CN4Yv'
+p1420
+sg8
+S'Dusk Till Dawn - Radio Edit'
+p1421
+ssS'3agtg0x11wPvLIWkYR39nZ'
+p1422
+(dp1423
+g3
+S'Linkin Park'
+p1424
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3agtg0x11wPvLIWkYR39nZ'
+p1425
+sg8
+S'Somewhere I Belong'
+p1426
+ssS'6BaCraQ9xeLYg4Sb9TBT2X'
+p1427
+(dp1428
+g3
+S'Calvin Harris'
+p1429
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6BaCraQ9xeLYg4Sb9TBT2X'
+p1430
+sg8
+S'Feels'
+p1431
+ssS'0RFFFGtPn6a58RHY3ccVYX'
+p1432
+(dp1433
+g3
+S'J Balvin'
+p1434
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/0RFFFGtPn6a58RHY3ccVYX'
+p1435
+sg8
+S'Si Tu Novio Te Deja Sola'
+p1436
+ssS'0JoHqmlqE0W0i9prt6kcHR'
+p1437
+(dp1438
+g3
+S'Maluma'
+p1439
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/0JoHqmlqE0W0i9prt6kcHR'
+p1440
+sg8
+S'Cuatro Babys'
+p1441
+ssS'5dH7o4TP3HYLvCjo4QAhhv'
+p1442
+(dp1443
+g3
+S'Sak Noel & Salvi'
+p1444
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/5dH7o4TP3HYLvCjo4QAhhv'
+p1445
+sg8
+S'Trumpets'
+p1446
+ssS'378iszndTZAR4dH8kwsLC6'
+p1447
+(dp1448
+g3
+S'Sia'
+p1449
+sg5
+I30
+sg6
+S'https://open.spotify.com/track/378iszndTZAR4dH8kwsLC6'
+p1450
+sg8
+S'Cheap Thrills'
+p1451
+ssS'0ueJesXdxikucezsJr2ejB'
+p1452
+(dp1453
+g3
+S'Marc Anthony'
+p1454
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/0ueJesXdxikucezsJr2ejB'
+p1455
+sg8
+S'Vali\xc3\xb3 la Pena - Salsa Version'
+p1456
+ssS'3nUNwSYEUv9bmUc3de0Owv'
+p1457
+(dp1458
+g3
+S'Chayanne'
+p1459
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/3nUNwSYEUv9bmUc3de0Owv'
+p1460
+sg8
+S'Qu\xc3\xa9 Me Has Hecho'
+p1461
+ssS'3tRFqxTYOjeTmCiVaGDCsq'
+p1462
+(dp1463
+g3
+S'Ariana Grande'
+p1464
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3tRFqxTYOjeTmCiVaGDCsq'
+p1465
+sg8
+S'Be Alright'
+p1466
+ssS'6mORGLOz79w6VsCRLWYYuK'
+p1467
+(dp1468
+g3
+S'Lord Huron'
+p1469
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/6mORGLOz79w6VsCRLWYYuK'
+p1470
+sg8
+S'The Night We Met'
+p1471
+ssS'5aAx2yezTd8zXrkmtKl66Z'
+p1472
+(dp1473
+g3
+S'The Weeknd'
+p1474
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5aAx2yezTd8zXrkmtKl66Z'
+p1475
+sg8
+S'Starboy'
+p1476
+ssS'1SJtlNRJDeYHioymcvsqev'
+p1477
+(dp1478
+g3
+S'Camila Cabello'
+p1479
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/1SJtlNRJDeYHioymcvsqev'
+p1480
+sg8
+S'Crying in the Club'
+p1481
+ssS'747eWJy8c3u09N30NSqSTp'
+p1482
+(dp1483
+g3
+S'Justin Bieber'
+p1484
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/747eWJy8c3u09N30NSqSTp'
+p1485
+sg8
+S"I'll Show You"
+p1486
+ssS'04DwTuZ2VBdJCCC5TROn7L'
+p1487
+(dp1488
+g3
+S'Martin Garrix'
+p1489
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/04DwTuZ2VBdJCCC5TROn7L'
+p1490
+sg8
+S'In the Name of Love'
+p1491
+ssS'3AJwUDP919kvQ9QcozQPxg'
+p1492
+(dp1493
+g3
+S'Coldplay'
+p1494
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg'
+p1495
+sg8
+S'Yellow'
+p1496
+ssS'2SmgFAhQkQCQPyBiBxR6Te'
+p1497
+(dp1498
+g3
+S'Natti Natasha'
+p1499
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/2SmgFAhQkQCQPyBiBxR6Te'
+p1500
+sg8
+S'Criminal'
+p1501
+ssS'7Ckhk1XW5NV2k4jpqtQNlz'
+p1502
+(dp1503
+g3
+S'Valentino'
+p1504
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/7Ckhk1XW5NV2k4jpqtQNlz'
+p1505
+sg8
+S'Besame'
+p1506
+ssS'07T5sZOqViC15F9XBNre4L'
+p1507
+(dp1508
+g3
+S'Ha*Ash'
+p1509
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/07T5sZOqViC15F9XBNre4L'
+p1510
+sg8
+S'S\xc3\xa9 Que Te Vas'
+p1511
+ssS'5hKjEpYrJIJs6uPl7zw6Y6'
+p1512
+(dp1513
+g3
+S'Jory Boy'
+p1514
+sg5
+I23
+sg6
+S'https://open.spotify.com/track/5hKjEpYrJIJs6uPl7zw6Y6'
+p1515
+sg8
+S'No Te Hagas'
+p1516
+ssS'4JAyIDXOqNM6qHuZML01uX'
+p1517
+(dp1518
+g3
+g162
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4JAyIDXOqNM6qHuZML01uX'
+p1519
+sg8
+g162
+ssS'4VXejnj5WgM6H72ct2fSgQ'
+p1520
+(dp1521
+g3
+S'Reykon'
+p1522
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/4VXejnj5WgM6H72ct2fSgQ'
+p1523
+sg8
+S'El Chisme'
+p1524
+ssS'6VRghJeP6I0w1KxkdWFfIh'
+p1525
+(dp1526
+g3
+S'Imagine Dragons'
+p1527
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6VRghJeP6I0w1KxkdWFfIh'
+p1528
+sg8
+S'Believer'
+p1529
+ssS'6SznMYPQJHzr3IwsAHLId2'
+p1530
+(dp1531
+g3
+S'Ed Sheeran'
+p1532
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/6SznMYPQJHzr3IwsAHLId2'
+p1533
+sg8
+S'Bibia Be Ye Ye'
+p1534
+ssS'5J1c3M4EldCfNxXwrwt8mT'
+p1535
+(dp1536
+g3
+S'Sebastian Yatra'
+p1537
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5J1c3M4EldCfNxXwrwt8mT'
+p1538
+sg8
+S'Traicionera'
+p1539
+ssS'5zSOVwaY3sVjnmLhuEfsuf'
+p1540
+(dp1541
+g3
+S'Ozuna'
+p1542
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5zSOVwaY3sVjnmLhuEfsuf'
+p1543
+sg8
+S'T\xc3\xba Foto'
+p1544
+ssS'46NBoIAHrmR7qcUGCIFEjR'
+p1545
+(dp1546
+g3
+S'David Guetta'
+p1547
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/46NBoIAHrmR7qcUGCIFEjR'
+p1548
+sg8
+S"This One's For You (feat. Zara Larsson) - Official Song UEFA EURO 2016"
+p1549
+ssS'6NSMQFKgjpQb0KkjMDYIK0'
+p1550
+(dp1551
+g3
+S'Arcangel'
+p1552
+sg5
+I33
+sg6
+S'https://open.spotify.com/track/6NSMQFKgjpQb0KkjMDYIK0'
+p1553
+sg8
+S'Tu No Vive Asi (feat. Mambo Kingz & DJ Luian)'
+p1554
+ssS'11zRKpjEZwmcBBBGzB4pMn'
+p1555
+(dp1556
+g3
+S'Rvssian'
+p1557
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/11zRKpjEZwmcBBBGzB4pMn'
+p1558
+sg8
+S'Privado'
+p1559
+ssS'2LW4Zu7FcrwjWm3t5Rv3Oq'
+p1560
+(dp1561
+g3
+S'Ozuna'
+p1562
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/2LW4Zu7FcrwjWm3t5Rv3Oq'
+p1563
+sg8
+S'El Farsante'
+p1564
+ssS'0B6GRS3vGtzu6w5BQXqWMq'
+p1565
+(dp1566
+g3
+S'Dasoul'
+p1567
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/0B6GRS3vGtzu6w5BQXqWMq'
+p1568
+sg8
+S'Kung Fu'
+p1569
+ssS'5Ohxk2dO5COHF1krpoPigN'
+p1570
+(dp1571
+g3
+S'Harry Styles'
+p1572
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN'
+p1573
+sg8
+S'Sign of the Times'
+p1574
+ssS'5Fim1gaXBgsiFfsQAfQSDS'
+p1575
+(dp1576
+g3
+S'Nicky Jam'
+p1577
+sg5
+I38
+sg6
+S'https://open.spotify.com/track/5Fim1gaXBgsiFfsQAfQSDS'
+p1578
+sg8
+S'Hasta el Amanecer'
+p1579
+ssS'6wHm04cn5HxK6pE2ITEdUS'
+p1580
+(dp1581
+g3
+S'Cosculluela'
+p1582
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/6wHm04cn5HxK6pE2ITEdUS'
+p1583
+sg8
+S'Te Busco (feat. Nicky Jam)'
+p1584
+ssS'4mxWSdf71VFO52qFeY0fZt'
+p1585
+(dp1586
+g3
+S'Maroon 5'
+p1587
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/4mxWSdf71VFO52qFeY0fZt'
+p1588
+sg8
+S'What Lovers Do (feat. SZA)'
+p1589
+ssS'4Hf7WnR761jpxPr5D46Bcd'
+p1590
+(dp1591
+g3
+S'Shawn Mendes'
+p1592
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/4Hf7WnR761jpxPr5D46Bcd'
+p1593
+sg8
+S'Treat You Better'
+p1594
+ssS'3AEZUABDXNtecAOSC1qTfo'
+p1595
+(dp1596
+g3
+S'CNCO'
+p1597
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/3AEZUABDXNtecAOSC1qTfo'
+p1598
+sg8
+S'Reggaet\xc3\xb3n Lento (Bailemos)'
+p1599
+ssS'1Tt4sE4pXi57mTD1GCzsqm'
+p1600
+(dp1601
+g3
+S'Rihanna'
+p1602
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/1Tt4sE4pXi57mTD1GCzsqm'
+p1603
+sg8
+S'Needed Me'
+p1604
+ssS'5JcxAgRw2S3hb67AA8Vk13'
+p1605
+(dp1606
+g3
+S'Justin Bieber'
+p1607
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5JcxAgRw2S3hb67AA8Vk13'
+p1608
+sg8
+S'Mark My Words'
+p1609
+ssS'16Ah4QqH4mgYVXqfC4mdSd'
+p1610
+(dp1611
+g3
+S'Tory Lanez'
+p1612
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/16Ah4QqH4mgYVXqfC4mdSd'
+p1613
+sg8
+S'LUV'
+p1614
+ssS'5fqE4mcMADOX0qTuIlpLZL'
+p1615
+(dp1616
+g3
+S'Cali Y El Dandee'
+p1617
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5fqE4mcMADOX0qTuIlpLZL'
+p1618
+sg8
+S'La Estrategia'
+p1619
+ssS'1EaKU4dMbesXXd3BrLCtYG'
+p1620
+(dp1621
+g3
+S'Kendrick Lamar'
+p1622
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1EaKU4dMbesXXd3BrLCtYG'
+p1623
+sg8
+S'ELEMENT.'
+p1624
+ssS'7xHWNBFm6ObGEQPaUxHuKO'
+p1625
+(dp1626
+g3
+S'Sia'
+p1627
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/7xHWNBFm6ObGEQPaUxHuKO'
+p1628
+sg8
+S'The Greatest'
+p1629
+ssS'6m2LNopVJKsvBB9l7Z1rwn'
+p1630
+(dp1631
+g3
+S'MC Kevinho'
+p1632
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6m2LNopVJKsvBB9l7Z1rwn'
+p1633
+sg8
+S'Olha a Explos\xc3\xa3o'
+p1634
+ssS'5knuzwU65gJK7IF5yJsuaW'
+p1635
+(dp1636
+g3
+S'Clean Bandit'
+p1637
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5knuzwU65gJK7IF5yJsuaW'
+p1638
+sg8
+S'Rockabye (feat. Sean Paul & Anne-Marie)'
+p1639
+ssS'14WWzenpaEgQZlqPq2nk4v'
+p1640
+(dp1641
+g3
+S'Rihanna'
+p1642
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/14WWzenpaEgQZlqPq2nk4v'
+p1643
+sg8
+S'Work'
+p1644
+ssS'6b8Be6ljOzmkOmFslEb23P'
+p1645
+(dp1646
+g3
+S'Bruno Mars'
+p1647
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P'
+p1648
+sg8
+S'24K Magic'
+p1649
+ssS'6Ep6BzIOB9tz3P4sWqiiAB'
+p1650
+(dp1651
+g3
+S'Imagine Dragons'
+p1652
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/6Ep6BzIOB9tz3P4sWqiiAB'
+p1653
+sg8
+S'Radioactive'
+p1654
+ssS'04f13iELcsYpY2yeLiAcfq'
+p1655
+(dp1656
+g3
+S'Nicky Jam'
+p1657
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/04f13iELcsYpY2yeLiAcfq'
+p1658
+sg8
+S'El Amante - Remix'
+p1659
+ssS'2CkHE54EH44Qj945ynQRw7'
+p1660
+(dp1661
+g3
+S'Man\xc3\xa1'
+p1662
+sg5
+I15
+sg6
+S'https://open.spotify.com/track/2CkHE54EH44Qj945ynQRw7'
+p1663
+sg8
+S'De Pies a Cabeza'
+p1664
+ssS'5DA77EqppDmCTWGovd4oTP'
+p1665
+(dp1666
+g3
+S'Cheat Codes'
+p1667
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/5DA77EqppDmCTWGovd4oTP'
+p1668
+sg8
+S'Sex'
+p1669
+ssS'6HZILIRieu8S0iqY8kIKhj'
+p1670
+(dp1671
+g3
+S'Kendrick Lamar'
+p1672
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/6HZILIRieu8S0iqY8kIKhj'
+p1673
+sg8
+S'DNA.'
+p1674
+ssS'7F9vK8hNFMml4GtHsaXui6'
+p1675
+(dp1676
+g3
+S'Louis Tomlinson'
+p1677
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/7F9vK8hNFMml4GtHsaXui6'
+p1678
+sg8
+S'Back to You (feat. Bebe Rexha & Digital Farm Animals)'
+p1679
+ssS'5ITqNeFxofIOAzCYoc1xQq'
+p1680
+(dp1681
+g3
+S'Vybz Kartel'
+p1682
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/5ITqNeFxofIOAzCYoc1xQq'
+p1683
+sg8
+S'Bicycle Ride'
+p1684
+ssS'2EEeOnHehOozLq4aS0n6SL'
+p1685
+(dp1686
+g3
+S'KYLE'
+p1687
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/2EEeOnHehOozLq4aS0n6SL'
+p1688
+sg8
+S'iSpy (feat. Lil Yachty)'
+p1689
+ssS'3B54sVLJ402zGa6Xm4YGNe'
+p1690
+(dp1691
+g3
+S'French Montana'
+p1692
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/3B54sVLJ402zGa6Xm4YGNe'
+p1693
+sg8
+S'Unforgettable'
+p1694
+ssS'1rIKgCH4H52lrvDcz50hS8'
+p1695
+(dp1696
+g3
+S'Zara Larsson'
+p1697
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/1rIKgCH4H52lrvDcz50hS8'
+p1698
+sg8
+S'Lush Life'
+p1699
+ssS'6gpcs5eMhJwax4mIfKDYQk'
+p1700
+(dp1701
+g3
+S'Calvin Harris'
+p1702
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/6gpcs5eMhJwax4mIfKDYQk'
+p1703
+sg8
+S'Slide'
+p1704
+ssS'5bcTCxgc7xVfSaMV3RuVke'
+p1705
+(dp1706
+g3
+S'Calvin Harris'
+p1707
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/5bcTCxgc7xVfSaMV3RuVke'
+p1708
+sg8
+S'Feels'
+p1709
+ssS'0QsvXIfqM0zZoerQfsI9lm'
+p1710
+(dp1711
+g3
+S'The Chainsmokers'
+p1712
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/0QsvXIfqM0zZoerQfsI9lm'
+p1713
+sg8
+S"Don't Let Me Down"
+p1714
+ssS'7w87IxuO7BDcJ3YUqCyMTT'
+p1715
+(dp1716
+g3
+S'Foster The People'
+p1717
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/7w87IxuO7BDcJ3YUqCyMTT'
+p1718
+sg8
+S'Pumped Up Kicks'
+p1719
+ssS'0fioLzGM8ngbD1w6fMmm45'
+p1720
+(dp1721
+g3
+S'Sam Smith'
+p1722
+sg5
+I15
+sg6
+S'https://open.spotify.com/track/0fioLzGM8ngbD1w6fMmm45'
+p1723
+sg8
+S"I'm Not The Only One"
+p1724
+ssS'4qqArAiTPueDxIp7cf87h7'
+p1725
+(dp1726
+g3
+S'M\xc3\x98'
+p1727
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/4qqArAiTPueDxIp7cf87h7'
+p1728
+sg8
+S'Final Song'
+p1729
+ssS'2nLtzopw4rPReszdYBJU6h'
+p1730
+(dp1731
+g3
+S'Linkin Park'
+p1732
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h'
+p1733
+sg8
+S'Numb'
+p1734
+ssS'4BzTdCoD7hikdvNIo1k6W4'
+p1735
+(dp1736
+g3
+S'Ricardo Montaner'
+p1737
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4BzTdCoD7hikdvNIo1k6W4'
+p1738
+sg8
+S'Aunque Ahora Est\xc3\xa9s Con El'
+p1739
+ssS'3a1lNhkSLSkpJE4MSHpDu9'
+p1740
+(dp1741
+g3
+S'Post Malone'
+p1742
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/3a1lNhkSLSkpJE4MSHpDu9'
+p1743
+sg8
+S'Congratulations'
+p1744
+ssS'61WbtB6ujkpNAsAf5LjF4b'
+p1745
+(dp1746
+g3
+S'Katy Perry'
+p1747
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/61WbtB6ujkpNAsAf5LjF4b'
+p1748
+sg8
+S'Bon app\xc3\xa9tit'
+p1749
+ssS'0ofbQMrRDsUaVKq2mGLEAb'
+p1750
+(dp1751
+g3
+S'Camila Cabello'
+p1752
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/0ofbQMrRDsUaVKq2mGLEAb'
+p1753
+sg8
+S'Havana'
+p1754
+ssS'30mNHDOw7qD5SF8tBeuPpu'
+p1755
+(dp1756
+g3
+S'Konshens'
+p1757
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/30mNHDOw7qD5SF8tBeuPpu'
+p1758
+sg8
+S'Bruk Off Yuh Back'
+p1759
+ssS'6bLopGnirdrilrpdVB6Um1'
+p1760
+(dp1761
+g3
+S'Sia'
+p1762
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/6bLopGnirdrilrpdVB6Um1'
+p1763
+sg8
+S'The Greatest'
+p1764
+ssS'3uhBIQ7tv8j1FME8cFGEfG'
+p1765
+(dp1766
+g3
+S'John Legend'
+p1767
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/3uhBIQ7tv8j1FME8cFGEfG'
+p1768
+sg8
+S'All of Me'
+p1769
+ssS'1AkTW13ysu0AJrwuM6UY0I'
+p1770
+(dp1771
+g3
+S'Charly Black'
+p1772
+sg5
+I35
+sg6
+S'https://open.spotify.com/track/1AkTW13ysu0AJrwuM6UY0I'
+p1773
+sg8
+S'Gyal You A Party Animal - Remix'
+p1774
+ssS'7cCRlUf8ayOJtTlWN7g8Ni'
+p1775
+(dp1776
+g3
+S'R\xc3\xado Roma'
+p1777
+sg5
+I21
+sg6
+S'https://open.spotify.com/track/7cCRlUf8ayOJtTlWN7g8Ni'
+p1778
+sg8
+S'Caminar de Tu Mano'
+p1779
+ssS'1vvNmPOiUuyCbgWmtc6yfm'
+p1780
+(dp1781
+g3
+S'Calvin Harris'
+p1782
+sg5
+I34
+sg6
+S'https://open.spotify.com/track/1vvNmPOiUuyCbgWmtc6yfm'
+p1783
+sg8
+S'My Way'
+p1784
+ssS'5vZfgeDfNhlkKeJqjzSAmg'
+p1785
+(dp1786
+g3
+S'Alejandro Fernandez'
+p1787
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/5vZfgeDfNhlkKeJqjzSAmg'
+p1788
+sg8
+S'S\xc3\xa9 Que Te Duele'
+p1789
+ssS'57BrRMwf9LrcmuOsyGilwr'
+p1790
+(dp1791
+g3
+S'Linkin Park'
+p1792
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/57BrRMwf9LrcmuOsyGilwr'
+p1793
+sg8
+S'Crawling'
+p1794
+ssS'5u5MvmVtitax9R1Mxh3reC'
+p1795
+(dp1796
+g3
+S'Ozuna'
+p1797
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5u5MvmVtitax9R1Mxh3reC'
+p1798
+sg8
+S'Dile Que Tu Me Quieres'
+p1799
+ssS'5YzA563GXTuwQaRq24z1k5'
+p1800
+(dp1801
+g3
+S'Yandel'
+p1802
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/5YzA563GXTuwQaRq24z1k5'
+p1803
+sg8
+S'Como Antes'
+p1804
+ssS'0afhq8XCExXpqazXczTSve'
+p1805
+(dp1806
+g3
+S'Ed Sheeran'
+p1807
+sg5
+I26
+sg6
+S'https://open.spotify.com/track/0afhq8XCExXpqazXczTSve'
+p1808
+sg8
+S'Galway Girl'
+p1809
+ssS'2E9WGQ8JcVF3FMHlqCuzLa'
+p1810
+(dp1811
+g3
+S'Nesbeth'
+p1812
+sg5
+I18
+sg6
+S'https://open.spotify.com/track/2E9WGQ8JcVF3FMHlqCuzLa'
+p1813
+sg8
+S'My Dream'
+p1814
+ssS'6RtPijgfPKROxEzTHNRiDp'
+p1815
+(dp1816
+g3
+S'MAGIC!'
+p1817
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/6RtPijgfPKROxEzTHNRiDp'
+p1818
+sg8
+S'Rude'
+p1819
+ssS'5TysCiZtv1HnSWcTcUFusI'
+p1820
+(dp1821
+g3
+S'Joey Montana'
+p1822
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/5TysCiZtv1HnSWcTcUFusI'
+p1823
+sg8
+S'Suena El Dembow'
+p1824
+ssS'2aFiaMXmWsM3Vj72F9ksBl'
+p1825
+(dp1826
+g3
+S'DNCE'
+p1827
+sg5
+I41
+sg6
+S'https://open.spotify.com/track/2aFiaMXmWsM3Vj72F9ksBl'
+p1828
+sg8
+S'Cake By The Ocean'
+p1829
+ssS'152lZdxL1OR0ZMW6KquMif'
+p1830
+(dp1831
+g3
+S'Khalid'
+p1832
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/152lZdxL1OR0ZMW6KquMif'
+p1833
+sg8
+S'Location'
+p1834
+ssS'4J1e3hbf0e5YUZjkxyJWD3'
+p1835
+(dp1836
+g3
+S'Anuel Aa'
+p1837
+sg5
+I23
+sg6
+S'https://open.spotify.com/track/4J1e3hbf0e5YUZjkxyJWD3'
+p1838
+sg8
+S'La \xc3\x9altima Vez'
+p1839
+ssS'4TZy1wLyHec06pwgFYDh1a'
+p1840
+(dp1841
+g3
+S'Shawn Mendes'
+p1842
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/4TZy1wLyHec06pwgFYDh1a'
+p1843
+sg8
+S'Mercy'
+p1844
+ssS'5HABnFSYvl6mTmg8nSdzHa'
+p1845
+(dp1846
+g3
+S'Zion & Lennox'
+p1847
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/5HABnFSYvl6mTmg8nSdzHa'
+p1848
+sg8
+S'Mi Tesoro (feat. Nicky Jam)'
+p1849
+ssS'20H2Hd5AkUcRjB4yL3UQtJ'
+p1850
+(dp1851
+g3
+S'Fifth Harmony'
+p1852
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/20H2Hd5AkUcRjB4yL3UQtJ'
+p1853
+sg8
+S'Down'
+p1854
+ssS'1mSzZKMIPZIkn3jFV7v62b'
+p1855
+(dp1856
+g3
+S'Charly Black'
+p1857
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/1mSzZKMIPZIkn3jFV7v62b'
+p1858
+sg8
+S'Gyal You A Party Animal'
+p1859
+ssS'1FUViuNSldssMIawrOXF2i'
+p1860
+(dp1861
+g3
+S'Bebe Rexha'
+p1862
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/1FUViuNSldssMIawrOXF2i'
+p1863
+sg8
+S'I Got You'
+p1864
+ssS'4efQTJSX6Jca1hHZNi74Zd'
+p1865
+(dp1866
+g3
+S'Carlos Baute'
+p1867
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4efQTJSX6Jca1hHZNi74Zd'
+p1868
+sg8
+S'Amor y dolor'
+p1869
+ssS'5OgzsE0POkXqoOACuVgLKA'
+p1870
+(dp1871
+g3
+S'Farruko'
+p1872
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/5OgzsE0POkXqoOACuVgLKA'
+p1873
+sg8
+S'Passion Whine - Remastered Version'
+p1874
+ssS'2OxUtaKYeahAGNaBiahXtR'
+p1875
+(dp1876
+g3
+S'Farruko'
+p1877
+sg5
+I15
+sg6
+S'https://open.spotify.com/track/2OxUtaKYeahAGNaBiahXtR'
+p1878
+sg8
+S'Diabla - Official Remix'
+p1879
+ssS'4Q4jmPHwu0wrJvqrld0FQ6'
+p1880
+(dp1881
+g3
+S'Zara Larsson'
+p1882
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/4Q4jmPHwu0wrJvqrld0FQ6'
+p1883
+sg8
+S'I Would Like'
+p1884
+ssS'6rQSrBHf7HlZjtcMZ4S4bO'
+p1885
+(dp1886
+g3
+S'J Balvin'
+p1887
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/6rQSrBHf7HlZjtcMZ4S4bO'
+p1888
+sg8
+S'Safari'
+p1889
+ssS'7yyRTcZmCiyzzJlNzGC9Ol'
+p1890
+(dp1891
+g3
+S'DRAM'
+p1892
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/7yyRTcZmCiyzzJlNzGC9Ol'
+p1893
+sg8
+S'Broccoli (feat. Lil Yachty)'
+p1894
+ssS'1m69ELEgE6k5ZWsap40ozt'
+p1895
+(dp1896
+g3
+S'Ozuna'
+p1897
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/1m69ELEgE6k5ZWsap40ozt'
+p1898
+sg8
+S'Se Prepar\xc3\xb3'
+p1899
+ssS'4tPL9PeVZY4c0jUPtSD5nx'
+p1900
+(dp1901
+g3
+S'Joey Montana'
+p1902
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/4tPL9PeVZY4c0jUPtSD5nx'
+p1903
+sg8
+S'Picky'
+p1904
+ssS'2771LMNxwf62FTAdpJMQfM'
+p1905
+(dp1906
+g3
+S'Cardi B'
+p1907
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/2771LMNxwf62FTAdpJMQfM'
+p1908
+sg8
+S'Bodak Yellow'
+p1909
+ssS'5EId1m4DNwTf3at31w8bPJ'
+p1910
+(dp1911
+g3
+S'Ozuna'
+p1912
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5EId1m4DNwTf3at31w8bPJ'
+p1913
+sg8
+S'El Farsante'
+p1914
+ssS'6PCUP3dWmTjcTtXY02oFdT'
+p1915
+(dp1916
+g3
+S'Ed Sheeran'
+p1917
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/6PCUP3dWmTjcTtXY02oFdT'
+p1918
+sg8
+S'Castle on the Hill'
+p1919
+ssS'4CTjql34LKCJy5WOSgEhvA'
+p1920
+(dp1921
+g3
+S'Silvestre Dangond'
+p1922
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/4CTjql34LKCJy5WOSgEhvA'
+p1923
+sg8
+S'Ya No Me Duele M\xc3\xa1s - Remix'
+p1924
+ssS'5PycBIeabfvX3n9ILG7Vrv'
+p1925
+(dp1926
+g3
+S'Romeo Santos'
+p1927
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/5PycBIeabfvX3n9ILG7Vrv'
+p1928
+sg8
+S'Propuesta Indecente'
+p1929
+ssS'2wgDAPgBhFA7pnIbm0YOhP'
+p1930
+(dp1931
+g3
+S'Bad Bunny'
+p1932
+sg5
+I23
+sg6
+S'https://open.spotify.com/track/2wgDAPgBhFA7pnIbm0YOhP'
+p1933
+sg8
+S'Me Mata'
+p1934
+ssS'104buTcnP2AsxqB7U1FIZ4'
+p1935
+(dp1936
+g3
+S'Linkin Park'
+p1937
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/104buTcnP2AsxqB7U1FIZ4'
+p1938
+sg8
+S'Heavy (feat. Kiiara)'
+p1939
+ssS'0CcQNd8CINkwQfe1RDtGV6'
+p1940
+(dp1941
+g3
+S'Imagine Dragons'
+p1942
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/0CcQNd8CINkwQfe1RDtGV6'
+p1943
+sg8
+S'Believer'
+p1944
+ssS'650OeHTLxZAQmb4aEbGmaA'
+p1945
+(dp1946
+g3
+S'Linkin Park'
+p1947
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/650OeHTLxZAQmb4aEbGmaA'
+p1948
+sg8
+S'Good Goodbye (feat. Pusha T and Stormzy)'
+p1949
+ssS'1PSBzsahR2AKwLJgx8ehBj'
+p1950
+(dp1951
+g3
+S'Machine Gun Kelly'
+p1952
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/1PSBzsahR2AKwLJgx8ehBj'
+p1953
+sg8
+S'Bad Things (with Camila Cabello)'
+p1954
+ssS'5gFAT2DbEt4TOMXyAMEixG'
+p1955
+(dp1956
+g3
+S'Brytiago'
+p1957
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/5gFAT2DbEt4TOMXyAMEixG'
+p1958
+sg8
+S'Netflixxx'
+p1959
+ssS'31MkGwj0SWgZaTvEt5Hgxv'
+p1960
+(dp1961
+g3
+S'P!nk'
+p1962
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/31MkGwj0SWgZaTvEt5Hgxv'
+p1963
+sg8
+S'What About Us'
+p1964
+ssS'0D8ZpOXVjapLXrjz5VfZSD'
+p1965
+(dp1966
+g3
+S'Sam Smith'
+p1967
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0D8ZpOXVjapLXrjz5VfZSD'
+p1968
+sg8
+S'Pray'
+p1969
+ssS'0sXvAOmXgjR2QUqLK1MltU'
+p1970
+(dp1971
+g3
+S'Carlos Vives'
+p1972
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/0sXvAOmXgjR2QUqLK1MltU'
+p1973
+sg8
+S'La Bicicleta'
+p1974
+ssS'3m660poUr1chesgkkjQM7P'
+p1975
+(dp1976
+g3
+S'Demi Lovato'
+p1977
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/3m660poUr1chesgkkjQM7P'
+p1978
+sg8
+S'Sorry Not Sorry'
+p1979
+ssS'5EnYT6F7wEcdege6mDHEfO'
+p1980
+(dp1981
+g3
+S'Drake'
+p1982
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/5EnYT6F7wEcdege6mDHEfO'
+p1983
+sg8
+S'Signs'
+p1984
+ssS'3K4HG9evC7dg3N0R9cYqk4'
+p1985
+(dp1986
+g3
+S'Linkin Park'
+p1987
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3K4HG9evC7dg3N0R9cYqk4'
+p1988
+sg8
+S'One Step Closer'
+p1989
+ssS'05ZXXyeZFhZtA6DAP3Aw7x'
+p1990
+(dp1991
+g3
+S'Maite Perroni'
+p1992
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/05ZXXyeZFhZtA6DAP3Aw7x'
+p1993
+sg8
+S'Loca (feat. Cali Y El Dandee)'
+p1994
+ssS'3ebXMykcMXOcLeJ9xZ17XH'
+p1995
+(dp1996
+g3
+S'Martin Garrix'
+p1997
+sg5
+I37
+sg6
+S'https://open.spotify.com/track/3ebXMykcMXOcLeJ9xZ17XH'
+p1998
+sg8
+S'Scared to Be Lonely'
+p1999
+ssS'6fujklziTHa8uoM5OQSfIo'
+p2000
+(dp2001
+g3
+S'Rae Sremmurd'
+p2002
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/6fujklziTHa8uoM5OQSfIo'
+p2003
+sg8
+S'Black Beatles'
+p2004
+ssS'1WOJTQfNUEkLlsinPP95VM'
+p2005
+(dp2006
+g3
+S'Zion & Lennox'
+p2007
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1WOJTQfNUEkLlsinPP95VM'
+p2008
+sg8
+S'Embri\xc3\xa1game (feat. Don Omar) - Remix'
+p2009
+ssS'19WjVVgXjdKXfLXoaDPwTM'
+p2010
+(dp2011
+g3
+S'Taylor Swift'
+p2012
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/19WjVVgXjdKXfLXoaDPwTM'
+p2013
+sg8
+S'...Ready For It?'
+p2014
+ssS'27PmvZoffODNFW2p7ehZTQ'
+p2015
+(dp2016
+g3
+S'Kent Jones'
+p2017
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/27PmvZoffODNFW2p7ehZTQ'
+p2018
+sg8
+S"Don't Mind"
+p2019
+ssS'7abpmGpF7PGep2rDU68GBR'
+p2020
+(dp2021
+g3
+S'Burak Yeter'
+p2022
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/7abpmGpF7PGep2rDU68GBR'
+p2023
+sg8
+S'Tuesday'
+p2024
+ssS'2QBlGKAp4PquIGtA6iNAuJ'
+p2025
+(dp2026
+g3
+S'Farruko'
+p2027
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/2QBlGKAp4PquIGtA6iNAuJ'
+p2028
+sg8
+S'Lejos De Aqu\xc3\xad'
+p2029
+ssS'2yvjjJrWzVzA2zg4VsoEmo'
+p2030
+(dp2031
+g3
+S'Prince Royce'
+p2032
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/2yvjjJrWzVzA2zg4VsoEmo'
+p2033
+sg8
+S'La Carretera'
+p2034
+ssS'2yajAy8Va9VTk3yhF9B3ET'
+p2035
+(dp2036
+g3
+S'Pablo Albor\xc3\xa1n'
+p2037
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/2yajAy8Va9VTk3yhF9B3ET'
+p2038
+sg8
+S'No vaya a ser'
+p2039
+ssS'0ERbK7qVqveCaBWIiYCrl3'
+p2040
+(dp2041
+g3
+S'Romeo Santos'
+p2042
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/0ERbK7qVqveCaBWIiYCrl3'
+p2043
+sg8
+S'Bella y Sensual'
+p2044
+ssS'3H179O48ynsu9q8LOnFQZY'
+p2045
+(dp2046
+g3
+S'Reik'
+p2047
+sg5
+I36
+sg6
+S'https://open.spotify.com/track/3H179O48ynsu9q8LOnFQZY'
+p2048
+sg8
+S'Qu\xc3\xa9 Gano Olvid\xc3\xa1ndote - Versi\xc3\xb3n Urbana'
+p2049
+ssS'48yAM9xWBwT4Ac9G1y20rw'
+p2050
+(dp2051
+g3
+S'Yandel'
+p2052
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/48yAM9xWBwT4Ac9G1y20rw'
+p2053
+sg8
+S'Expl\xc3\xadcale'
+p2054
+ssS'0B8B8cVRFIG1yznoQe7c9s'
+p2055
+(dp2056
+g3
+S'The Chainsmokers'
+p2057
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0B8B8cVRFIG1yznoQe7c9s'
+p2058
+sg8
+S'Setting Fires'
+p2059
+ssS'6041gM9Th1ViQcnzkIxnuv'
+p2060
+(dp2061
+g3
+S'Ozuna'
+p2062
+sg5
+I30
+sg6
+S'https://open.spotify.com/track/6041gM9Th1ViQcnzkIxnuv'
+p2063
+sg8
+S'Me Ama Me Odia'
+p2064
+ssS'1mDGDb2fUmUMdqV3tb8VKQ'
+p2065
+(dp2066
+g3
+S'Halsey'
+p2067
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1mDGDb2fUmUMdqV3tb8VKQ'
+p2068
+sg8
+S'Now Or Never'
+p2069
+ssS'0lJCqIx5BhZtf6QtYI2fbv'
+p2070
+(dp2071
+g3
+S'Daddy Yankee'
+p2072
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/0lJCqIx5BhZtf6QtYI2fbv'
+p2073
+sg8
+S'Vuelve'
+p2074
+ssS'6OZh916QF8XNunWaP97WEZ'
+p2075
+(dp2076
+g3
+S'Jonas Blue'
+p2077
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/6OZh916QF8XNunWaP97WEZ'
+p2078
+sg8
+S'Fast Car'
+p2079
+ssS'2rizacJSyD9S1IQUxUxnsK'
+p2080
+(dp2081
+g3
+S'The Chainsmokers'
+p2082
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/2rizacJSyD9S1IQUxUxnsK'
+p2083
+sg8
+S'All We Know'
+p2084
+ssS'6RsWqX8zABZLhZydXxEFOm'
+p2085
+(dp2086
+g3
+S'The Weeknd'
+p2087
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/6RsWqX8zABZLhZydXxEFOm'
+p2088
+sg8
+S"Can't Feel My Face"
+p2089
+ssS'0tgVpDi06FyKpA1z0VMD4v'
+p2090
+(dp2091
+g3
+S'Ed Sheeran'
+p2092
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v'
+p2093
+sg8
+S'Perfect'
+p2094
+ssS'3nqrj9bM1clIkejk7BVPtX'
+p2095
+(dp2096
+g3
+S'Karol G'
+p2097
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/3nqrj9bM1clIkejk7BVPtX'
+p2098
+sg8
+S'A Ella'
+p2099
+ssS'2Vdub5mY4lad7w64bFPUez'
+p2100
+(dp2101
+g3
+S'Pitbull'
+p2102
+sg5
+I31
+sg6
+S'https://open.spotify.com/track/2Vdub5mY4lad7w64bFPUez'
+p2103
+sg8
+S'Hey Ma (with Pitbull & J Balvin feat. Camila Cabello) - Spanish Version'
+p2104
+ssS'5i50gKdLAjjIr7UxRT5IVy'
+p2105
+(dp2106
+g3
+S'Sebastian Yatra'
+p2107
+sg5
+I35
+sg6
+S'https://open.spotify.com/track/5i50gKdLAjjIr7UxRT5IVy'
+p2108
+sg8
+S'Alguien Robo'
+p2109
+ssS'69uxyAqqPIsUyTO8txoP2M'
+p2110
+(dp2111
+g3
+S'Coldplay'
+p2112
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/69uxyAqqPIsUyTO8txoP2M'
+p2113
+sg8
+S'Adventure Of A Lifetime'
+p2114
+ssS'1zRqRmZyE0bgXkSoVVaCwK'
+p2115
+(dp2116
+g3
+S'Sin Bandera'
+p2117
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/1zRqRmZyE0bgXkSoVVaCwK'
+p2118
+sg8
+S'En \xc3\x89sta No'
+p2119
+ssS'72Q0FQQo32KJloivv5xge2'
+p2120
+(dp2121
+g3
+S'DJ Khaled'
+p2122
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/72Q0FQQo32KJloivv5xge2'
+p2123
+sg8
+S"I'm the One"
+p2124
+ssS'79NlESqzFSW0hdBWgls4FX'
+p2125
+(dp2126
+g3
+S'Kesha'
+p2127
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/79NlESqzFSW0hdBWgls4FX'
+p2128
+sg8
+S'Praying'
+p2129
+ssS'1x5sYLZiu9r5E43kMlt9f8'
+p2130
+(dp2131
+g3
+S'Clean Bandit'
+p2132
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/1x5sYLZiu9r5E43kMlt9f8'
+p2133
+sg8
+S'Symphony (feat. Zara Larsson)'
+p2134
+ssS'2rb5MvYT7ZIxbKW5hfcHx8'
+p2135
+(dp2136
+g3
+S'J Balvin'
+p2137
+sg5
+I15
+sg6
+S'https://open.spotify.com/track/2rb5MvYT7ZIxbKW5hfcHx8'
+p2138
+sg8
+S'Mi Gente'
+p2139
+ssS'5TvE3pk05pyFIGdSY9j4DJ'
+p2140
+(dp2141
+g3
+S'A Great Big World'
+p2142
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/5TvE3pk05pyFIGdSY9j4DJ'
+p2143
+sg8
+S'Say Something'
+p2144
+ssS'5SE57ljOIUJ1ybL9U6CuBH'
+p2145
+(dp2146
+g3
+S'BTS'
+p2147
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/5SE57ljOIUJ1ybL9U6CuBH'
+p2148
+sg8
+S'DNA'
+p2149
+ssS'1pWYnQIlqxTh5bxuPmTG4E'
+p2150
+(dp2151
+g3
+S'Thal\xc3\xada'
+p2152
+sg5
+I23
+sg6
+S'https://open.spotify.com/track/1pWYnQIlqxTh5bxuPmTG4E'
+p2153
+sg8
+S'Desde Esa Noche'
+p2154
+ssS'6SwRhMLwNqEi6alNPVG00n'
+p2155
+(dp2156
+g3
+S'Kendrick Lamar'
+p2157
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6SwRhMLwNqEi6alNPVG00n'
+p2158
+sg8
+S'LOYALTY. FEAT. RIHANNA.'
+p2159
+ssS'4J40gKMbS6bm97M7EqCZS0'
+p2160
+(dp2161
+g3
+S'DeStorm'
+p2162
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/4J40gKMbS6bm97M7EqCZS0'
+p2163
+sg8
+S'Tsunami'
+p2164
+ssS'5oiI4g2TR6RrynKbyVqV8w'
+p2165
+(dp2166
+g3
+S'Eshconinco'
+p2167
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/5oiI4g2TR6RrynKbyVqV8w'
+p2168
+sg8
+S'Drop It'
+p2169
+ssS'1denQBP7H6fh9BXaTIgvQy'
+p2170
+(dp2171
+g3
+S'Feid'
+p2172
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/1denQBP7H6fh9BXaTIgvQy'
+p2173
+sg8
+S'911'
+p2174
+ssS'0FDzzruyVECATHXKHFs9eJ'
+p2175
+(dp2176
+g3
+S'Coldplay'
+p2177
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/0FDzzruyVECATHXKHFs9eJ'
+p2178
+sg8
+S'A Sky Full of Stars'
+p2179
+ssS'0tKcYR2II1VCQWT79i5NrW'
+p2180
+(dp2181
+g3
+S'Imagine Dragons'
+p2182
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/0tKcYR2II1VCQWT79i5NrW'
+p2183
+sg8
+S'Thunder'
+p2184
+ssS'3rgjBiAMVGnxmsTDmUy8vb'
+p2185
+(dp2186
+g3
+S'Farruko'
+p2187
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/3rgjBiAMVGnxmsTDmUy8vb'
+p2188
+sg8
+S'Krippy Kush'
+p2189
+ssS'6DNtNfH8hXkqOX1sjqmI7p'
+p2190
+(dp2191
+g3
+S'Major Lazer'
+p2192
+sg5
+I39
+sg6
+S'https://open.spotify.com/track/6DNtNfH8hXkqOX1sjqmI7p'
+p2193
+sg8
+S'Cold Water (feat. Justin Bieber & M\xc3\x98)'
+p2194
+ssS'5NNlUMcOEOdoOIwwaWXv0k'
+p2195
+(dp2196
+g3
+S'Maroon 5'
+p2197
+sg5
+I26
+sg6
+S'https://open.spotify.com/track/5NNlUMcOEOdoOIwwaWXv0k'
+p2198
+sg8
+S'Cold'
+p2199
+ssS'47TyfLrGhYHHyyQWk64d0M'
+p2200
+(dp2201
+g3
+S'Marc Anthony'
+p2202
+sg5
+I32
+sg6
+S'https://open.spotify.com/track/47TyfLrGhYHHyyQWk64d0M'
+p2203
+sg8
+S'Flor P\xc3\xa1lida'
+p2204
+ssS'1sXUWdKx03aP9Gmzft58rt'
+p2205
+(dp2206
+g3
+S'Julia Michaels'
+p2207
+sg5
+I21
+sg6
+S'https://open.spotify.com/track/1sXUWdKx03aP9Gmzft58rt'
+p2208
+sg8
+S'Issues'
+p2209
+ssS'1eq1wUnLVLg4pdEfx9kajC'
+p2210
+(dp2211
+g3
+S'Adele'
+p2212
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/1eq1wUnLVLg4pdEfx9kajC'
+p2213
+sg8
+S'Rolling In The Deep'
+p2214
+ssS'3bVbQvGVIe4n24AzyXovXh'
+p2215
+(dp2216
+g3
+g162
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3bVbQvGVIe4n24AzyXovXh'
+p2217
+sg8
+g162
+ssS'7IWkJwX9C0J7tHurTD7ViL'
+p2218
+(dp2219
+g3
+S'Adele'
+p2220
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/7IWkJwX9C0J7tHurTD7ViL'
+p2221
+sg8
+S'When We Were Young'
+p2222
+ssS'2Oehrcv4Kov0SuIgWyQY9e'
+p2223
+(dp2224
+g3
+S'Imagine Dragons'
+p2225
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/2Oehrcv4Kov0SuIgWyQY9e'
+p2226
+sg8
+S'Demons'
+p2227
+ssS'14oOKFGuXu8DqvOe1W8vao'
+p2228
+(dp2229
+g3
+S'Katy Perry'
+p2230
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/14oOKFGuXu8DqvOe1W8vao'
+p2231
+sg8
+S'Bon App\xc3\xa9tit'
+p2232
+ssS'4BHSjbYylfOH5WAGusDyni'
+p2233
+(dp2234
+g3
+S'Kendrick Lamar'
+p2235
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4BHSjbYylfOH5WAGusDyni'
+p2236
+sg8
+S'YAH.'
+p2237
+ssS'66gNNRsKkmECPQUrvpMQtS'
+p2238
+(dp2239
+g3
+S'DJ Jonathan'
+p2240
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/66gNNRsKkmECPQUrvpMQtS'
+p2241
+sg8
+S'El Farsante'
+p2242
+ssS'1louJpMmzEicAn7lzDalPW'
+p2243
+(dp2244
+g3
+S'Cheat Codes'
+p2245
+sg5
+I18
+sg6
+S'https://open.spotify.com/track/1louJpMmzEicAn7lzDalPW'
+p2246
+sg8
+S'No Promises (feat. Demi Lovato)'
+p2247
+ssS'6TIU9Ehmi6dMzZK73Ym4yj'
+p2248
+(dp2249
+g3
+S'Ed Sheeran'
+p2250
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/6TIU9Ehmi6dMzZK73Ym4yj'
+p2251
+sg8
+S'Save Myself'
+p2252
+ssS'2pJZ1v8HezrAoZ0Fhzby92'
+p2253
+(dp2254
+g3
+S'Ed Sheeran'
+p2255
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/2pJZ1v8HezrAoZ0Fhzby92'
+p2256
+sg8
+S'What Do I Know?'
+p2257
+ssS'0KKkJNfGyhkQ5aFogxQAPU'
+p2258
+(dp2259
+g3
+S'Bruno Mars'
+p2260
+sg5
+I35
+sg6
+S'https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU'
+p2261
+sg8
+S"That's What I Like"
+p2262
+ssS'494OU6M7NOf4ICYb4zWCf5'
+p2263
+(dp2264
+g3
+S'Maroon 5'
+p2265
+sg5
+I41
+sg6
+S'https://open.spotify.com/track/494OU6M7NOf4ICYb4zWCf5'
+p2266
+sg8
+S'Sugar'
+p2267
+ssS'0gbBzIqrECJOEPvQJIBFs5'
+p2268
+(dp2269
+g3
+S'Lorde'
+p2270
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/0gbBzIqrECJOEPvQJIBFs5'
+p2271
+sg8
+S'Green Light'
+p2272
+ssS'3VClLWqNn80Llv0PJOsKgr'
+p2273
+(dp2274
+g3
+S'Nacho'
+p2275
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/3VClLWqNn80Llv0PJOsKgr'
+p2276
+sg8
+S'B\xc3\xa1ilame - Remix'
+p2277
+ssS'29csiYMOfBmLmGwxmISrMy'
+p2278
+(dp2279
+g3
+S'Ricardo Arjona'
+p2280
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/29csiYMOfBmLmGwxmISrMy'
+p2281
+sg8
+S'Fuiste T\xc3\xba'
+p2282
+ssS'3kg9JvQe6QJFKUQCN1oIQz'
+p2283
+(dp2284
+g3
+S'Feid'
+p2285
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/3kg9JvQe6QJFKUQCN1oIQz'
+p2286
+sg8
+S'Que Raro'
+p2287
+ssS'5Jt4zdXTd9y1zxihiNYQI1'
+p2288
+(dp2289
+g3
+S'Farruko'
+p2290
+sg5
+I18
+sg6
+S'https://open.spotify.com/track/5Jt4zdXTd9y1zxihiNYQI1'
+p2291
+sg8
+S'Obsesionado'
+p2292
+ssS'5Ua3GXyHwiSfpNTMjq6m2z'
+p2293
+(dp2294
+g3
+S'Little Mix'
+p2295
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/5Ua3GXyHwiSfpNTMjq6m2z'
+p2296
+sg8
+S'Touch'
+p2297
+ssS'6i0V12jOa3mr6uu4WYhUBr'
+p2298
+(dp2299
+g3
+S'Twenty One Pilots'
+p2300
+sg5
+I38
+sg6
+S'https://open.spotify.com/track/6i0V12jOa3mr6uu4WYhUBr'
+p2301
+sg8
+S'Heathens'
+p2302
+ssS'48UPSzbZjgc449aqz8bxox'
+p2303
+(dp2304
+g3
+S'Red Hot Chili Peppers'
+p2305
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/48UPSzbZjgc449aqz8bxox'
+p2306
+sg8
+S'Californication'
+p2307
+ssS'0SuG9kyzGRpDqrCWtgD6Lq'
+p2308
+(dp2309
+g3
+S'Ed Sheeran'
+p2310
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0SuG9kyzGRpDqrCWtgD6Lq'
+p2311
+sg8
+S'Give Me Love'
+p2312
+ssS'5masKPHeAOVNgxdLebIcK7'
+p2313
+(dp2314
+g3
+S'Kygo'
+p2315
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/5masKPHeAOVNgxdLebIcK7'
+p2316
+sg8
+S'Stole the Show'
+p2317
+ssS'4XCQtUoRSh22Ep18ULmDnT'
+p2318
+(dp2319
+g3
+S'De La Ghetto'
+p2320
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/4XCQtUoRSh22Ep18ULmDnT'
+p2321
+sg8
+S'La Formula (feat. Chris Jeday)'
+p2322
+ssS'0N4jis8aNOjiIfkBl4mGje'
+p2323
+(dp2324
+g3
+S'R\xc3\xado Roma'
+p2325
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/0N4jis8aNOjiIfkBl4mGje'
+p2326
+sg8
+S'Princesa'
+p2327
+ssS'0lPXFrKyl8HkdQ2E6NmNja'
+p2328
+(dp2329
+g3
+S'Reik'
+p2330
+sg5
+I36
+sg6
+S'https://open.spotify.com/track/0lPXFrKyl8HkdQ2E6NmNja'
+p2331
+sg8
+S'Ya Me Enter\xc3\xa9'
+p2332
+ssS'693iqPOQvhI7PobtR8CC8v'
+p2333
+(dp2334
+g3
+S'J Balvin'
+p2335
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/693iqPOQvhI7PobtR8CC8v'
+p2336
+sg8
+S'Bonita'
+p2337
+ssS'6fxVffaTuwjgEk5h9QyRjy'
+p2338
+(dp2339
+g3
+S'Ed Sheeran'
+p2340
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/6fxVffaTuwjgEk5h9QyRjy'
+p2341
+sg8
+S'Photograph'
+p2342
+ssS'2kVHAQKVtczchKctctzbtK'
+p2343
+(dp2344
+g3
+S'Katy Perry'
+p2345
+sg5
+I19
+sg6
+S'https://open.spotify.com/track/2kVHAQKVtczchKctctzbtK'
+p2346
+sg8
+S'Swish Swish'
+p2347
+ssS'1VdZ0vKfR5jneCmWIUAMxK'
+p2348
+(dp2349
+g3
+S'Ed Sheeran'
+p2350
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/1VdZ0vKfR5jneCmWIUAMxK'
+p2351
+sg8
+S'The A Team'
+p2352
+ssS'6nxQdXa1uAL0rY72wPZu89'
+p2353
+(dp2354
+g3
+S'John Legend'
+p2355
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/6nxQdXa1uAL0rY72wPZu89'
+p2356
+sg8
+S'Love Me Now'
+p2357
+ssS'6kex4EBAj0WHXDKZMEJaaF'
+p2358
+(dp2359
+g3
+S'Jason Derulo'
+p2360
+sg5
+I31
+sg6
+S'https://open.spotify.com/track/6kex4EBAj0WHXDKZMEJaaF'
+p2361
+sg8
+S'Swalla (feat. Nicki Minaj & Ty Dolla $ign)'
+p2362
+ssS'79Bm3DTEYuQsDpUVHbSRsL'
+p2363
+(dp2364
+g3
+S'Sofia Reyes'
+p2365
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/79Bm3DTEYuQsDpUVHbSRsL'
+p2366
+sg8
+S'Llegaste t\xc3\xba (feat. Reykon)'
+p2367
+ssS'1Slwb6dOYkBlWal1PGtnNg'
+p2368
+(dp2369
+g3
+S'Ed Sheeran'
+p2370
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/1Slwb6dOYkBlWal1PGtnNg'
+p2371
+sg8
+S'Thinking Out Loud'
+p2372
+ssS'1VoHrSS3QQ6TbpabLrFiYb'
+p2373
+(dp2374
+g3
+S'Alvaro Soler'
+p2375
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/1VoHrSS3QQ6TbpabLrFiYb'
+p2376
+sg8
+S'Sofia'
+p2377
+ssS'0FJoj1lLkUDPH4dazfrBOz'
+p2378
+(dp2379
+g3
+S'Ricardo Arjona'
+p2380
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0FJoj1lLkUDPH4dazfrBOz'
+p2381
+sg8
+S'Nada Es Como T\xc3\xba - Ac\xc3\xbastico'
+p2382
+ssS'4iPV0gcc8keTFl6qxqP73M'
+p2383
+(dp2384
+g3
+S'CNCO'
+p2385
+sg5
+I14
+sg6
+S'https://open.spotify.com/track/4iPV0gcc8keTFl6qxqP73M'
+p2386
+sg8
+S'Quisiera'
+p2387
+ssS'7KXjTSCq5nL1LoYtL7XAwS'
+p2388
+(dp2389
+g3
+S'Kendrick Lamar'
+p2390
+sg5
+I28
+sg6
+S'https://open.spotify.com/track/7KXjTSCq5nL1LoYtL7XAwS'
+p2391
+sg8
+S'HUMBLE.'
+p2392
+ssS'7vldwy3gdhmPRKWSCi8H61'
+p2393
+(dp2394
+g3
+S'Justin Bieber'
+p2395
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/7vldwy3gdhmPRKWSCi8H61'
+p2396
+sg8
+S'The Feeling'
+p2397
+ssS'5MT96Zz0ymUJNm8obKZQr0'
+p2398
+(dp2399
+g3
+S'Bad Bunny'
+p2400
+sg5
+I35
+sg6
+S'https://open.spotify.com/track/5MT96Zz0ymUJNm8obKZQr0'
+p2401
+sg8
+S'Soy Peor'
+p2402
+ssS'6Na5uKk5SsqZimk0hAWo8y'
+p2403
+(dp2404
+g3
+S'Drake'
+p2405
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/6Na5uKk5SsqZimk0hAWo8y'
+p2406
+sg8
+S'Signs'
+p2407
+ssS'6IWsTPv5O1O58zsRyrkGlO'
+p2408
+(dp2409
+g3
+S'Eshconinco'
+p2410
+sg5
+I4
+sg6
+S'https://open.spotify.com/track/6IWsTPv5O1O58zsRyrkGlO'
+p2411
+sg8
+S'When You Dance (feat. Kalado)'
+p2412
+ssS'7BwJtE8KSbCQKOCTIAY3jX'
+p2413
+(dp2414
+g3
+S'Carlos Baute'
+p2415
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/7BwJtE8KSbCQKOCTIAY3jX'
+p2416
+sg8
+S'Ando buscando'
+p2417
+ssS'0Szp49tpFasIjX04Mcsydp'
+p2418
+(dp2419
+g3
+S'Ozuna'
+p2420
+sg5
+I17
+sg6
+S'https://open.spotify.com/track/0Szp49tpFasIjX04Mcsydp'
+p2421
+sg8
+S'Tu Foto'
+p2422
+ssS'0n2bvWvMwr0gbjcuTm92eW'
+p2423
+(dp2424
+g3
+S'Lana Del Rey'
+p2425
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/0n2bvWvMwr0gbjcuTm92eW'
+p2426
+sg8
+S'Love'
+p2427
+ssS'3Lfiu5sZ4M4B6JaKMBc0FU'
+p2428
+(dp2429
+g3
+S'Ed Sheeran'
+p2430
+sg5
+I7
+sg6
+S'https://open.spotify.com/track/3Lfiu5sZ4M4B6JaKMBc0FU'
+p2431
+sg8
+S'Barcelona'
+p2432
+ssS'4kfm1uI9QGaoN9qm6CkAMn'
+p2433
+(dp2434
+g3
+S'Linkin Park'
+p2435
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/4kfm1uI9QGaoN9qm6CkAMn'
+p2436
+sg8
+S"What I've Done"
+p2437
+ssS'69bp2EbF7Q2rqc5N3ylezZ'
+p2438
+(dp2439
+g3
+S'Justin Bieber'
+p2440
+sg5
+I31
+sg6
+S'https://open.spotify.com/track/69bp2EbF7Q2rqc5N3ylezZ'
+p2441
+sg8
+S'Sorry'
+p2442
+ssS'2cnKEkpVUSV4wnjQiTWfH6'
+p2443
+(dp2444
+g3
+S'Wisin'
+p2445
+sg5
+I28
+sg6
+S'https://open.spotify.com/track/2cnKEkpVUSV4wnjQiTWfH6'
+p2446
+sg8
+S'Esc\xc3\xa1pate Conmigo'
+p2447
+ssS'6qDF4wWL49CAVbgT7yuHl8'
+p2448
+(dp2449
+g3
+S'J Balvin'
+p2450
+sg5
+I37
+sg6
+S'https://open.spotify.com/track/6qDF4wWL49CAVbgT7yuHl8'
+p2451
+sg8
+S'Sigo Extra\xc3\xb1\xc3\xa1ndote'
+p2452
+ssS'2VRssqds7rRNb4eaG9FaY8'
+p2453
+(dp2454
+g3
+S'Jencarlos'
+p2455
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/2VRssqds7rRNb4eaG9FaY8'
+p2456
+sg8
+S'Pa Que Me Invitan - Spanglish Version'
+p2457
+ssS'4iLqG9SeJSnt0cSPICSjxv'
+p2458
+(dp2459
+g3
+S'Charlie Puth'
+p2460
+sg5
+I24
+sg6
+S'https://open.spotify.com/track/4iLqG9SeJSnt0cSPICSjxv'
+p2461
+sg8
+S'Attention'
+p2462
+ssS'15dnkAHcHC0vrIUlbiPiqU'
+p2463
+(dp2464
+g3
+S'Imagine Dragons'
+p2465
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/15dnkAHcHC0vrIUlbiPiqU'
+p2466
+sg8
+S'I Don\xe2\x80\x99t Know Why'
+p2467
+ssS'6RUKPb4LETWmmr3iAEQktW'
+p2468
+(dp2469
+g3
+S'The Chainsmokers'
+p2470
+sg5
+I33
+sg6
+S'https://open.spotify.com/track/6RUKPb4LETWmmr3iAEQktW'
+p2471
+sg8
+S'Something Just Like This'
+p2472
+ssS'3FQCJI2t5LTbsRPfYVBSVB'
+p2473
+(dp2474
+g3
+S'Linkin Park'
+p2475
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/3FQCJI2t5LTbsRPfYVBSVB'
+p2476
+sg8
+S'Battle Symphony'
+p2477
+ssS'0MIcPSq9n2z5H8TAfEstri'
+p2478
+(dp2479
+g3
+S'Ozuna'
+p2480
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/0MIcPSq9n2z5H8TAfEstri'
+p2481
+sg8
+S'Quiero Repetir'
+p2482
+ssS'7qCAVkHWZkF44OzOUKf8Cr'
+p2483
+(dp2484
+g3
+S'Nicky Jam'
+p2485
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/7qCAVkHWZkF44OzOUKf8Cr'
+p2486
+sg8
+S'El Perd\xc3\xb3n'
+p2487
+ssS'1xznGGDReH1oQq0xzbwXa3'
+p2488
+(dp2489
+g3
+S'Drake'
+p2490
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/1xznGGDReH1oQq0xzbwXa3'
+p2491
+sg8
+S'One Dance'
+p2492
+ssS'5GXAXm5YOmYT0kL5jHvYBt'
+p2493
+(dp2494
+g3
+S'The Weeknd'
+p2495
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5GXAXm5YOmYT0kL5jHvYBt'
+p2496
+sg8
+S'I Feel It Coming'
+p2497
+ssS'2habSXqcJGExM6JJyskY7O'
+p2498
+(dp2499
+g3
+S'Miley Cyrus'
+p2500
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/2habSXqcJGExM6JJyskY7O'
+p2501
+sg8
+S'Malibu'
+p2502
+ssS'0lMbuWUpfTWhEmOKxppEau'
+p2503
+(dp2504
+g3
+S'Calvin Harris'
+p2505
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/0lMbuWUpfTWhEmOKxppEau'
+p2506
+sg8
+S'Rollin'
+p2507
+ssS'3cFsmM51N5zMAuu1nNY4Tw'
+p2508
+(dp2509
+g3
+S'Sean Paul'
+p2510
+sg5
+I39
+sg6
+S'https://open.spotify.com/track/3cFsmM51N5zMAuu1nNY4Tw'
+p2511
+sg8
+S'No Lie'
+p2512
+ssS'51ChrwmUPDJvedPQnIU8Ls'
+p2513
+(dp2514
+g3
+S'Ed Sheeran'
+p2515
+sg5
+I29
+sg6
+S'https://open.spotify.com/track/51ChrwmUPDJvedPQnIU8Ls'
+p2516
+sg8
+S'Dive'
+p2517
+ssS'6jA8HL9i4QGzsj6fjoxp8Y'
+p2518
+(dp2519
+g3
+S'Martin Garrix'
+p2520
+sg5
+I20
+sg6
+S'https://open.spotify.com/track/6jA8HL9i4QGzsj6fjoxp8Y'
+p2521
+sg8
+S'There for You'
+p2522
+ssS'7dxGZfWqbwSMxfNuNZR6TD'
+p2523
+(dp2524
+g3
+S'Eshconinco'
+p2525
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/7dxGZfWqbwSMxfNuNZR6TD'
+p2526
+sg8
+S'Bruk It Dung'
+p2527
+ssS'42MoYJb42qprlpJU0OEhAT'
+p2528
+(dp2529
+g3
+S'Jencarlos'
+p2530
+sg5
+I9
+sg6
+S'https://open.spotify.com/track/42MoYJb42qprlpJU0OEhAT'
+p2531
+sg8
+S'Dure Dure'
+p2532
+ssS'1CUVN2kn7mW5FjkqXTR2W1'
+p2533
+(dp2534
+g3
+S'Jonas Blue'
+p2535
+sg5
+I27
+sg6
+S'https://open.spotify.com/track/1CUVN2kn7mW5FjkqXTR2W1'
+p2536
+sg8
+S'Perfect Strangers'
+p2537
+ssS'4C1Smq2t3MVOPzsUPWW0oX'
+p2538
+(dp2539
+g3
+S'Vybz Kartel'
+p2540
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/4C1Smq2t3MVOPzsUPWW0oX'
+p2541
+sg8
+S'Fever'
+p2542
+ssS'0SGkqnVQo9KPytSri1H6cF'
+p2543
+(dp2544
+g3
+S'Big Sean'
+p2545
+sg5
+I6
+sg6
+S'https://open.spotify.com/track/0SGkqnVQo9KPytSri1H6cF'
+p2546
+sg8
+S'Bounce Back'
+p2547
+ssS'7nKBxz47S9SD79N086fuhn'
+p2548
+(dp2549
+g3
+S'Enrique Iglesias'
+p2550
+sg5
+I33
+sg6
+S'https://open.spotify.com/track/7nKBxz47S9SD79N086fuhn'
+p2551
+sg8
+S'SUBEME LA RADIO'
+p2552
+ssS'27SdWb2rFzO6GWiYDBTD9j'
+p2553
+(dp2554
+g3
+S'Sia'
+p2555
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/27SdWb2rFzO6GWiYDBTD9j'
+p2556
+sg8
+S'Cheap Thrills'
+p2557
+ssS'6PJ8FF6UR8FZXfEvpHkIVN'
+p2558
+(dp2559
+g3
+S'Ed Sheeran'
+p2560
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/6PJ8FF6UR8FZXfEvpHkIVN'
+p2561
+sg8
+S'How Would You Feel (Paean)'
+p2562
+ssS'3hB5DgAiMAQ4DzYbsMq1IT'
+p2563
+(dp2564
+g3
+S'Justin Bieber'
+p2565
+sg5
+I39
+sg6
+S'https://open.spotify.com/track/3hB5DgAiMAQ4DzYbsMq1IT'
+p2566
+sg8
+S'Love Yourself'
+p2567
+ssS'5ndfVSDyPq90jaIUhNPeby'
+p2568
+(dp2569
+g3
+S'Katy Perry'
+p2570
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/5ndfVSDyPq90jaIUhNPeby'
+p2571
+sg8
+S'Chained To The Rhythm'
+p2572
+ssS'0mwPE0lPOgnWf2bo14xedJ'
+p2573
+(dp2574
+g3
+S'Juanes'
+p2575
+sg5
+I23
+sg6
+S'https://open.spotify.com/track/0mwPE0lPOgnWf2bo14xedJ'
+p2576
+sg8
+S'Fuego'
+p2577
+ssS'5uCax9HTNlzGybIStD3vDh'
+p2578
+(dp2579
+g3
+S'James Arthur'
+p2580
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh'
+p2581
+sg8
+S"Say You Won't Let Go"
+p2582
+ssS'7qiZfU4dY1lWllzX7mPBI3'
+p2583
+(dp2584
+g3
+S'Ed Sheeran'
+p2585
+sg5
+I40
+sg6
+S'https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3'
+p2586
+sg8
+S'Shape of You'
+p2587
+ssS'0wfbD5rAksdXUzRvMfM3x5'
+p2588
+(dp2589
+g3
+S'The Chainsmokers'
+p2590
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/0wfbD5rAksdXUzRvMfM3x5'
+p2591
+sg8
+S'The One'
+p2592
+ssS'2fQrGHiQOvpL9UgPvtYy6G'
+p2593
+(dp2594
+g3
+S'21 Savage'
+p2595
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/2fQrGHiQOvpL9UgPvtYy6G'
+p2596
+sg8
+S'Bank Account'
+p2597
+ssS'1F2HXIJrE2Xn81OzT2zZvW'
+p2598
+(dp2599
+g3
+S'French Montana'
+p2600
+sg5
+I10
+sg6
+S'https://open.spotify.com/track/1F2HXIJrE2Xn81OzT2zZvW'
+p2601
+sg8
+S'Unforgettable'
+p2602
+ssS'78rIJddV4X0HkNAInEcYde'
+p2603
+(dp2604
+g3
+S'Starley'
+p2605
+sg5
+I22
+sg6
+S'https://open.spotify.com/track/78rIJddV4X0HkNAInEcYde'
+p2606
+sg8
+S'Call On Me - Ryan Riback Extended Remix'
+p2607
+ssS'7o2CTH4ctstm8TNelqjb51'
+p2608
+(dp2609
+g3
+S"Guns N' Roses"
+p2610
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/7o2CTH4ctstm8TNelqjb51'
+p2611
+sg8
+S"Sweet Child O' Mine"
+p2612
+ssS'05KOgYg8PGeJyyWBPi5ja8'
+p2613
+(dp2614
+g3
+S'Drake'
+p2615
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/05KOgYg8PGeJyyWBPi5ja8'
+p2616
+sg8
+S'Free Smoke'
+p2617
+ssS'6DUdDIRgLqCGq1DwkNWQTN'
+p2618
+(dp2619
+g3
+S'Maluma'
+p2620
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/6DUdDIRgLqCGq1DwkNWQTN'
+p2621
+sg8
+S'Borro Cassette'
+p2622
+ssS'167NczpNbRF7oWakJaY3Hh'
+p2623
+(dp2624
+g3
+S'Niall Horan'
+p2625
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/167NczpNbRF7oWakJaY3Hh'
+p2626
+sg8
+S'Slow Hands'
+p2627
+ssS'1LszjjoVwDDZcWUQbzeDLG'
+p2628
+(dp2629
+g3
+S'Yandel'
+p2630
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/1LszjjoVwDDZcWUQbzeDLG'
+p2631
+sg8
+S'Expl\xc3\xadcale'
+p2632
+ssS'5mey7CLLuFToM2P68Qu1gF'
+p2633
+(dp2634
+g3
+S'Chino & Nacho'
+p2635
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/5mey7CLLuFToM2P68Qu1gF'
+p2636
+sg8
+S'Andas En Mi Cabeza'
+p2637
+ssS'32lm3769IRfcnrQV11LO4E'
+p2638
+(dp2639
+g3
+S'Enrique Iglesias'
+p2640
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/32lm3769IRfcnrQV11LO4E'
+p2641
+sg8
+S'Bailando - Spanish Version'
+p2642
+ssS'09mhA1SJjMHniZPF4Hcihn'
+p2643
+(dp2644
+g3
+S'Justin Bieber'
+p2645
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/09mhA1SJjMHniZPF4Hcihn'
+p2646
+sg8
+S'Company'
+p2647
+ssS'7yHEDfrJNd0zWOfXwydNH0'
+p2648
+(dp2649
+g3
+S'Ariana Grande'
+p2650
+sg5
+I30
+sg6
+S'https://open.spotify.com/track/7yHEDfrJNd0zWOfXwydNH0'
+p2651
+sg8
+S'Into You'
+p2652
+ssS'0LtVx5vsq9nfpGsWgjUin6'
+p2653
+(dp2654
+g3
+S'Ryan Gosling'
+p2655
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0LtVx5vsq9nfpGsWgjUin6'
+p2656
+sg8
+S'City Of Stars - From La La Land Soundtrack'
+p2657
+ssS'0k2GOhqsrxDTAbFFSdNJjT'
+p2658
+(dp2659
+g3
+S'Sean Paul'
+p2660
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/0k2GOhqsrxDTAbFFSdNJjT'
+p2661
+sg8
+S'Temperature'
+p2662
+ssS'5Db9VIdDsN5yu3Eu7CT0i4'
+p2663
+(dp2664
+g3
+S'Sam Smith'
+p2665
+sg5
+I34
+sg6
+S'https://open.spotify.com/track/5Db9VIdDsN5yu3Eu7CT0i4'
+p2666
+sg8
+S'Stay With Me'
+p2667
+ssS'626rYyBfeAeleh1F5t4B70'
+p2668
+(dp2669
+g3
+S'Revol'
+p2670
+sg5
+I24
+sg6
+S'https://open.spotify.com/track/626rYyBfeAeleh1F5t4B70'
+p2671
+sg8
+S'Caile (feat. Zion & De La Ghetto)'
+p2672
+ssS'11KJSRSgaDxqydKYiD2Jew'
+p2673
+(dp2674
+g3
+S'Drake'
+p2675
+sg5
+I13
+sg6
+S'https://open.spotify.com/track/11KJSRSgaDxqydKYiD2Jew'
+p2676
+sg8
+S'Too Good'
+p2677
+ssS'3zoYkqS4y2BsGVShPL2nTE'
+p2678
+(dp2679
+g3
+S'CNCO'
+p2680
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/3zoYkqS4y2BsGVShPL2nTE'
+p2681
+sg8
+S'Reggaet\xc3\xb3n Lento (Remix) [CNCO & Little Mix]'
+p2682
+ssS'2xt2piJx6jlFkjS77YiqpL'
+p2683
+(dp2684
+g3
+S'Audioslave'
+p2685
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/2xt2piJx6jlFkjS77YiqpL'
+p2686
+sg8
+S'Like a Stone'
+p2687
+ssS'1yNyoWWWikbLhwIGWjZuDW'
+p2688
+(dp2689
+g3
+S'The Vamps'
+p2690
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/1yNyoWWWikbLhwIGWjZuDW'
+p2691
+sg8
+S'All Night'
+p2692
+ssS'5xMzazov0IHYllrc8U2K6F'
+p2693
+(dp2694
+g3
+S'Jennifer Lopez'
+p2695
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/5xMzazov0IHYllrc8U2K6F'
+p2696
+sg8
+S'Ni T\xc3\xba Ni Yo'
+p2697
+ssS'1iEwyiSLAunPR6uouANE0O'
+p2698
+(dp2699
+g3
+S'Maluma'
+p2700
+sg5
+I11
+sg6
+S'https://open.spotify.com/track/1iEwyiSLAunPR6uouANE0O'
+p2701
+sg8
+S'El Perdedor'
+p2702
+ssS'4vb4mFvYsr2h6enhjJsq9Y'
+p2703
+(dp2704
+g3
+S'Adele'
+p2705
+sg5
+I16
+sg6
+S'https://open.spotify.com/track/4vb4mFvYsr2h6enhjJsq9Y'
+p2706
+sg8
+S'Water Under the Bridge'
+p2707
+ssS'17Fd6Yb7mSbinKG8LoWfFl'
+p2708
+(dp2709
+g3
+S'Mike Posner'
+p2710
+sg5
+I42
+sg6
+S'https://open.spotify.com/track/17Fd6Yb7mSbinKG8LoWfFl'
+p2711
+sg8
+S'I Took A Pill In Ibiza - Seeb Remix'
+p2712
+ssS'4tCtwWceOPWzenK2HAIJSb'
+p2713
+(dp2714
+g3
+S'Fifth Harmony'
+p2715
+sg5
+I25
+sg6
+S'https://open.spotify.com/track/4tCtwWceOPWzenK2HAIJSb'
+p2716
+sg8
+S'Work from Home'
+p2717
+ssS'6RFJxVj9tL0Xrd3Jve4Vo4'
+p2718
+(dp2719
+g3
+S'Romeo Santos'
+p2720
+sg5
+I21
+sg6
+S'https://open.spotify.com/track/6RFJxVj9tL0Xrd3Jve4Vo4'
+p2721
+sg8
+S'H\xc3\xa9roe Favorito'
+p2722
+ssS'6XOYVSmNDjKUNMXooU4s4z'
+p2723
+(dp2724
+g3
+S'OneRepublic'
+p2725
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/6XOYVSmNDjKUNMXooU4s4z'
+p2726
+sg8
+S'No Vacancy'
+p2727
+ssS'7hydwXc3IVJIItIif6ZuLH'
+p2728
+(dp2729
+g3
+S'Ricardo Arjona'
+p2730
+sg5
+I8
+sg6
+S'https://open.spotify.com/track/7hydwXc3IVJIItIif6ZuLH'
+p2731
+sg8
+S'Ella'
+p2732
+ssS'5g7sDjBhZ4I3gcFIpkrLuI'
+p2733
+(dp2734
+g3
+S'Bruno Mars'
+p2735
+sg5
+I5
+sg6
+S'https://open.spotify.com/track/5g7sDjBhZ4I3gcFIpkrLuI'
+p2736
+sg8
+S'Locked Out Of Heaven'
+p2737
+ssS'22mek4IiqubGD9ctzxc69s'
+p2738
+(dp2739
+g3
+S'Calvin Harris'
+p2740
+sg5
+I3
+sg6
+S'https://open.spotify.com/track/22mek4IiqubGD9ctzxc69s'
+p2741
+sg8
+S'How Deep Is Your Love'
+p2742
+ssS'6PGoSes0D9eUDeeAafB2As'
+p2743
+(dp2744
+g3
+S'Kendrick Lamar'
+p2745
+sg5
+I1
+sg6
+S'https://open.spotify.com/track/6PGoSes0D9eUDeeAafB2As'
+p2746
+sg8
+S'LOVE. FEAT. ZACARI.'
+p2747
+ssS'1lItf5ZXJc1by9SbPeljFd'
+p2748
+(dp2749
+g3
+S'Zay Hilfigerrr'
+p2750
+sg5
+I2
+sg6
+S'https://open.spotify.com/track/1lItf5ZXJc1by9SbPeljFd'
+p2751
+sg8
+S'Juju On That Beat (TZ Anthem)'
+p2752
+ssS'5tz69p7tJuGPeMGwNTxYuV'
+p2753
+(dp2754
+g3
+S'Logic'
+p2755
+sg5
+I12
+sg6
+S'https://open.spotify.com/track/5tz69p7tJuGPeMGwNTxYuV'
+p2756
+sg8
+S'1-800-273-8255'
+p2757
+ss.

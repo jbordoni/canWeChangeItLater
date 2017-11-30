@@ -74,7 +74,7 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 			//console.log(key);
 			//return
 			let songsList = songsListData[key];
-			console.log(songsList.length);
+			//console.log(songsList.length);
 			let values = [];
 			let valueSum = 0;
 			for(var i=0; i<songsList.length; i++){
@@ -182,6 +182,9 @@ function showBubbleMap(rawdata, songsListData, audioFeaturesData){
 	})
 	.on('click',function(d,i){
 		//call scatterplot
+		globalCountryCode = d.Code;
+		audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
+    		"xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
 		});
 }
 
