@@ -28,11 +28,20 @@ function show(flag)
     bubbleChart = d3.select('#divContainer').select('#bubbleMap').append('svg').attr("height", height).attr("width", width);
 	bubbleMap = bubbleChart.append('g');
 
-	d3.csv('data/bubbleMapCountryData.csv', showBubbleMap);
+	d3.csv('data/bubbleMapCountryData.csv', initiateShowBubbleMap);
 }
 
-function showBubbleMap(rawdata)
+function initiateShowBubbleMap(rawdata)
 {
+
+	d3.json("datasets/songs-country/songsListPerCountry.json", function(error, songsListData){                  
+              d3.json("datasets/audioFeaturesHashMap.json", function(error2, audioFeaturesData){
+              	//console.log(weeksData==null);
+              	//console.log(audioFeaturesData==null);
+              	//audioFeaturesScatter.populateDiv(divID, weeksData, audioFeaturesData, xAxisProperty, xAxisPropertyText,  colorProperty, colorPropertyText);
+              	showBubbleMap(rawdata, songsListData, audioFeaturesData);
+              })
+        });
 	var selectedFeature = document.getElementById('dropDownAudioFeatures').value
 	console.log(selectedFeature)
    
