@@ -55,6 +55,17 @@ body {
   font-size:80%;
 }
 
+.bubbleMapTooltip {
+
+	position: absolute;
+	width: 20%;
+	height: 5%;
+	pointer-events: none;
+	background-color: #FFE900;
+	font-size:80%;
+
+}
+
 .axisLabelScatter {
 }
 

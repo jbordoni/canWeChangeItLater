@@ -34,7 +34,7 @@ function show(flag)
 function initiateShowBubbleMap(rawdata)
 {
 
-	d3.json("datasets/songs-country/songsListPerCountry.json", function(error, songsListData){                  
+	d3.json("datasets/songs-country/songListPerCountry-Last.json", function(error, songsListData){                  
               d3.json("datasets/audioFeaturesHashMap.json", function(error2, audioFeaturesData){
               	//console.log(weeksData==null);
               	//console.log(audioFeaturesData==null);
@@ -42,8 +42,43 @@ function initiateShowBubbleMap(rawdata)
               	showBubbleMap(rawdata, songsListData, audioFeaturesData);
               })
         });
-	var selectedFeature = document.getElementById('dropDownAudioFeatures').value
-	console.log(selectedFeature)
+}
+
+function showBubbleMap(rawdata, songsListData, audioFeaturesData){
+	var selectedFeature = document.getElementById('dropDownAudioFeatures').value;
+	console.log(selectedFeature);
+
+	//console.log()
+
+	countryValues = {};
+	countryValuesList = [];
+
+	for(var key in songsListData){
+		if(songsListData.hasOwnProperty(key)){
+			//console.log(key);
+			//return
+			let songsList = songsListData[key];
+			console.log(songsList.length);
+			let values = [];
+			let valueSum = 0;
+			for(var i=0; i<songsList.length; i++){
+				let songId = songsList[i];
+				if(songId!=null && songId!=undefined && songId in audioFeaturesData){
+					//console.log(songId);
+					if(audioFeaturesData[songId][selectedFeature]!=null){
+						values.push(audioFeaturesData[songId][selectedFeature]);
+						valueSum+=audioFeaturesData[songId][selectedFeature];
+					}
+				}
+				
+			}
+			let valueMean = valueSum/values.length; 
+
+			countryValues[key] = 1000*valueMean;
+			countryValuesList.push(1000*valueMean);
+
+		}
+	}
    
     var initialScaleDataX =[]
     var initialScaleDataY = []
@@ -54,8 +89,8 @@ function initiateShowBubbleMap(rawdata)
         initialScaleDataY[i] = (rawdata[i].Y)*1000
     }
    
-   	xpadding = 0.01*width;
-   	ypadding = 0.01*height;
+   	xpadding = 0.01*height;
+   	ypadding = 0.05*width;
 
  	var newScaledDataX = [];
  	var newScaledDataY = [];
@@ -68,14 +103,18 @@ function initiateShowBubbleMap(rawdata)
 
  	var linearScaleX = d3.scaleLinear()
                             .domain([minDataPointX,maxDataPointX])
-                            .range([0+xpadding,500-xpadding]);
+                            .range([0 + xpadding,500-xpadding]);
 
     var linearScaleY = d3.scaleLinear()
                             .domain([minDataPointY,maxDataPointY])
-                            .range([0+ypadding,500-ypadding]);
+                            .range([0 + ypadding,500-ypadding]);
+
+    var radiusScale = d3.scaleLinear()
+    					.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
+    					.range([10, 50]);
     
     var tooltip = d3.select('body').append("div")	
-		    .attr("class", "scatterTooltip")				
+		    .attr("class", "bubbleMapTooltip")				
 		    .style("opacity", 0);
    
 
@@ -87,18 +126,21 @@ function initiateShowBubbleMap(rawdata)
 	.attr("stroke", "yellow")
     .attr("fill", "gray")
     .attr("r",function(d){ 
-    	if (selectedFeature == "Valence")
+    	//console.log(d.Code);
+    	//console.log(countryValues[d.Code]);
+    	return radiusScale(countryValues[d.Code]);})
+    	/*if (selectedFeature == "valence")
     	{	
     		console.log(d.Valence)
     		return d.Valence;
     	}
-    	if (selectedFeature == "Energy")
+    	if (selectedFeature == "energy")
     	{
     		console.log(d.Energy)
 			return d.Energy;
 		}
 		else 
-			return 0})
+			return 0})*/
 	.attr("cy",function(d){return 500-linearScaleX((d.X) *1000)})
 	.attr("cx",function(d){return  linearScaleY((d.Y)*1000)})
 	.attr("text",function(d){return d.Country})
@@ -122,12 +164,5 @@ function initiateShowBubbleMap(rawdata)
 	.on('click',function(d,i){
 		//call scatterplot
 		});
-
-
-   
-
-	 
-
-
 }
 

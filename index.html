@@ -23,7 +23,6 @@
 
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript" src="d3/d3.js"></script>
-  <script type="text/javascript" src="js/bubbleMap.js"></script>
   <script type="text/javascript" src="d3/topojson/topojson.js"></script>
   <link rel="stylesheet" href="css/main.css">
 
@@ -43,8 +42,8 @@
       <div style="display: table-cell; width: 120;">
         <label for="dropDownAudioFeatures">Audio Features: </label>
         <select id="dropDownAudioFeatures" onchange="show(1)">
-          <option val="valence">Valence</option>
-          <option val="energy">Energy</option>
+          <option value="valence">Valence</option>
+          <option value="energy">Energy</option>
           <option value="liveness">Liveness</option>
           <option value="tempo">Tempo</option>
           <option value="speechiness">Speechiness</option>
@@ -96,6 +95,7 @@
   <div id="countryListDiv"></div>
 </body>
 
+<script type="text/javascript" src="js/bubbleMap.js"></script>
 <script type="text/javascript" src="js/audioFeaturesScatter.js"></script>
 
 <script type="text/javascript">
