@@ -38,12 +38,25 @@
 }
 
 #bubbleMap{
-	height:50%;
+	/*height:50%;*/
+	height:10%;
 	width:80%;
 	margin-left: 10%;
 	text-align: center;
 	border-top: 7px solid yellow;
 	padding-top: 2%;
+
+
+}
+
+#LifeOfMusicLineChart{
+	height:40%;
+	width:80%;
+	margin-left: 10%;
+	text-align: center;
+	border-top: 7px solid yellow;
+	padding-top: 2%;
+
 
 
 }
