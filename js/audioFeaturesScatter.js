@@ -44,8 +44,8 @@
 
 		//set default
 		if(colorProperty==""){
-			colorProperty = "energy";
-			colorPropertyText = "Energy";
+			colorProperty = "none";
+			colorPropertyText = "None";
 		}
 
 		let songs = {}; 
@@ -84,7 +84,15 @@
 		//console.log(audioFeaturesData[xAxisProperty])
 		//console.log(audioFeaturesScatter[0]);
 
-		let countrySelectedText = countryCodeData[globalCountryCode];
+		let countrySelectedText="";
+		if(globalCountryCode=="Global"){
+			countrySelectedText = globalCountryCode
+		}
+		else
+		{
+			countrySelectedText = countryCodeData[globalCountryCode];
+	
+		}
 		console.log(countrySelectedText);
 
 		let computedData = [];
@@ -106,12 +114,18 @@
 				if(key in audioFeaturesData && key!=undefined && key!=null){
 					if(audioFeaturesData[key][xAxisProperty]!=null){
 						obj[xAxisProperty] = audioFeaturesData[key][xAxisProperty];
-						obj[colorProperty] = audioFeaturesData[key][colorProperty];
+						if(colorPropertyText!="None"){
+							obj[colorProperty] = audioFeaturesData[key][colorProperty];
+
+						}
 						computedData.push(obj);
 						xAxisPropertyValueArr.push(audioFeaturesData[key][xAxisProperty]*10000);
 						xAxisPropertyValueArrNotMultiplied.push(audioFeaturesData[key][xAxisProperty]);
 						yAxisPropertyValueArr.push(obj["weeksOnChart"]);
-						colorPropertyValueArr.push(obj[colorProperty]*1000)
+						if(colorPropertyText!="None"){
+							colorPropertyValueArr.push(obj[colorProperty]*1000)
+						}
+						
 						if(obj["weeksOnChart"]==0){
 							console.log(obj);
 						}
@@ -126,7 +140,7 @@
 
 		/*console.log(xAxisPropertyValueArr.length);
 		console.log(xAxisPropertyValueArrNotMultiplied.length);
-		console.log(computedData.length);*/
+		console.log(computedData.length);*/	
 
 
 		let div = document.getElementById(divID);
@@ -144,8 +158,8 @@
 		let xPadding = 0.1*divWidth; 
 		let yPadding = 0.1*divHeight; 
 
-		let svgWidth = divWidth - 0.1*divWidth; 
-		let svgHeight = divHeight - 0.1*divHeight; 
+		let svgWidth = divWidth - 0.2*divWidth; 
+		let svgHeight = divHeight - 0.25*divHeight; 
 
 
 		var xScale = d3.scaleLinear();
@@ -187,11 +201,14 @@
 		    .attr("class", "scatterTooltip")				
 		    .style("opacity", 0);
 
-		var colorScale = d3.scaleQuantize()
+		if(colorPropertyText!="None"){
+			var colorScale = d3.scaleQuantize()
 							.range(["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"])
 							.domain([d3.min(colorPropertyValueArr), d3.max(colorPropertyValueArr)]);
 		
 
+		}
+		
 		/*var colorScale = d3.scaleLinear()
 							.domain()*/
 
@@ -234,7 +251,13 @@
 			})
 			.attr("r", 5)
 			.style("fill", function(d){
-				return colorScale(d[colorProperty]*1000);
+				if(colorPropertyText!="None"){
+					return colorScale(d[colorProperty]*1000);
+				}
+				else{
+					return "orange";
+				}
+				
 			})
 			.on("mouseover", function(d){
 				//console.log("Mouseover");
