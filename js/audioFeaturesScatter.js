@@ -232,6 +232,7 @@
 		   .call(yAxis);
 
 		svg.append("text")
+			.attr("class", "axisLabelScatter")
 	      .attr("transform", "rotate(-90)")
 	      .attr("y", 0)
 	      .attr("x",0 - (svgHeight / 2))
