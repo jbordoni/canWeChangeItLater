@@ -1,15 +1,20 @@
 function initiateTimelineSlider(){
 
+	let value1 = 1;
+	let value2 = 12; 
+
 	//console.log("Setting up timeline");
 	$( "#slider-range" ).slider({
       orientation: "vertical",
       range: true,
       min:1, 
       max:12,
-      values: [1, 12], //set initial values
+      values: [value1, value2], //set initial values
       slide: function( event, ui ) {
         //$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
         console.log(ui.values[0], ui.values[1]);
+        showHighlightedValues(ui.values[0], ui.values[1]);
+        updateCountryData(ui.values[0], ui.values[1]);
       }
     });
 
@@ -30,6 +35,14 @@ function initiateTimelineSlider(){
     	monthSpan.innerHTML = monthText;
     	monthSpan.style.position = "absolute";
     	monthSpan.style.top = initialPos+"px"; 
+    	monthSpan.id = "monthLabel_"+(monthOptions.length-i);
+    	monthSpan.classList.add("monthLabel");
+    	if(monthOptions.length-i==value1 || monthOptions.length-i==value2){
+    		monthSpan.classList.add("bold");
+    	}
+    	else{
+    		monthSpan.classList.add("normal");
+    	}
 
     	let containerDiv = document.getElementById("sliderLabelsWrapper");
     	containerDiv.append(monthSpan);
@@ -39,5 +52,24 @@ function initiateTimelineSlider(){
     	initialPos+=spacing;
 
     }
+}
+
+function showHighlightedValues(value1, value2){
+
+	//$("span.bold")
+
+	$(".monthLabel").each(function(){
+		//console.log(this.id);
+		if(this.classList.contains("bold")){
+			this.classList.remove("bold");
+			this.classList.add("normal");
+		}
+	})
+
+	let spanReqd1 = document.getElementById("monthLabel_"+value1);
+	spanReqd1.classList.add("bold");
+
+	let spanReqd2 = document.getElementById("monthLabel_"+value2);
+	spanReqd2.classList.add("bold");
 
 }

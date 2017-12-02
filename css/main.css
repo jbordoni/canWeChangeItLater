@@ -34,6 +34,14 @@
 	float:right;
 }
 
+.bold{
+	font-weight: bold; 
+}
+
+.normal{
+	font-weight:none;
+}
+
 /*#countryListDiv {
 
 	float:right;
@@ -47,12 +55,21 @@
 }
 
 .ui-state-default, .ui-widget-content .ui-state-active {
-	background-color: #f6931c;
+	background-color: darkgray;
 	border:none;
 }
 
+/*.ui-slider .ui-slider-range .ui-corner-all .ui-widget-header{
+	background-color: #f6931c;
+}*/
+
+.ui-widget-header{
+	background: #f6931c;
+}
+
 .ui-slider .ui-slider-handle:focus { 
-	outline: none; 
+	outline:none;
+	outline-color: darkgray;
 }
 
 
