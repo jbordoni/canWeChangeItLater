@@ -36,21 +36,30 @@
 
   <div id="divContainer">
 
-    <div id = "bubbleMap">
+    <div id = "bubbleMapView">
       <!--<button id="show" onclick="show()">Show</button>-->
 
-      <div style="display: table-cell; width: 120;">
-        <label for="dropDownAudioFeatures">Audio Features: </label>
-        <select id="dropDownAudioFeatures" onchange="show(1)">
-          <option value="valence">Valence</option>
-          <option value="energy">Energy</option>
-          <option value="liveness">Liveness</option>
-          <option value="tempo">Tempo</option>
-          <option value="speechiness">Speechiness</option>
-          <option value="acousticness">Acousticness</option>
-          <option value="danceability">Danceability</option>
-          <option value="loudness">Loudness</option>
-        </select>
+      <div id="bubbleDropDownMenuContainer">
+        <div id="bubbleDropDown" style="display: table-cell; width: 120;">
+          <label for="dropDownAudioFeatures">Audio Features: </label>
+          <select id="dropDownAudioFeatures" onchange="show(1)">
+            <option value="valence">Valence</option>
+            <option value="energy">Energy</option>
+            <option value="liveness">Liveness</option>
+            <option value="tempo">Tempo</option>
+            <option value="speechiness">Speechiness</option>
+            <option value="acousticness">Acousticness</option>
+            <option value="danceability">Danceability</option>
+            <option value="loudness">Loudness</option>
+          </select>
+        </div>
+      </div>
+
+      <div id = "bubbleMapDiv_1" class="continentDiv"></div>
+      <div id = "bubbleMapDiv_2" class="continentDiv"></div>
+      <div id = "bubbleMapDiv_3" class="continentDiv"></div>
+      
+      <div id = "bubbleMap">  
       </div>
     
     </div>
@@ -94,7 +103,7 @@
       </div>
 
     </div>
-    
+
     <!--<div id = "LifeOfMusicLineChart">
          <button id="showLife" onclick="showLifeOfMusic()">Show Life Of Music</button>
     </div>-->

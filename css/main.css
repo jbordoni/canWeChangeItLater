@@ -11,8 +11,6 @@
 	width: 100%;
 	height:100%;
 	text-align: center;
-
-
 }
 
 #countryListDiv {
@@ -23,7 +21,7 @@
 
 }
 
-#audioFeaturesScatterDiv, #bubbleMap{
+#audioFeaturesScatterDiv, #bubbleMapView{
 	background: white;
 }
 
@@ -37,7 +35,7 @@
 	margin-left: 10%
 }
 
-#bubbleMap{
+#bubbleMapView{
 	/*height:50%;*/
 	height:50%;
 	width:80%;
@@ -45,6 +43,23 @@
 	text-align: center;
 	border-top: 7px solid yellow;
 	padding-top: 2%;
+	position: relative;
+}
+
+#bubbleMap { 
+
+	height: 80%;
+	width:100%;
+	bottom:0px;
+	position:absolute;
+}
+
+.continentDiv {
+	display:inline-block;
+	width:32%;
+	height:80%;
+	bottom:0px;
+	margin-top:2%;
 }
 
 .dropdownMenuContainer { 
@@ -52,6 +67,19 @@
 	margin-left:10%;
 	width:100%;
 }
+
+#bubbleDropDown{
+	margin-left:10%;
+	position: absolute;
+}
+
+/*#bubbleDropDownMenuContainer {
+	position:absolute;
+	top:0px;
+	height:5%;
+	float:right;
+	margin-right:10%;
+}*/
 
 #LifeOfMusicLineChart{
 	height:40%;
@@ -88,7 +116,6 @@ body {
 	pointer-events: none;
 	background-color: #FFE900;
 	font-size:80%;
-
 }
 
 .axisLabelScatter {

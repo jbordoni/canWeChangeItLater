@@ -1,40 +1,40 @@
-Code,Country,X,Y,Energy,Valence
-ar,Argentina,-34,-64,10,20
-at,Austria,47.33,13.33,10,20
-au,Australia,-25,135,10,20
-be,Belgium,50.83,4,10,20
-bo,Bolivia,-17,-65,10,20
-br,Brazil,-10,-55,10,20
-ca,Canada,60,-96,10,20
-ch,Switzerland,47,8,10,20
-cl,Chile,-30,-71,10,20
-co,Colombia,4,-72,10,20
-cr,Costa Rica,10,-84,10,20
-cz,Czech Republic,49.75,15,10,20
-de,Germany,51.5,10.5,10,20
-dk,Denmark,56,10,10,20
-ec,Ecuador,-2,-77.5,10,20
-es,Spain,40,-4,10,20
-fi,Finland,64,26,10,20
-fr,France,46,2,10,20
-gb,United Kingdom,54,-4,10,20
-gr,Greece,39,22,10,20
-hk,Hong Kong,22.25,114.167,10,20
-id,Indonesia,-5,120,10,20
-ie,Ireland,53,-8,10,20
-is,Iceland,65,-18,10,20
-it,Italy,42.83,12.83,10,20
-jp,Japan,36,138,10,20
-mx,Mexico,23,-102,10,20
-my,Malayasia,2.5,112.5,10,20
-nl,Netherlands,52.5,5.75,10,20
-no,Norway,62,10,10,20
-nz,New Zealand,-42,174,10,20
-pe,Peru,13,-85,10,20
-ph,Philippines,13,122,10,20
-pt,Portugal,39.5,-8,10,20
-se,Sweden,62,5,10,20
-sg,Singapore,1.37,103.8,10,20
-th,Thailand,15,100,10,20
-tw,Taiwan,24,121,10,20
-us,United States,39.8,-98.5,10,50
+Code,Country,Continent,X,Y,Energy,Valence
+ar,Argentina,sa,-34,-64,10,20
+at,Austria,eu,47.33,13.33,10,20
+au,Australia,oc,-25,135,10,20
+be,Belgium,eu,50.83,4,10,20
+bo,Bolivia,sa,-17,-65,10,20
+br,Brazil,sa,-10,-55,10,20
+ca,Canada,na,60,-96,10,20
+ch,Switzerland,eu,47,8,10,20
+cl,Chile,sa,-30,-71,10,20
+co,Colombia,sa,4,-72,10,20
+cr,Costa Rica,na,10,-84,10,20
+cz,Czech Republic,eu,49.75,15,10,20
+de,Germany,eu,51.5,10.5,10,20
+dk,Denmark,eu,56,10,10,20
+ec,Ecuador,sa,-2,-77.5,10,20
+es,Spain,eu,40,-4,10,20
+fi,Finland,eu,64,26,10,20
+fr,France,eu,46,2,10,20
+gb,United Kingdom,eu,54,-4,10,20
+gr,Greece,eu,39,22,10,20
+hk,Hong Kong,as,22.25,114.167,10,20
+id,Indonesia,as,-5,120,10,20
+ie,Ireland,eu,53,-8,10,20
+is,Iceland,eu,65,-18,10,20
+it,Italy,eu,42.83,12.83,10,20
+jp,Japan,as,36,138,10,20
+mx,Mexico,na,23,-102,10,20
+my,Malayasia,as,2.5,112.5,10,20
+nl,Netherlands,eu,52.5,5.75,10,20
+no,Norway,eu,62,10,10,20
+nz,New Zealand,as,-42,174,10,20
+pe,Peru,sa,13,-85,10,20
+ph,Philippines,as,13,122,10,20
+pt,Portugal,eu,39.5,-8,10,20
+se,Sweden,eu,62,5,10,20
+sg,Singapore,as,1.37,103.8,10,20
+th,Thailand,as,15,100,10,20
+tw,Taiwan,as,24,121,10,20
+us,United States,na,39.8,-98.5,10,50
