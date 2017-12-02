@@ -32,7 +32,20 @@
   <!-- Container for the visualization -->
   <!--<div id="vis"></div>-->
 
-  <!--<div id="timelineDiv"></div>-->
+  <div id="timelineDiv">
+    <div id="timelineDivInner">
+      <div style="margin-top:30%">
+        <span class=headingTwoText>Time Range</span>
+      </div>
+      <div>
+        <div id="sliderLabelsWrapper">
+        </div>
+        <div id="sliderWrapper">
+          <div id="slider-range"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="divContainer">
 
@@ -116,10 +129,14 @@
 <script type="text/javascript" src="js/bubbleMap.js"></script>
 <script type="text/javascript" src="js/audioFeaturesScatter.js"></script>
 <script type="text/javascript" src="js/MultiLineChart.js"></script>
+<script type="text/javascript" src="js/timeline.js"></script>
+
 
 <script type="text/javascript">
 
   var globalCountryCode = "Global";
+
+  initiateTimelineSlider();
 
   show(0);
 
