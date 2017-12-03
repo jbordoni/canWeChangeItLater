@@ -1,25 +1,31 @@
 function initiateTimelineSlider(){
 
 	let value1 = 1;
-	let value2 = 12; 
+	let value2 = 10; 
+    startMonthNoGlobal = 1; 
+    endMonthNoGlobal = 10;
+    updateCountryData("initiate");
 
 	//console.log("Setting up timeline");
 	$( "#slider-range" ).slider({
       orientation: "vertical",
       range: true,
       min:1, 
-      max:12,
+      max:10,
       values: [value1, value2], //set initial values
       slide: function( event, ui ) {
         //$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        console.log(ui.values[0], ui.values[1]);
+        //console.log(ui.values[0], ui.values[1]);
         showHighlightedValues(ui.values[0], ui.values[1]);
-        updateCountryData(ui.values[0], ui.values[1]);
+        startMonthNoGlobal = ui.values[0];
+        endMonthNoGlobal = ui.values[1];
+        updateCountryData("update");
       }
     });
 
     var monthOptions = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
-    'August', 'September', 'October', 'November', 'December'];
+    'August', 'September', 'October'];
+    monthOptions.reverse();
 
     let sliderHeight = document.getElementById("slider-range").offsetHeight+20; 
     let sliderPosition = document.getElementById("slider-range").getBoundingClientRect();

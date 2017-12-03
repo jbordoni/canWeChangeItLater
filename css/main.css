@@ -12,6 +12,7 @@
 }
 
 #sliderLabelsWrapper { 
+	height:530px;;
 	width:20%;
 	display: inline-block;
 	vertical-align: top;

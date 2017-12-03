@@ -29,6 +29,24 @@ for country in countryList:
 	countryFolderRead = os.path.join(dataFolder, country)
 
 	csvFiles = os.listdir(countryFolderRead)
+
+	prev = ""
+	newList = []
+	for idx, csvFile in enumerate(csvFiles[1:]):
+		endDate = csvFile.split("_")[4]
+		endDateMonth = endDate.split("-")[1]
+		#print idx
+		if int(endDateMonth)!=prev:
+			newList.append(idx)
+			
+		prev = int(endDateMonth)
+
+
+	print len(newList)
+	print newList
+	sys.exit()
+
+
 	for csvFile in csvFiles:
 		startDate = csvFile.split("_")[3]
 		startDateYear = startDate.split("-")[0]
@@ -108,7 +126,7 @@ for country in countryList:
 
 	print len(hmap)
 
-	pickle.dump(hmap, open("weeksOnChart-"+country+"-Last.pickle", "wb"))
+	#pickle.dump(hmap, open("weeksOnChart-"+country+"-Last.pickle", "wb"))
 
-	with open("weeksOnChart-"+country+"-Last.json", "w") as fp:
-		json.dump(hmap, fp, indent=4)
+	#with open("weeksOnChart-"+country+"-Last.json", "w") as fp:
+	#	json.dump(hmap, fp, indent=4)

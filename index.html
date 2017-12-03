@@ -35,7 +35,7 @@
   <div id="timelineDiv">
     <div id="timelineDivInner">
       <div style="margin-top:30%">
-        <span class=headingTwoText>Time Range</span>
+        <span class=headingTwoText>Time Range <br> 2017</span>
       </div>
       <div>
         <div id="sliderLabelsWrapper">
@@ -55,7 +55,7 @@
       <div id="bubbleDropDownMenuContainer">
         <div id="bubbleDropDown" style="display: table-cell; width: 120;">
           <label for="dropDownAudioFeatures">Audio Features: </label>
-          <select id="dropDownAudioFeatures" onchange="show(1)">
+          <select id="dropDownAudioFeatures" onchange="updateCountryDataOnFeatureChange()">
             <option value="valence">Valence</option>
             <option value="energy">Energy</option>
             <option value="liveness">Liveness</option>
@@ -127,6 +127,7 @@
 </body>
 
 <script type="text/javascript" src="js/bubbleMap.js"></script>
+<script type="text/javascript" src="js/bubbleMapNew.js"></script>
 <script type="text/javascript" src="js/audioFeaturesScatter.js"></script>
 <script type="text/javascript" src="js/MultiLineChart.js"></script>
 <script type="text/javascript" src="js/timeline.js"></script>
@@ -136,16 +137,23 @@
 <script type="text/javascript">
 
   var globalCountryCode = "Global";
+  //var globalWeekMap = [0, 4, 8, 13, 17, 
+  //                     21, 26, 30, 34, 38, 40]
 
+  var globalWeekMap = [-1, 0, 4, 8, 13, 17, 
+                  21, 26, 30, 34, 39];
+
+  var startMonthNoGlobal; 
+  var endMonthNoGlobal;
   initiateTimelineSlider();
 
-  show(0);
+  //show(0);
 
   function updateClickedScatter(){
-    console.log(globalCountryCode);
+    //console.log(globalCountryCode);
 
-    audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
-    "xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
+    // audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
+    // "xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
   }
   
 
