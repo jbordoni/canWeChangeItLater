@@ -96,7 +96,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	    						.domain([d3.min(yCoordinatesContainer[i]), d3.max(yCoordinatesContainer[i])])
 								.range([ 
     							continentDivStartY+(0.4*continentDivHeight)-continentDivYPadding, 
-    							continentDivStartY-continentDivYPadding]);
+    							continentDivStartY]);
 
 			yScales[i]=continentYScale;
     	}

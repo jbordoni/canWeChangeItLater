@@ -10,7 +10,7 @@ function updateCountryData(typeOfCall){
 	let startMonthNo = startMonthNoGlobal; 
 	let endMonthNo = endMonthNoGlobal;
 
-	console.log("Updating data by week");
+	//console.log("Updating data by week");
 
 	d3.json("datasets/combinedData.json", function(error, songsListData){                  
               d3.json("datasets/audioFeaturesHashMap.json", function(error2, audioFeaturesData){
