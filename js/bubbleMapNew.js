@@ -6,8 +6,13 @@ function loadSVGInBubbleMap(countryValues, countryValuesList){
 	bubbleChartDivHeight = bubbleChartDiv.offsetHeight; 
 	bubbleChartDivWidth = bubbleChartDiv.offsetWidth;
 
+	let divPosition = bubbleChartDiv.getBoundingClientRect();
+
     bubbleChart = d3.select('#bubbleMap')
     			.append('svg')
+    			.style("top", bubbleChartDiv.offsetTop-50+"px")
+    			.style("left", bubbleChartDiv.offsetLeft+"px")
+    			.attr("id", "bubbleMapSVG")
     			.attr("height", bubbleChartDivHeight)
     			.attr("width", bubbleChartDivWidth);
 	bubbleChartSVGGroup = bubbleChart.append('g');

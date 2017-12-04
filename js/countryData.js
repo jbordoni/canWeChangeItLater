@@ -84,6 +84,8 @@ function filterSongsByCountry(){
 						obj['weeksOnCharts'] = 1;
 						obj['songName'] = weekChart[song]['songName'];
 						obj['artistName'] = weekChart[song]['artistName'];
+						obj['trackKey'] = song;
+						//obj['track']
 						hmap[song] = obj;
 					}
 
@@ -95,7 +97,27 @@ function filterSongsByCountry(){
 		}
 	}
 
-	console.log(Object.keys(hmap).length);
+	for(var song in hmap){
+		if(hmap.hasOwnProperty(song)){
+			hmap[song]['positionList'] = []
+			for(var i=startMonthNoChart; i<=endMonthNoChart; i++){
+				let weekChart = weeklyChartsList[i]
+
+				if(song in weekChart){
+					hmap[song]['positionList'].push(weekChart[song]['position'])
+				}
+				else{
+					hmap[song]['positionList'].push(101);
+					//see if can be handled in better way 
+					//not appearing on chart
+				}
+			}
+		}
+	}
+
+	//console.log(Object.keys(hmap).length);
+
+	//console.log(Object.keys(hmap).length);
 	//console.log(hmap);
 	updateAudioScatter(hmap);
 

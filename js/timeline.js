@@ -6,6 +6,8 @@ function initiateTimelineSlider(){
     endMonthNoGlobal = 10;
     updateCountryData("initiate");
     loadSVGInAudioScatter();
+    loadSVGInLineChart();
+    //updateLineChart();
     //update
 
 	//console.log("Setting up timeline");

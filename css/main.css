@@ -12,6 +12,11 @@ div{
 
 }
 
+#bubbleMapSVG {
+	
+	position: absolute;
+}
+
 #timelineDivInner {
 }
 

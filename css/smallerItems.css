@@ -29,7 +29,9 @@
 .axisLabelScatter {
 }
 
-.countryHover { 
-  border:"orange"; 
-  fill:"#333333";
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
 }

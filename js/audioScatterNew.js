@@ -17,13 +17,6 @@ function loadSVGInAudioScatter(){
     //let bubbleSVG = d3.select('#audioFeaturesScatterDiv').selectAll('svg')
 	
 	let audioScatterSVGGroup = bubbleChartSVG.append('g');
-
-	//console.log(bubbleSVG instanceof SVGElement);
-	//console.log(audioScatterSVGGroup);
-
-	//data = [[51, 20], [55, 50], [56, 90]];
-	//setupScatterPlot();
-	//updateScatter(data);
 }
 
 function updateAudioScatter(hmap){
@@ -61,11 +54,10 @@ function updateAudioScatter(hmap){
 	let svgWidth = $("#audioSVG").width();
 	let svgHeight = $("#audioSVG").height(); 
 
-	//console.log(svgWidth, svgHeight);
-	//return;
-
 	let xPadding = 0.1*svgWidth; 
 	let yPadding = 0.1*svgHeight; 
+
+	let selectedCircles = [];
 
 	var xScale = d3.scaleLinear();
 		xScale.domain([d3.min(xScaleValues), d3.max(xScaleValues)])
@@ -82,28 +74,14 @@ function updateAudioScatter(hmap){
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
 				.attr("r", 5)
+				.on("click", function(d, i){
+					//console.log("clicked");
+					d3.select(this).style("fill", "steelblue")
+					selectedCircles.push(d);
+					updateLineChart(selectedCircles);
+					//console.log(selectedCircles);
+				});
 
 	circles.exit().remove()
 
-}
-
-function updateScatter(data){
-
-	//let audioScatterSVGGroup = d3.select('#audioFeaturesScatterDiv').selectAll("g");
-	var audioSVG = d3.select("#audioSVG");
-	var audioSVGGroup = audioSVG.selectAll("g");
-
-	var circles = audioSVGGroup.selectAll("circle")
-					.data(data, function(d) { return(d); })
-
-	//circles.style("fill", "red")
-
-	circles.enter().append("circle")
-				.transition(100)
-				.style("fill", "orange")
-				.attr("cx", function(d){return d[0]})
-				.attr("cy", function(d){return d[1]})
-				.attr("r", 5)
-
-	circles.exit().remove()
 }
