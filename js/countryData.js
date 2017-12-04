@@ -7,6 +7,7 @@ function updateCountryDataOnFeatureChange(){
 function loadCountryData(){
 
 	//songsListData
+	//load up data synchronously 
 
 	$.ajax({
 	  url: 'datasets/cumulativeCountryFeatureValuesPlain.json',
@@ -19,28 +20,92 @@ function loadCountryData(){
 				songsListData[key] = response[key];
 			}
 		}
-
-		//console.log(Object.keys(songsListData).length)
-	    // do stuff with response.
 	  }
 	});
 
-	//console.log(Object.keys(songsListData).length);
-
-	/*d3.json("datasets/cumulativeCountryFeatureValuesPlain.json", function(error, data){
-
-		for(var key in data){
-			songsListData[key] = data[key];
+	$.ajax({
+	  url: 'datasets/combinedData.json',
+	  async: false,
+	  dataType: 'json',
+	  success: function (response) {
+	  	//console.log(response.length);
+	  	for(var key in response){
+	  		if(response.hasOwnProperty(key)){
+				weeklyCharts[key] = response[key];
+			}
 		}
-	}); */
+	  }
+	});
+
+
+	$.ajax({
+	  url: 'datasets/audioFeaturesHashMap.json',
+	  async: false,
+	  dataType: 'json',
+	  success: function (response) {
+	  	//console.log(response.length);
+	  	for(var key in response){
+	  		if(response.hasOwnProperty(key)){
+				audioFeaturesMapGlobal[key] = response[key];
+			}
+		}
+	  }
+	});
+	console.log("Data loaded");
+}
+
+function filterSongsByCountry(){
+	console.log("Filtering by country");
+	let countryCode = globalCountryCode; 
+	let startMonthNo = startMonthNoGlobal; 
+	let endMonthNo = endMonthNoGlobal;
+
+	let startMonthNoChart = globalWeekMap[startMonthNo];
+	let endMonthNoChart = globalWeekMap[endMonthNo];
+
+	let weeklyChartsList = weeklyCharts[countryCode];
+
+	let hmap = {}; 
+
+	for(var i=startMonthNoChart; i<=endMonthNoChart; i++){
+		let weekChart = weeklyChartsList[i];
+		//console.log(weekChart.length)
+		//return;
+
+		for(var song in weekChart){
+			if(weekChart.hasOwnProperty(song)){
+				if(!(song in hmap)){
+					if(song in audioFeaturesMapGlobal)
+					{
+						let obj = $.extend(true, {}, audioFeaturesMapGlobal[song])
+						obj['weeksOnCharts'] = 1;
+						obj['songName'] = weekChart[song]['songName'];
+						obj['artistName'] = weekChart[song]['artistName'];
+						hmap[song] = obj;
+					}
+
+				}
+				else{
+					hmap[song]['weeksOnCharts'] = hmap[song]['weeksOnCharts']+1
+				}
+			}
+		}
+	}
+
+	console.log(Object.keys(hmap).length);
+	//console.log(hmap);
+	updateAudioScatter(hmap);
+
+	//let selectedFeatureX = document.getElementById("xdropdownScatter").value;
+	//let selectedFeatureXText = document.getElementById("xdropdownScatter").innerHTML; 
+
+
 
 }
 
-
 function updateCountryData(typeOfCall){
 
-	console.log("updating");
-	console.log(Object.keys(songsListData).length);
+	//console.log("updating");
 	//return;
 
 	let startMonthNo = startMonthNoGlobal; 
@@ -62,10 +127,11 @@ function updateCountryData(typeOfCall){
 		}
 		let countryValues = newmap; 
 		let countryValuesList = meanList;
-		console.log(countryValues);
+		//console.log(countryValues);
 
 		if(typeOfCall=="initiate"){
-					loadSVGInBubbleMap(countryValues, countryValuesList);
+			loadSVGInBubbleMap(countryValues, countryValuesList);
+			//loadSVGInAudioScatter();
 		}
 		else if(typeOfCall=="update"){
 			updateBubbleMapData(countryValues, countryValuesList);

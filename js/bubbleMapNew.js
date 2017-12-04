@@ -41,6 +41,8 @@ function updateBubbleMapData(countryValues, countryValuesList){
 }
 
 function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
+	//console.log(countryValues);
+
 	var selectedFeature = document.getElementById('dropDownAudioFeatures').value;
 	//console.log(selectedFeature);
 
@@ -175,7 +177,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 						.duration(200)
 						.style("opacity", .9);
 				tooltip.html("Country : " + d.Country+
-							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]/1000.0).toFixed(2)))
+							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
 				.style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
 	})
@@ -189,6 +191,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.on('click',function(d,i){
 		//call scatterplot
 		globalCountryCode = d.Code;
+		filterSongsByCountry();
 		//audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
     	//	"xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
 		});

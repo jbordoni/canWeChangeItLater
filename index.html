@@ -111,7 +111,7 @@
           </select>
         </div>
         <div style="display: table-cell; width: 150;">
-          <button id="updateAudioFeatScatter" onclick="updateClickedScatter()">Update</button>
+          <button id="updateAudioFeatScatter" onclick="testUpdate()">Update</button>
         </div>
       </div>
 
@@ -129,6 +129,7 @@
 <script type="text/javascript" src="js/bubbleMap.js"></script>
 <script type="text/javascript" src="js/bubbleMapNew.js"></script>
 <script type="text/javascript" src="js/audioFeaturesScatter.js"></script>
+<script type="text/javascript" src="js/audioScatterNew.js"></script>
 <script type="text/javascript" src="js/MultiLineChart.js"></script>
 <script type="text/javascript" src="js/timeline.js"></script>
 <script type="text/javascript" src="js/countryData.js"></script>
@@ -147,21 +148,17 @@
   var endMonthNoGlobal;
 
   var songsListData = {}; 
+  var weeklyCharts = {}; 
+  var audioFeaturesMapGlobal = {}
 
-  loadCountryData(); 
+
+  loadCountryData(); //load up complete data sync
 
   //console.log(Object.keys(songsListData).length); 
 
   initiateTimelineSlider();
 
   //show(0);
-
-  function updateClickedScatter(){
-    //console.log(globalCountryCode);
-
-    // audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
-    // "xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
-  }
   
 
 </script>
