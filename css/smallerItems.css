@@ -1,0 +1,25 @@
+.axis line {
+    shape-rendering: crispEdges;
+}
+
+.scatterTooltip {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  pointer-events: none;
+  background-color: #FFE900;
+  font-size:80%;
+}
+
+.bubbleMapTooltip {
+
+	position: absolute;
+	width: 15%;
+	height: 5%;
+	pointer-events: none;
+	background-color: #FFE900;
+	font-size:80%;
+}
+
+.axisLabelScatter {
+}

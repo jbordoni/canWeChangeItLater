@@ -25,6 +25,7 @@
   <script type="text/javascript" src="d3/d3.js"></script>
   <script type="text/javascript" src="d3/topojson/topojson.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/smallerItems.css">
 
 </head>
 
@@ -49,70 +50,77 @@
 
   <div id="divContainer">
 
-    <div id = "bubbleMapView">
-      <!--<button id="show" onclick="show()">Show</button>-->
+    <div id="bubbleMapOutermost">
+      <div id = "bubbleMapView">
+        <!--<button id="show" onclick="show()">Show</button>-->
 
-      <div id="bubbleDropDownMenuContainer">
-        <div id="bubbleDropDown" style="display: table-cell; width: 120;">
-          <label for="dropDownAudioFeatures">Audio Features: </label>
-          <select id="dropDownAudioFeatures" onchange="updateCountryDataOnFeatureChange()">
-            <option value="valence">Valence</option>
-            <option value="energy">Energy</option>
-            <option value="liveness">Liveness</option>
-            <option value="tempo">Tempo</option>
-            <option value="speechiness">Speechiness</option>
-            <option value="acousticness">Acousticness</option>
-            <option value="danceability">Danceability</option>
-            <option value="loudness">Loudness</option>
-          </select>
+        <div id="bubbleDropDownMenuContainer">
+          <div id="bubbleDropDown" style="display: table-cell; width: 120;">
+            <label for="dropDownAudioFeatures">Audio Features: </label>
+            <select id="dropDownAudioFeatures" onchange="updateCountryDataOnFeatureChange()">
+              <option value="valence">Valence</option>
+              <option value="energy">Energy</option>
+              <option value="liveness">Liveness</option>
+              <option value="tempo">Tempo</option>
+              <option value="speechiness">Speechiness</option>
+              <option value="acousticness">Acousticness</option>
+              <option value="danceability">Danceability</option>
+              <option value="loudness">Loudness</option>
+            </select>
+          </div>
         </div>
-      </div>
 
-      <div id = "bubbleMapDiv_1" class="continentDiv"></div>
-      <div id = "bubbleMapDiv_2" class="continentDiv"></div>
-      <div id = "bubbleMapDiv_3" class="continentDiv"></div>
+        <div id = "bubbleMapDiv_1" class="continentDiv"></div>
+        <div id = "bubbleMapDiv_2" class="continentDiv"></div>
+        <div id = "bubbleMapDiv_3" class="continentDiv"></div>
+        
+        <div id = "bubbleMap">  
+        </div>
       
-      <div id = "bubbleMap">  
       </div>
-    
     </div>
 
-    <div id="audioFeaturesScatterDiv">
+    <div id="divBelowBubbleMap">
+      <div id="audioFeaturesScatterDiv">
 
-      <div class="dropdownMenuContainer">
-        <div style="display: table-cell; width: 120;">
-          <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
-            <option val="weeksOnCharts">Weeks On Charts</option>
-          </select>
+        <div class="dropdownMenuContainer">
+          <div style="display: table-cell; width: 120;">
+            <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
+              <option val="weeksOnCharts">Weeks On Charts</option>
+            </select>
+          </div>
+          <div style="display: table-cell; width: 150;">
+            <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter">
+              <option value="valence">Valence</option>
+              <option value="energy">Energy</option>
+              <option value="liveness">Liveness</option>
+              <option value="tempo">Tempo</option>
+              <option value="speechiness">Speechiness</option>
+              <option value="acousticness">Acousticness</option>
+              <option value="danceability">Danceability</option>
+              <option value="loudness">Loudness</option>
+            </select>
+          </div>
+          <div style="display: table-cell; width: 150;">
+            <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter">
+              <option value="none">None</option>
+              <option value="valence">Valence</option>
+              <option value="energy">Energy</option>
+              <option value="liveness">Liveness</option>
+              <option value="tempo">Tempo</option>
+              <option value="speechiness">Speechiness</option>
+              <option value="acousticness">Acousticness</option>
+              <option value="danceability">Danceability</option>
+              <option value="loudness">Loudness</option>
+            </select>
+          </div>
         </div>
-        <div style="display: table-cell; width: 150;">
-          <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter">
-            <option value="valence">Valence</option>
-            <option value="energy">Energy</option>
-            <option value="liveness">Liveness</option>
-            <option value="tempo">Tempo</option>
-            <option value="speechiness">Speechiness</option>
-            <option value="acousticness">Acousticness</option>
-            <option value="danceability">Danceability</option>
-            <option value="loudness">Loudness</option>
-          </select>
-        </div>
-        <div style="display: table-cell; width: 150;">
-          <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter">
-            <option value="none">None</option>
-            <option value="valence">Valence</option>
-            <option value="energy">Energy</option>
-            <option value="liveness">Liveness</option>
-            <option value="tempo">Tempo</option>
-            <option value="speechiness">Speechiness</option>
-            <option value="acousticness">Acousticness</option>
-            <option value="danceability">Danceability</option>
-            <option value="loudness">Loudness</option>
-          </select>
-        </div>
-        <div style="display: table-cell; width: 150;">
-          <button id="updateAudioFeatScatter" onclick="testUpdate()">Update</button>
-        </div>
+          <!--<div style="display: table-cell; width: 150;">
+            <button id="updateAudioFeatScatter" onclick="testUpdate()">Update</button>
+          </div>-->
+      </div>
+
+      <div id="lifeOfMusicHitDiv">
       </div>
 
     </div>

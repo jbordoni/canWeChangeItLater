@@ -1,7 +1,11 @@
+div{
+	border-radius: 2px;
+}
 #timelineDiv {
 
+	display: inline-block;
 	float:left;
-	width: 20%;
+	width: 15%;
 	height:100%;
 	text-align: center;
 	background:#f2de31;
@@ -29,7 +33,8 @@
 
 #divContainer {
 
-	width: 80%;
+	display: inline-block;
+	width: 85%;
 	height:100%;
 	text-align: center;
 	float:right;
@@ -51,48 +56,58 @@
 
 }*/
 
-#slider-range { 
-	height:530px;
-}
 
-.ui-state-default, .ui-widget-content .ui-state-active {
-	background-color: darkgray;
-	border:none;
-}
-
-/*.ui-slider .ui-slider-range .ui-corner-all .ui-widget-header{
-	background-color: #f6931c;
-}*/
-
-.ui-widget-header{
-	background: #f6931c;
-}
-
-.ui-slider .ui-slider-handle:focus { 
-	outline:none;
-	outline-color: darkgray;
-}
-
-
-#audioFeaturesScatterDiv, #bubbleMapView{
+#audioFeaturesScatterDiv, #bubbleMapView, #lifeOfMusicHitDiv{
 	background: white;
 }
 
+#audioFeaturesScatterDiv,  #lifeOfMusicHitDiv{
+
+	display: inline-block;
+
+}
+
 #audioFeaturesScatterDiv {
-	margin-top:2%;
-	height:45%;
-	width:80%;
+	
 	border-top: 7px solid crimson;
 	padding-top:5%;
+	height:100%;
+	width: 50%;
+	float:left;
+	
+}
+
+#lifeOfMusicHitDiv {
+
+	border-top: 7px solid #f6931c;
+	padding-top:5%;
+	height:100%;
+	width: 48%;
+	float:right;
+
+}
+
+#divBelowBubbleMap{
+	margin-top:2%;
+	height:30%;
+	width:95%;
 	text-align: center;
-	margin-left: 10%
+	margin-left: 3.5%;
+	margin-top:5%;
+
+}
+
+#bubbleMapOutermost{
+	height:50%;
+	width:94%;
+	text-align: center
 }
 
 #bubbleMapView{
 	/*height:50%;*/
-	height:50%;
-	width:80%;
-	margin-left: 10%;
+	height:100%;
+	width:100%;
+	margin-left: 4%;
 	text-align: center;
 	border-top: 7px solid #f2de31;
 	padding-top: 2%;
@@ -146,32 +161,29 @@
 body {
 	height:100vh;
 	background: #e7e7e7;
+
 }
 
-.axis line {
-    shape-rendering: crispEdges;
+#slider-range { 
+	height:530px;
 }
 
-.scatterTooltip {
-  position: absolute;
-  width: 20%;
-  height: 10%;
-  pointer-events: none;
-  background-color: #FFE900;
-  font-size:80%;
+.ui-state-default, .ui-widget-content .ui-state-active {
+	background-color: darkgray;
+	border:none;
 }
 
-.bubbleMapTooltip {
+/*.ui-slider .ui-slider-range .ui-corner-all .ui-widget-header{
+	background-color: #f6931c;
+}*/
 
-	position: absolute;
-	width: 15%;
-	height: 5%;
-	pointer-events: none;
-	background-color: #FFE900;
-	font-size:80%;
+.ui-widget-header{
+	background: #f6931c;
 }
 
-.axisLabelScatter {
+.ui-slider .ui-slider-handle:focus { 
+	outline:none;
+	outline-color: darkgray;
 }
 
 /*body {
