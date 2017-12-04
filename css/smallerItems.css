@@ -2,6 +2,11 @@
     shape-rendering: crispEdges;
 }
 
+.bubbleMapTooltip, .scatterTooltip{
+
+  border-radius:2px;
+
+}
 .scatterTooltip {
   position: absolute;
   width: 20%;
@@ -22,4 +27,9 @@
 }
 
 .axisLabelScatter {
+}
+
+.countryHover { 
+  border:"orange"; 
+  fill:"#333333";
 }

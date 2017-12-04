@@ -55,6 +55,9 @@ function loadCountryData(){
 }
 
 function filterSongsByCountry(){
+	if(globalCountryCode==""){
+		return;
+	}
 	console.log("Filtering by country");
 	let countryCode = globalCountryCode; 
 	let startMonthNo = startMonthNoGlobal; 

@@ -23,20 +23,53 @@ function updateBubbleMapData(countryValues, countryValuesList){
 	//console.log(countryValues);
 	//console.log("Am i here?");
 
+	var selectedFeature = document.getElementById('dropDownAudioFeatures').value;
+	//console.log(selectedFeature);
+	let nodeIdx = document.getElementById('dropDownAudioFeatures').selectedIndex;
+	//console.log(nodeIdx);
+
+	let selectedFeatureText = document.getElementById('dropDownAudioFeatures')[nodeIdx].innerHTML;
+	
+
 	let radiusScale = d3.scaleLinear()
     					.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
     					.range([10, 30]);
 
-	bubbleChartSVGGroup.selectAll("circle")
+    var tooltip = d3.select('body').append("div")	
+		    .attr("class", "bubbleMapTooltip")				
+		    .style("opacity", 0);
+
+	let dots = bubbleChartSVGGroup.selectAll("circle")
 	.data(rawdataGlobal)
-	.transition()
-	.duration(500)
-	.attr("r",function(d){ 
+
+	dots.transition()
+	.duration(700)
+
+	dots.attr("r",function(d){ 
     	//console.log(d.Code);
     	//console.log(countryValues[d.Code]);
     	//console.log(radiusScale(countryValues[d.Code]));
     	return radiusScale(countryValues[d.Code]);
-    });
+    })
+    .on("mouseover", function(d){
+				//console.log("Inside Mouseover");
+				d3.select(this).attr('stroke',"orange")
+				d3.select(this).attr("fill", "#333333")
+				d3.select(this).attr("stroke-width", 3)
+				tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+				tooltip.html("Country: " + d.Country+
+							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
+				.style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");})
+    .on("mouseout", function(d){
+				d3.select(this).attr('stroke',"yellow");
+				d3.select(this).attr("fill","#666666")
+				d3.select(this).attr("stroke-width", 1)
+				tooltip.transition()
+               .duration(500)
+               .style("opacity", 0)});
 
 }
 
@@ -45,12 +78,13 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 
 	var selectedFeature = document.getElementById('dropDownAudioFeatures').value;
 	//console.log(selectedFeature);
-
 	let nodeIdx = document.getElementById('dropDownAudioFeatures').selectedIndex;
 	//console.log(nodeIdx);
 
 	let selectedFeatureText = document.getElementById('dropDownAudioFeatures')[nodeIdx].innerHTML;
 	
+	//console.log(selectedFeatureText);
+
 	let bubbleChartDiv = document.getElementById("bubbleMap");
 	let height = bubbleChartDiv.offsetHeight; 
 	let width = bubbleChartDiv.offsetWidth;
@@ -173,10 +207,11 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 				//console.log("Inside Mouseover");
 				d3.select(this).attr('stroke',"orange")
 				d3.select(this).attr("fill", "#333333")
+				d3.select(this).attr("stroke-width", 3)
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
-				tooltip.html("Country : " + d.Country+
+				tooltip.html("Country: " + d.Country+
 							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
 				.style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
@@ -184,12 +219,16 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.on("mouseout", function(d){
 				d3.select(this).attr('stroke',"yellow");
 				d3.select(this).attr("fill","#666666")
+				d3.select(this).attr("stroke-width", 1)
 				tooltip.transition()
                .duration(500)
                .style("opacity", 0);
 	})
 	.on('click',function(d,i){
 		//call scatterplot
+		d3.select(this).attr('stroke',"steelblue")
+		d3.select(this).attr("fill", "#333333")
+		d3.select(this).attr("stroke-width", 3)
 		globalCountryCode = d.Code;
 		filterSongsByCountry();
 		//audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 

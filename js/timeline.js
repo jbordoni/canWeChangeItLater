@@ -21,7 +21,15 @@ function initiateTimelineSlider(){
         showHighlightedValues(ui.values[0], ui.values[1]);
         startMonthNoGlobal = ui.values[0];
         endMonthNoGlobal = ui.values[1];
+        
+      },
+      stop: function(event, ui){
+
+        startMonthNoGlobal = ui.values[0];
+        endMonthNoGlobal = ui.values[1];
         updateCountryData("update");
+        filterSongsByCountry();
+
       }
     });
 

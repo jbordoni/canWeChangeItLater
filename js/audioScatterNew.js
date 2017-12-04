@@ -76,8 +76,8 @@ function updateAudioScatter(hmap){
 					.range([svgHeight-(yPadding), 0+yPadding]);
 
 	circles.enter().append("circle")
-				.transition()
-				.duration(300)
+				//.transition()
+				//.duration(300)
 				.style("fill", "orange")
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
@@ -106,65 +106,4 @@ function updateScatter(data){
 				.attr("r", 5)
 
 	circles.exit().remove()
-
-
-}
-
-function testUpdate(){
-
-	let data2 = [[100, 50], [75, 150]];
-	updateScatter(data2);
-
-}
-
-function setupScatterPlot(){
-
-	data = [[51, 20], [55, 50], [56, 90]];
-
-	audioScatterSVGGroup.selectAll("circle")
-			.data(data)
-			.enter()
-			.append("circle")
-			.attr("cx", function(d){
-				return d[0]
-			})
-			.attr("cy", function(d){
-				return d[1]
-			})
-			.attr("r", 5)
-			.style("fill", "orange")
-
-}
-
-function testTransition(){
-	console.log("checking");
-	data2 = [[55, 50], [75, 150]];
-
-	let circles = audioScatterSVGGroup.selectAll("circle");
-	console.log(circles);
-
-	circles.data(data2);
-
-	console.log(circles.exit());
-	console.log(circles.enter());
-
-	circles.style("fill", "blue"); //update old circles 
-
-	circles.enter()
-	.append("circle")
-	.attr("r", 5)
-	.style("fill", "red")
-	.merge(circles)
-	.attr("cx", function(d){
-		return d[0]
-	})
-	.attr("cy", function(d){
-		return d[1]
-	})
-
-	//newCircles.merge(circles)
-	
-
-	circles.exit().remove(); //delete old ones
-
 }

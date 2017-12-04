@@ -64,6 +64,7 @@ div{
 #audioFeaturesScatterDiv,  #lifeOfMusicHitDiv{
 
 	display: inline-block;
+	overflow: scroll;
 
 }
 
