@@ -47,16 +47,18 @@ function updateBubbleMapData(countryValues, countryValuesList){
 	let dots = bubbleChartSVGGroup.selectAll("circle")
 	.data(rawdataGlobal)
 
-	dots.transition()
-	.duration(700)
+	//dots.transition()
 
-	dots.attr("r",function(d){ 
+	dots.transition().duration(500)
+	.attr("r",function(d){ 
     	//console.log(d.Code);
     	//console.log(countryValues[d.Code]);
     	//console.log(radiusScale(countryValues[d.Code]));
     	return radiusScale(countryValues[d.Code]);
     })
-    .on("mouseover", function(d){
+    //.transition().duration(500);
+   
+    dots.on("mouseover", function(d){
 				//console.log("Inside Mouseover");
 				d3.select(this).attr('stroke',"orange")
 				d3.select(this).attr("fill", "#333333")
