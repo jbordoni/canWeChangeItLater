@@ -12,7 +12,7 @@ function loadSVGInLineChart(){
     let bubbleChartSVG = d3.select('#lifeOfMusicHitDiv')
     				.append("svg")
 					.attr("height", bubbleChartDivHeight)
-    				.attr("width", bubbleChartDivWidth)
+    				.attr("width", 0.95 * bubbleChartDivWidth)
     				.attr("id", "lineChartSVG");
 
     //console.log(bubbleChartSVG);
@@ -47,20 +47,26 @@ function updateLineChart(hmap){
 
 	let weekList = globalWeekStringMap.slice(startMonthNoChart, endMonthNoChart+1);
 
+	let xPaddingForAxis = 30; 
+
 	var xScale = d3.scaleLinear()
-				.range([0, svgWidth])
+				.range([0+xPaddingForAxis, svgWidth])
 				.domain([0, weekList.length]);
 
-	let xPaddingForAxis = 0; 
 	
 	var yScale = d3.scaleLinear()
 			.range([svgHeight, 10])
 			.domain([0, 101]);
 
-	let yAxis = d3.axisLeft();
-	yAxis.scale(yScale);
+	var yScaleForDisplay = d3.scaleLinear()
+			.range([svgHeight, 10])
+			.domain([101, 1])
 
-	svg.append("g")
+	let yAxis = d3.axisLeft();
+	yAxis.scale(yScaleForDisplay)
+		.tickFormat();
+
+	audioSVGGroup.append("g")
 	   .attr("class", "axis")
 	   .attr("transform", "translate(" + xPaddingForAxis + ",0)")
 	   .call(yAxis);
