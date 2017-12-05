@@ -58,22 +58,35 @@
               <div id="bubbleMapOutermost">
                 <div id = "bubbleMapView">
                   <!--<button id="show" onclick="show()">Show</button>-->
-
-                  <div id="bubbleDropDownMenuContainer">
-                    <div id="bubbleDropDown" style="display: table-cell; width: 120;">
-                      <label for="dropDownAudioFeatures">Audio Features: </label>
-                      <select id="dropDownAudioFeatures" onchange="updateCountryDataOnFeatureChange()">
-                        <option value="valence">Valence</option>
-                        <option value="energy">Energy</option>
-                        <option value="liveness">Liveness</option>
-                        <option value="tempo">Tempo</option>
-                        <option value="speechiness">Speechiness</option>
-                        <option value="acousticness">Acousticness</option>
-                        <option value="danceability">Danceability</option>
-                        <option value="loudness">Loudness</option>
-                      </select> 
+                  <div class="row" id="bubble_map_panel">
+                    <div class="col-md-4">
+                      <h2>World Preferences</h2>
+                      What kinds of music do different countries prefer?
                     </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                      <p><strong>Valence</strong> describes whether something is likely to make someone feel happy (positive valence) or sad (negative valence).</p>
+                    </div>
+                    <div class="col-md-3">
+                      <div id="bubbleDropDownMenuContainer">
+                        <div id="bubbleDropDown" style="display: table-cell; width: 120;">
+                          <label for="dropDownAudioFeatures">Audio Features: </label>
+                          <select id="dropDownAudioFeatures" onchange="updateCountryDataOnFeatureChange()">
+                            <option value="valence">Valence</option>
+                            <option value="energy">Energy</option>
+                            <option value="liveness">Liveness</option>
+                            <option value="tempo">Tempo</option>
+                            <option value="speechiness">Speechiness</option>
+                            <option value="acousticness">Acousticness</option>
+                            <option value="danceability">Danceability</option>
+                            <option value="loudness">Loudness</option>
+                          </select> 
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
+
 
                   <div id = "bubbleMapDiv_1" class="continentDiv" ></div>
                   <div id = "bubbleMapDiv_2" class="continentDiv" ></div>
