@@ -101,6 +101,7 @@ h1,h2,h3,h4,h5{
 	margin: 0 auto;
 	font-weight: 500;
 	font-size: 24px;
+	width:30%;
 }
 
 .yellow_text_area{
@@ -142,5 +143,7 @@ h1,h2,h3,h4,h5{
 h1 strong{
 	font-size:84px;
 }
+
+
 
 
