@@ -47,29 +47,24 @@ function updateAudioScatter(hmap){
 	let colorScaleSelectedFeature = selectedNodeColor[selectedNodeColorIndex].value; 
 	let colorScaleSelectedFeatureText = selectedNodeColor[selectedNodeColorIndex].innerHTML; 
 
-	//console.log(xScaleSelectedFeature, xScaleSelectedFeatureText);
-
-	//var xScaleSelectedFeature = document.getElementById("xdropdownScatter").value;
-	//var xScaleSelectedFeatureText = document.getElementById("xdropdownScatter").selectedIndex.innerHTML;
-
-	//var colorScaleSelectedFeature = document.getElementById("colordropdownScatter").value; 
-	//var colorScaleSelectedFeatureText = document.getElementById("colordropdownScatter").selectedIndex.innerHTML;
-	//console.log(colorScaleSelectedFeature);
-
 	var dataList = []; 
+	var uniqueVals = [];
 
 	for(var item in hmap){
 		obj = hmap[item];
-		if(obj['weeksOnCharts']!=undefined && obj['weeksOnCharts']!=null &&
-			obj[xScaleSelectedFeature]!=undefined && obj[xScaleSelectedFeature]!=null){
-			weekValues.push(obj['weeksOnCharts'])
-			xScaleValues.push(obj[xScaleSelectedFeature]);
-			if(colorScaleSelectedFeature!="none"){
-				if(obj[colorScaleSelectedFeature]!=undefined && obj[colorScaleSelectedFeature]!=null){
-					colorScaleValues.push(obj[colorScaleSelectedFeature])
+		if(!(obj['trackKey'] in uniqueVals)){
+			if(obj['weeksOnCharts']!=undefined && obj['weeksOnCharts']!=null &&
+				obj[xScaleSelectedFeature]!=undefined && obj[xScaleSelectedFeature]!=null){
+				weekValues.push(obj['weeksOnCharts'])
+				xScaleValues.push(obj[xScaleSelectedFeature]);
+				if(colorScaleSelectedFeature!="none"){
+					if(obj[colorScaleSelectedFeature]!=undefined && obj[colorScaleSelectedFeature]!=null){
+						colorScaleValues.push(obj[colorScaleSelectedFeature])
+					}
 				}
+				dataList.push(obj);
+				uniqueVals.push(obj['trackKey']);
 			}
-			dataList.push(obj);
 		}
 		
 	}

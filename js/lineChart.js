@@ -51,10 +51,19 @@ function updateLineChart(hmap){
 				.range([0, svgWidth])
 				.domain([0, weekList.length]);
 
+	let xPaddingForAxis = 0; 
+	
 	var yScale = d3.scaleLinear()
 			.range([svgHeight, 10])
-			.domain([1, 101]);
+			.domain([0, 101]);
 
+	let yAxis = d3.axisLeft();
+	yAxis.scale(yScale);
+
+	svg.append("g")
+	   .attr("class", "axis")
+	   .attr("transform", "translate(" + xPaddingForAxis + ",0)")
+	   .call(yAxis);
 	
 	//console.
 
@@ -91,7 +100,7 @@ function updateLineChart(hmap){
 
 	var valueline = d3.line()
     .x(function(d, i) { return xScale(i); })
-    .y(function(d) { return yScale(d); });
+    .y(function(d) { return yScale(101-d); });
 
 
     //xScale.domain(d3.extent(data, function(d) { return parseTime(d.month); }))
@@ -107,6 +116,9 @@ function updateLineChart(hmap){
     lines.enter().append("path")
 		.attr("class", "line")
 		.attr("d", valueline)
+		.on("mouseover", function(d){
+			console.log(d)
+		})
 
     lines.exit().remove()
 
