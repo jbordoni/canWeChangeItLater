@@ -245,8 +245,10 @@ function updateAudioScatter(hmap){
 					//d3.select(this).style("fill", "steelblue")
 					d3.select(this).style("stroke", "black")
 					d3.select(this).attr("class", "clicked")
-					selectedCircles.push(d);
-					updateLineChart(selectedCircles);
+					if(selectedCircles.indexOf(d)==-1){
+						selectedCircles.push(d);
+						updateLineChart(selectedCircles);
+					}
 					//console.log(selectedCircles);
 				});
 

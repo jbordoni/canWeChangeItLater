@@ -85,7 +85,7 @@ function updateLineChart(hmap){
  	xAxis.scale(xScale);
 
  	//console.log(audioSVGDOM.childNodes);
-	if(document.getElementById("#lineChartYAxis")==null){
+	if(document.getElementById("#lineChartYAxis")==null && document.getElementById("#lineChartXAxis")==null){
 
 		d3.select("#lineChartSVG").append("g")
 		   .attr("class", "axis")

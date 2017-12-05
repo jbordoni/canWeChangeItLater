@@ -434,7 +434,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	})
 	.on('click',function(d,i){
 		if(globalCurrentBubbleClickedId!=null){
-			console.log(document.getElementById(globalCurrentBubbleClickedId).classList);
+			//console.log(document.getElementById(globalCurrentBubbleClickedId).classList);
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleClicked");
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
 		}
