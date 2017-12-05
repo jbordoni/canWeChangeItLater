@@ -3,6 +3,15 @@ function loadLineChart(){
 	let data = 1;
 }
 
+function clearLineChartLines(){
+
+	let svgDOMElement = document.getElementById("lineChartSVGGroup");
+	while(svgDOMElement.firstChild){
+		svgDOMElement.firstChild.remove();
+	}
+
+}
+
 function loadSVGInLineChart(){
 	let bubbleChartDiv = document.getElementById("lifeOfMusicHitDiv");
 
@@ -75,12 +84,13 @@ function updateLineChart(hmap){
  	let xAxis = d3.axisBottom()
  	xAxis.scale(xScale);
 
- 	console.log(audioSVGDOM.childNodes);
-	if(audioSVGDOM.firstChild.firstChild == null){
+ 	//console.log(audioSVGDOM.childNodes);
+	if(document.getElementById("#lineChartYAxis")==null){
 
 		d3.select("#lineChartSVG").append("g")
 		   .attr("class", "axis")
 		   .attr("transform", "translate(" + 2*xPaddingForAxis + ",0)")
+		   .attr("id", "lineChartYAxis")
 		   .call(yAxis);
 
 		d3.select("#lineChartSVG").append("text")
@@ -95,6 +105,7 @@ function updateLineChart(hmap){
 		d3.select("#lineChartSVG").append("g")
 		    .attr("class", "axis")
 		    .attr("transform", "translate(0," + (svgHeight-1.5*yPaddingForAxis) + ")")
+		    .attr("id", "lineChartXAxis")
 		    .call(xAxis);
 
 		d3.select("#lineChartSVG").append("text")
@@ -104,8 +115,6 @@ function updateLineChart(hmap){
 	                           (svgHeight) + ")")
 		      .style("text-anchor", "middle")
 		      .text("Week");
-
-
 	}
 
 	dataList = [];

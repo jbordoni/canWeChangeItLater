@@ -121,6 +121,7 @@ function filterSongsByCountry(){
 	//console.log(hmap);
 	globalDataForAudioScatter = hmap; 
 	updateAudioScatter(hmap);
+	clearLineChartLines();
 
 	//let selectedFeatureX = document.getElementById("xdropdownScatter").value;
 	//let selectedFeatureXText = document.getElementById("xdropdownScatter").innerHTML; 

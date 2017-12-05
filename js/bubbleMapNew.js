@@ -145,10 +145,13 @@ function updateBubbleMapData(countryValues, countryValuesList){
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
 		}
 		$(this).addClass("bubbleClicked")
-		globalCurrentBubbleClickedId = this.id;
-		globalCountryCode = d.Code;
-		filterSongsByCountry();
-		});
+		if(!(d.Code==globalCountryCode)){
+			//only call if different country is clicked
+			globalCurrentBubbleClickedId = this.id;
+			globalCountryCode = d.Code;
+			filterSongsByCountry();
+		}
+	});
 
     var legendMinUpdated
     var legendMaxUpdated
@@ -431,9 +434,14 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
 		}
 		$(this).addClass("bubbleClicked")
-		globalCurrentBubbleClickedId = this.id;
-		globalCountryCode = d.Code;
-		filterSongsByCountry();
+
+		if(!(d.Code==globalCountryCode)){
+			//only call if different country is clicked
+			globalCurrentBubbleClickedId = this.id;
+			globalCountryCode = d.Code;
+			filterSongsByCountry();
+		}
+		
 		});
 
 	var legendMinInitial = "0.1 <br > negative" 
