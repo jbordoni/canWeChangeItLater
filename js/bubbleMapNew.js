@@ -212,9 +212,12 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.attr("id", function(d){return d.Country})
 	.on("mouseover", function(d){
 				//console.log("Inside Mouseover");
-				d3.select(this).attr('stroke',"orange")
-				d3.select(this).attr("fill", "#333333")
-				d3.select(this).attr("stroke-width", 3)
+				if(!(this.classList.contains("clicked"))){
+					d3.select(this).attr('stroke',"orange")
+					d3.select(this).attr("fill", "#333333")
+					d3.select(this).attr("stroke-width", 3)
+				}
+				
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
@@ -237,8 +240,8 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 				subtitleSpanPart2.classList.add("tooltipValue");
 				subtitleSpanPart2.innerHTML = parseFloat(countryValues[d.Code]).toFixed(2);
 
-				subtitleSpanPart1.classList.add("tooldtipSubtitle");
-				subtitleSpanPart2.classList.add("tooltipSubtitle");
+				//subtitleSpanPart1.classList.add("tooltipSubtitle");
+				//subtitleSpanPart2.classList.add("tooltipSubtitle");
 
 				let tooltipDOM = document.getElementById("bubbleMap_"+d.Country);
 
@@ -256,10 +259,17 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
                .style("top", (d3.event.pageY - 28) + "px");
 	})
 	.on("mouseout", function(d){
+			//also remove clicked from all other circles
+			if(this.classList.contains("clicked")){
+				//do not change stroke attributes
+
+			}
+			else{
 				d3.select(this).attr('stroke',"yellow");
-				d3.select(this).attr("fill","#666666")
 				d3.select(this).attr("stroke-width", 1)
-				tooltip.transition()
+				d3.select(this).attr("fill","#666666")
+			}
+			tooltip.transition()
                .duration(500)
                .style("opacity", 0);
 	})
@@ -268,6 +278,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 		d3.select(this).attr('stroke',"steelblue")
 		d3.select(this).attr("fill", "#333333")
 		d3.select(this).attr("stroke-width", 3)
+		d3.select(this).attr("class", "clicked")
 		globalCountryCode = d.Code;
 		filterSongsByCountry();
 		//audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 

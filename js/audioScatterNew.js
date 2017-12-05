@@ -89,6 +89,10 @@ function updateAudioScatter(hmap){
 
 	let selectedCircles = [];
 
+	var tooltip = d3.select('body').append("div")	
+		    .attr("class", "scatterTooltip")				
+		    .style("opacity", 0);
+
 	var xScale = d3.scaleLinear();
 		xScale.domain([d3.min(xScaleValues), d3.max(xScaleValues)])
 				.range([0+xPadding, svgWidth-xPadding]);
@@ -103,8 +107,6 @@ function updateAudioScatter(hmap){
 		var colorScale = d3.scaleQuantize()
 						.range(colorValues)
 						.domain([d3.min(colorScaleValues), d3.max(colorScaleValues)]);
-	
-
 	}
 
 	circles.enter().append("circle")
@@ -122,10 +124,67 @@ function updateAudioScatter(hmap){
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
 				.attr("r", 5)
+				.on("mouseover", function(d){
+					tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+
+					tooltip.attr("id", "audioScatter_"+d.trackKey);
+
+					let songTitleSpan = document.createElement("span");
+					songTitleSpan.innerHTML = d.songName + "<br/>";
+					songTitleSpan.classList.add("tooltipTitle");
+
+					let artistSpan = document.createElement("span");
+					artistSpan.innerHTML = d.artistName + "<br/>"; 
+					artistSpan.classList.add("tooltipSubtitle");
+
+					let value1SpanPart1 = document.createElement("span");
+					value1SpanPart1.innerHTML = xScaleSelectedFeatureText + ": ";
+					value1SpanPart1.classList.add("tooltipKey");
+
+					let value1SpanPart2 = document.createElement("span");
+					value1SpanPart2.innerHTML = d[xScaleSelectedFeature] + "<br/>";
+					value1SpanPart2.classList.add("tooltipValue");
+
+					let value2SpanPart1 = document.createElement("span");
+					let value2SpanPart2 = document.createElement("span");
+
+					if(colorScaleSelectedFeatureText!="None"){
+						value2SpanPart1.innerHTML = colorScaleSelectedFeatureText + ": ";
+						value2SpanPart1.classList.add("tooltipKey");
+
+						value2SpanPart2.innerHTML = d[colorScaleSelectedFeature] + "<br/>";
+						value2SpanPart2.classList.add("tooltipValue");
+					}
+					let tooltipDOM = document.getElementById("audioScatter_"+d.trackKey);
+
+					while(tooltipDOM.firstChild){
+						tooltipDOM.removeChild(tooltipDOM.firstChild);
+					}
+
+					tooltipDOM.append(songTitleSpan);
+					tooltipDOM.append(artistSpan);
+					tooltipDOM.append(value1SpanPart1);
+					tooltipDOM.append(value1SpanPart2);
+					if(colorScaleSelectedFeatureText!="None"){
+						tooltipDOM.append(value2SpanPart1);
+						tooltipDOM.append(value2SpanPart2);
+					}
+
+					tooltip.style("left", (d3.event.pageX + 5) + "px")
+               				.style("top", (d3.event.pageY - 28) + "px");
+				})
+				.on("mouseout", function(d){
+					tooltip.transition()
+	               .duration(500)
+	               .style("opacity", 0);
+				})
 				.on("click", function(d, i){
 					//console.log("clicked");
 					//d3.select(this).style("fill", "steelblue")
 					d3.select(this).style("stroke", "black")
+					d3.select(this).attr("class", "clicked")
 					selectedCircles.push(d);
 					updateLineChart(selectedCircles);
 					//console.log(selectedCircles);
