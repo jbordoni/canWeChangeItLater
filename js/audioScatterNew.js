@@ -76,7 +76,8 @@ function updateAudioScatter(hmap){
 				.attr("r", 5)
 				.on("click", function(d, i){
 					//console.log("clicked");
-					d3.select(this).style("fill", "steelblue")
+					//d3.select(this).style("fill", "steelblue")
+					d3.select(this).style("stroke", "black")
 					selectedCircles.push(d);
 					updateLineChart(selectedCircles);
 					//console.log(selectedCircles);
