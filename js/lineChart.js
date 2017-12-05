@@ -19,12 +19,13 @@ function loadSVGInLineChart(){
 
     //let bubbleSVG = d3.select('#audioFeaturesScatterDiv').selectAll('svg')
 	
-	let audioScatterSVGGroup = bubbleChartSVG.append('g');
+	let audioScatterSVGGroup = bubbleChartSVG.append('g').attr("id", "lineChartSVGGroup");
 }
 
 function updateLineChart(hmap){
 
 	console.log("updating lineChart");
+	console.log(hmap);
 
 	let startMonthNo = startMonthNoGlobal; 
 	let endMonthNo = endMonthNoGlobal;
@@ -36,48 +37,75 @@ function updateLineChart(hmap){
 	let weekStringEnd = globalWeekStringMap[endMonthNoChart];
 
 	var audioSVG = d3.select("#lifeOfMusicHitDiv");
-	var audioSVGGroup = audioSVG.selectAll("g");
+	//var audioSVGGroup = audioSVG.selectAll("g");
+	let audioSVGGroup = d3.select("#lineChartSVGGroup")
+
+	let audioSVGDOM = document.getElementById("lineChartSVG");
 
 	let svgWidth = $("#lineChartSVG").width();
 	let svgHeight = $("#lineChartSVG").height(); 
-
-	//console.log(weekStringStart, weekStringEnd);
 
 	let parseWeek = d3.timeParse("%Y-%m-%d");
 
 	let weekList = globalWeekStringMap.slice(startMonthNoChart, endMonthNoChart+1);
 
-	let xPaddingForAxis = 30; 
+	let xPaddingForAxis = 30;
+	let yPaddingForAxis = 30 
+
+	let marginRight = 20;
 
 	var xScale = d3.scaleLinear()
-				.range([0+xPaddingForAxis, svgWidth])
+				.range([0+2*xPaddingForAxis, svgWidth-marginRight])
 				.domain([0, weekList.length]);
 
 	
 	var yScale = d3.scaleLinear()
-			.range([svgHeight, 10])
+			.range([svgHeight-1.5*yPaddingForAxis, 0])
 			.domain([0, 101]);
 
 	var yScaleForDisplay = d3.scaleLinear()
-			.range([svgHeight, 10])
-			.domain([101, 1])
+			.range([svgHeight-1.5*yPaddingForAxis, 0])
+			.domain([101, 0])
 
 	let yAxis = d3.axisLeft();
 	yAxis.scale(yScaleForDisplay)
-		.tickFormat();
+		.tickValues([1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
-	audioSVGGroup.append("g")
-	   .attr("class", "axis")
-	   .attr("transform", "translate(" + xPaddingForAxis + ",0)")
-	   .call(yAxis);
-	
-	//console.
+ 	let xAxis = d3.axisBottom()
+ 	xAxis.scale(xScale);
 
-	//let listOfWeeks = d3.range(parseWeek(weekStringStart), parseWeek(weekStringEnd))
+ 	console.log(audioSVGDOM.childNodes);
+	if(audioSVGDOM.firstChild.firstChild == null){
 
-	//console.log(listOfWeeks);
-	//return;
+		d3.select("#lineChartSVG").append("g")
+		   .attr("class", "axis")
+		   .attr("transform", "translate(" + 2*xPaddingForAxis + ",0)")
+		   .call(yAxis);
 
+		d3.select("#lineChartSVG").append("text")
+			.attr("class", "axisLabelScatter")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 0)
+	      .attr("x",0 - (svgHeight / 2))
+	      .attr("dy", "1em")
+	      .style("text-anchor", "middle")
+	      .text("Position on Chart"); 
+
+		d3.select("#lineChartSVG").append("g")
+		    .attr("class", "axis")
+		    .attr("transform", "translate(0," + (svgHeight-1.5*yPaddingForAxis) + ")")
+		    .call(xAxis);
+
+		d3.select("#lineChartSVG").append("text")
+			.attr("class", "axisLabelScatter")
+			.attr("transform",
+	            "translate(" + (svgWidth/2) + " ," + 
+	                           (svgHeight) + ")")
+		      .style("text-anchor", "middle")
+		      .text("Week");
+
+
+	}
 
 	dataList = [];
 
@@ -87,40 +115,20 @@ function updateLineChart(hmap){
 		}
 	}
 
-	// xValues = d3.range(1, 11);
-	// console.log(xValues);
-	// yValues = [3, 7, 5, 9];
+	console.log(dataList);
 
-	// let data = [{"month":1, "position":3}, {"month":2, "position":7}, {"month":5, "position":2}, {"month":9, "position":9}]
-
-	
-	//var parseTime = d3.timeParse("%m");
-
-							//.domain(d3.extent(data, function(d) { return parseTime(d.month); }));
-
-	/*var xScale = d3.scaleLinear()
-			.range([0, svgWidth])
-			.domain([d3.min(xValues), d3.max(xValues)]);*/
-
-								//.domain([d3.min(yValues), d3.max(yValues)]);
 
 	var valueline = d3.line()
     .x(function(d, i) { return xScale(i); })
     .y(function(d) { return yScale(101-d); });
 
+    var lines = audioSVGGroup.selectAll(".lineChartLine")
+     				.data(dataList, function(d){ return d; })
 
-    //xScale.domain(d3.extent(data, function(d) { return parseTime(d.month); }))
-    //yScale.domain([d3.min(yValues), d3.max(yValues)]);
-
-	/*audioSVGGroup.append("path")
-      .data([data])
-      .attr("class", "line")
-      .attr("d", valueline);*/
-    var lines = audioSVGGroup.selectAll(".line")
-     				.data(dataList, function(d){return d;})
+     				//want to retain original songs
      				
     lines.enter().append("path")
-		.attr("class", "line")
+		.attr("class", "lineChartLine")
 		.attr("d", valueline)
 		.on("mouseover", function(d){
 			console.log(d)
