@@ -29,7 +29,6 @@ function updateBubbleMapData(countryValues, countryValuesList){
 	//console.log("Am i here?");
 
 	var selectedFeature = document.getElementById('dropDownAudioFeatures').value;
-	//console.log(selectedFeature);
 	let nodeIdx = document.getElementById('dropDownAudioFeatures').selectedIndex;
 	//console.log(nodeIdx);
 
@@ -39,6 +38,8 @@ function updateBubbleMapData(countryValues, countryValuesList){
 	let radiusScale = d3.scaleLinear()
     					.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
     					.range([10, 30]);
+
+    				
 
     var tooltip = d3.select('body').append("div")	
 		    .attr("class", "bubbleMapTooltip")				
@@ -77,6 +78,58 @@ function updateBubbleMapData(countryValues, countryValuesList){
 				tooltip.transition()
                .duration(500)
                .style("opacity", 0)});
+
+    var legendMinUpdated
+    var legendMaxUpdated
+    var legendData
+
+    if (selectedFeature == "loudness")
+    {
+    	legendMinUpdated = "-60 dB <br > Less Loud"
+    	legendMaxUpdated = "0 dB <br > Very Loud"
+    	legendData = "Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude)"
+
+    }
+    else if(selectedFeature == "energy")
+    {
+		legendMinUpdated = 0.1
+    	legendMaxUpdated = 1.0
+    	legendData ="Energy represents a perceptual measure of intensity and activity"
+    }
+    else if(selectedFeature == "liveness")
+    {
+		legendMinUpdated = 0.1
+    	legendMaxUpdated = 1.0
+    	legendData ="Liveness detects the presence of an audience in the recording."
+    }
+    else if(selectedFeature == "tempo")
+    {
+		legendMinUpdated = Math.round(d3.min(countryValuesList) * 100) / 100 
+    	legendMaxUpdated = Math.round(d3.max(countryValuesList) * 100) / 100 
+    	legendData ="Tempo represents the overall estimated tempo of a track in beats per minute (BPM)."
+    }
+    else if(selectedFeature == "speechiness")
+    {
+		legendMinUpdated = "0.1 Less speechy"
+    	legendMaxUpdated = "1.0 Very speechy"
+		legendData="Speechiness detects the presence of spoken words in a track."
+	}
+	else if(selectedFeature == "acousticness")
+	{
+      	legendMinUpdated = "0.1"
+    	legendMaxUpdated = "1.0"
+		legendData="A confidence measure of whether the track is acoustic."
+	}
+	else if(selectedFeature == "danceability")	
+	{
+		legendMinUpdated = "0.1 <br> Least Danceable"
+    	legendMaxUpdated = "1.0 <br> Most Danceable"
+		legendData="Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity."
+	}
+    	
+    document.getElementById("minValue").innerHTML = legendMinUpdated 
+	document.getElementById("maxValue").innerHTML = legendMaxUpdated 
+	document.getElementById("legendText").innerHTML = legendData
 
 }
 
@@ -165,6 +218,8 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 		    .attr("class", "bubbleMapTooltip")				
 		    .style("opacity", 0);
 
+		    
+
 	bubbleChartSVGGroup.selectAll("circle")
 	.data(rawdata)
 	.enter()
@@ -242,4 +297,12 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     	//	"xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
 		});
 
+	var legendMinInitial = "0.1 <br > negative" 
+	var legendMaxInitial = "1.0 <br > positive"
+	document.getElementById("minValue").innerHTML = legendMinInitial 
+	document.getElementById("maxValue").innerHTML = legendMaxInitial
+	document.getElementById("legendText").innerHTML = "Valence measures the musical positiveness conveyed by a track"
+
+
 }
+
