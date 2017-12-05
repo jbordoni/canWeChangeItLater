@@ -19,6 +19,10 @@ function loadSVGInAudioScatter(){
 	let audioScatterSVGGroup = bubbleChartSVG.append('g');
 }
 
+
+function updateKeyForAudioScatter(){
+	updateAudioScatter(globalDataForAudioScatter);
+}
 function updateAudioScatter(hmap){
 	//console.log("Updating scatter");
 
@@ -29,7 +33,28 @@ function updateAudioScatter(hmap){
 	var xScaleValues = []; 
 	var colorScaleValues = [];
 
-	var xScaleSelectedFeature = document.getElementById("xdropdownScatter").value;
+	let selectedNodeX = d3.select("#xdropdownScatter").node()
+	let selectedNodeXIndex = selectedNodeX.selectedIndex;
+	//console.log(selectedNodeXIndex);
+
+	let xScaleSelectedFeature = selectedNodeX[selectedNodeXIndex].value; 
+	let xScaleSelectedFeatureText = selectedNodeX[selectedNodeXIndex].innerHTML; 
+
+	let selectedNodeColor = d3.select("#colordropdownScatter").node()
+	let selectedNodeColorIndex = selectedNodeColor.selectedIndex;
+	//console.log(selectedNodeXIndex);
+
+	let colorScaleSelectedFeature = selectedNodeColor[selectedNodeColorIndex].value; 
+	let colorScaleSelectedFeatureText = selectedNodeColor[selectedNodeColorIndex].innerHTML; 
+
+	//console.log(xScaleSelectedFeature, xScaleSelectedFeatureText);
+
+	//var xScaleSelectedFeature = document.getElementById("xdropdownScatter").value;
+	//var xScaleSelectedFeatureText = document.getElementById("xdropdownScatter").selectedIndex.innerHTML;
+
+	//var colorScaleSelectedFeature = document.getElementById("colordropdownScatter").value; 
+	//var colorScaleSelectedFeatureText = document.getElementById("colordropdownScatter").selectedIndex.innerHTML;
+	//console.log(colorScaleSelectedFeature);
 
 	var dataList = []; 
 
@@ -39,6 +64,11 @@ function updateAudioScatter(hmap){
 			obj[xScaleSelectedFeature]!=undefined && obj[xScaleSelectedFeature]!=null){
 			weekValues.push(obj['weeksOnCharts'])
 			xScaleValues.push(obj[xScaleSelectedFeature]);
+			if(colorScaleSelectedFeature!="none"){
+				if(obj[colorScaleSelectedFeature]!=undefined && obj[colorScaleSelectedFeature]!=null){
+					colorScaleValues.push(obj[colorScaleSelectedFeature])
+				}
+			}
 			dataList.push(obj);
 		}
 		
@@ -67,10 +97,28 @@ function updateAudioScatter(hmap){
 					.domain([d3.min(weekValues), d3.max(weekValues)])
 					.range([svgHeight-(yPadding), 0+yPadding]);
 
+	let colorValues = ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"]
+
+	if(colorScaleSelectedFeatureText !="None"){
+		var colorScale = d3.scaleQuantize()
+						.range(colorValues)
+						.domain([d3.min(colorScaleValues), d3.max(colorScaleValues)]);
+	
+
+	}
+
 	circles.enter().append("circle")
 				//.transition()
 				//.duration(300)
-				.style("fill", "orange")
+				.style("fill", function(d){
+						if(colorScaleSelectedFeatureText !="None"){
+						return colorScale(d[colorScaleSelectedFeature]);
+					}
+					else{
+						//return "orange";
+						return colorValues[2]; //return median color
+					}
+				})
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
 				.attr("r", 5)
