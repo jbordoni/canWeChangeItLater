@@ -90,7 +90,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
 						.duration(200)
 						.style("opacity", .9);
 
-				tooltip.attr("id", "bubbleMapTooltip_"+d.Country);
+				tooltip.attr("id", "bubbleMapTooltip_"+d.Code);
 
 				//let countrySpanPart1 = "Country: ";
 				//countrySpanPart1.classList.add("")
@@ -111,7 +111,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
 				//subtitleSpanPart1.classList.add("tooltipSubtitle");
 				//subtitleSpanPart2.classList.add("tooltipSubtitle");
 
-				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Country);
+				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Code);
 
 				while(tooltipDOM.firstChild){
 					tooltipDOM.removeChild(tooltipDOM.firstChild);
@@ -141,6 +141,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
 	})
 	.on('click',function(d,i){
 		if(globalCurrentBubbleClickedId!=null){
+			//console.log($("#"+globalCurrentBubbleClickedId).classes());
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleClicked");
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
 		}
@@ -328,7 +329,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.enter()
 	.append("circle")
 	//.attr("class")
-	.classed("bubbleDefault", true)
+	.attr("class", "bubbleDefault")
     .attr("fill", "#666666")
     .attr("r",function(d){ 
     	//console.log(d.Code);
@@ -368,18 +369,21 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 		return  xScales[scaleNumToUse-1](d.Y*1000);})
 		//linearScaleY((d.Y)*1000)})
 	.attr("text",function(d){return d.Country})
-	.attr("id", function(d){return d.Country})
+	.attr("id", function(d){return d.Code})
 	.on("mouseover", function(d){
 				//console.log("Inside Mouseover");
 				if(!(this.classList.contains("clicked"))){
-					$(this).addClass("bubbleHovered");
+					if(!(this.classList.contains("bubbleHovered"))){
+						$(this).addClass("bubbleHovered");
+
+					}
 				}
 				
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
 
-				tooltip.attr("id", "bubbleMapTooltip_"+d.Country);
+				tooltip.attr("id", "bubbleMapTooltip_"+d.Code);
 
 				//let countrySpanPart1 = "Country: ";
 				//countrySpanPart1.classList.add("")
@@ -400,7 +404,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 				//subtitleSpanPart1.classList.add("tooltipSubtitle");
 				//subtitleSpanPart2.classList.add("tooltipSubtitle");
 
-				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Country);
+				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Code);
 
 				while(tooltipDOM.firstChild){
 					tooltipDOM.removeChild(tooltipDOM.firstChild);
@@ -430,10 +434,13 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	})
 	.on('click',function(d,i){
 		if(globalCurrentBubbleClickedId!=null){
+			console.log(document.getElementById(globalCurrentBubbleClickedId).classList);
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleClicked");
 			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
 		}
-		$(this).addClass("bubbleClicked")
+		if(!(this.classList.contains("bubbleClicked"))){
+			$(this).addClass("bubbleClicked")
+		}
 
 		if(!(d.Code==globalCountryCode)){
 			//only call if different country is clicked
