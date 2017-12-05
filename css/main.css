@@ -275,4 +275,23 @@ body {
 	line-height: 0.95;
 }
 
+#music_chart_panel {
+	text-align: left;
+	padding: 0 3.5%;
+	margin-bottom: 5px;
+	font-size:0.4rem;
+	margin-top: 5px;
+}
+
+#music_chart_panel h2{
+	font-size: 1.4rem;
+	margin-bottom: 4px;
+	line-height: 0.95;
+}
+
+.music_chart_title_area p{
+	font-size: 0.7rem;
+	margin-bottom: 0;
+	line-height: 1.15;
+}
 
