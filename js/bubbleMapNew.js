@@ -10,7 +10,7 @@ function loadSVGInBubbleMap(countryValues, countryValuesList){
 
     bubbleChart = d3.select('#bubbleMap')
     			.append('svg')
-    			.style("top", bubbleChartDiv.offsetTop-50+"px")
+    			.style("top", bubbleChartDiv.offsetTop+"px")
     			.style("left", bubbleChartDiv.offsetLeft+"px")
     			.attr("id", "bubbleMapSVG")
     			.attr("height", bubbleChartDivHeight)
@@ -121,7 +121,8 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     	//console.log(continentDivWidth);
     	let continentDivHeight = continentDiv.clientHeight;
     	let position = continentDiv.getBoundingClientRect();
-    	let continentDivStartX = parseInt(continentDiv.offsetLeft);
+    	let continentDivStartXInitial = parseInt(continentDiv.offsetLeft);
+    	let continentDivStartX = continentDivStartXInitial + (i*continentDivWidth);
     	let continentDivStartY = parseInt(continentDiv.offsetTop);
     	//console.log(continentDivStartX,continentDivStartX+continentDivWidth-2*continentDivPadding)
 
@@ -148,7 +149,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     		let continentYScale = d3.scaleLinear()
 	    						.domain([d3.min(yCoordinatesContainer[i]), d3.max(yCoordinatesContainer[i])])
 								.range([
-    							continentDivStartY+(0.7*continentDivHeight)-continentDivYPadding, 
+    							continentDivStartY+(0.8*continentDivHeight)-continentDivYPadding, 
     							continentDivStartY]);
 
 			yScales[i]=continentYScale;
