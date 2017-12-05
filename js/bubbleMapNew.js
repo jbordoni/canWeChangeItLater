@@ -218,9 +218,41 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
-				tooltip.html("Country: " + d.Country+
-							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
-				.style("left", (d3.event.pageX + 5) + "px")
+
+				tooltip.attr("id", "bubbleMap_"+d.Country);
+
+				//let countrySpanPart1 = "Country: ";
+				//countrySpanPart1.classList.add("")
+				let countrySpan = document.createElement("span");
+				countrySpan.innerHTML = d.Country + "<br/>"; 
+				countrySpan.classList.add("tooltipTitle");
+				//console.log(countrySpan);
+				//console.log(tooltip);
+
+				let subtitleSpanPart1 = document.createElement("span");
+				subtitleSpanPart1.classList.add("tooltipKey");
+				subtitleSpanPart1.innerHTML = selectedFeatureText+": ";
+
+				let subtitleSpanPart2 = document.createElement("span");
+				subtitleSpanPart2.classList.add("tooltipValue");
+				subtitleSpanPart2.innerHTML = parseFloat(countryValues[d.Code]).toFixed(2);
+
+				subtitleSpanPart1.classList.add("tooldtipSubtitle");
+				subtitleSpanPart2.classList.add("tooltipSubtitle");
+
+				let tooltipDOM = document.getElementById("bubbleMap_"+d.Country);
+
+				while(tooltipDOM.firstChild){
+					tooltipDOM.removeChild(tooltipDOM.firstChild);
+				}
+
+				tooltipDOM.append(countrySpan);
+				tooltipDOM.append(subtitleSpanPart1);
+				tooltipDOM.append(subtitleSpanPart2);
+
+				//tooltip.html("Country: " + d.Country+
+				//			"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
+				tooltip.style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
 	})
 	.on("mouseout", function(d){
