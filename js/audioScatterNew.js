@@ -95,6 +95,41 @@ function updateAudioScatter(hmap){
 	var yScale = d3.scaleLinear()
 					.domain([d3.min(weekValues), d3.max(weekValues)])
 					.range([svgHeight-(yPadding), 0+yPadding]);
+    
+    //Adding the X - axis 
+	var xAxis = d3.axisBottom()
+                   .scale(xScale);
+
+    audioSVG.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0," + (svgHeight - yPadding) + ")")
+    .call(xAxis); 
+
+    //Adding the X - label  -- add margin.bottom to svgheight
+    audioSVG.append("text")      
+        .attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight) + ")")
+        .style("text-anchor", "middle")
+        .text(xScaleSelectedFeature); 
+    
+    //Adding the Y - axis
+    var yAxis = d3.axisLeft()
+    				.scale(yScale)
+                 
+    audioSVG.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(" + xPadding + ",0)")
+    .call(yAxis);
+
+    //Adding Y - label - Change 5 to margin.left
+    audioSVG.append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y",0 - 5)
+        .attr("x",0 - (svgHeight / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Weeks On Charts");
+
+
 
 	let colorValues = ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"]
 
