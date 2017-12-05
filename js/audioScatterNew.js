@@ -16,7 +16,8 @@ function loadSVGInAudioScatter(){
 
     //let bubbleSVG = d3.select('#audioFeaturesScatterDiv').selectAll('svg')
 	
-	let audioScatterSVGGroup = bubbleChartSVG.append('g');
+	let audioScatterSVGGroup = bubbleChartSVG.append('g')
+											.attr("id", "audioScatterMainGroup");
 }
 
 
@@ -27,7 +28,7 @@ function updateAudioScatter(hmap){
 	//console.log("Updating scatter");
 
 	var audioSVG = d3.select("#audioSVG");
-	var audioSVGGroup = audioSVG.selectAll("g");
+	var audioSVGGroup = d3.select("#audioScatterMainGroup");
 
 	var weekValues = []; 
 	var xScaleValues = []; 
@@ -98,36 +99,53 @@ function updateAudioScatter(hmap){
     
     //Adding the X - axis 
 	var xAxis = d3.axisBottom()
-                   .scale(xScale).ticks(5);
+                .scale(xScale).ticks(5);
 
-    audioSVG.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(0," + (svgHeight - yPadding) + ")")
-    .call(xAxis); 
+     var yAxis = d3.axisLeft()
+				.scale(yScale)
 
-    //Adding the X - label  -- add margin.bottom to svgheight
-    audioSVG.append("text")      
-        .attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight) + ")")
-        .style("text-anchor", "middle")
-        .text(xScaleSelectedFeature); 
-    
-    //Adding the Y - axis
-    var yAxis = d3.axisLeft()
-    				.scale(yScale)
-                 
-    audioSVG.append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(" + xPadding + ",0)")
-    .call(yAxis);
+    let audioSVGDOM = document.getElementById("audioSVG");
+    if(audioSVGDOM.firstChild.firstChild==null){
 
-    //Adding Y - label - Change 5 to margin.left
-    audioSVG.append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y",0 - 5)
-        .attr("x",0 - (svgHeight / 2))
-        .attr("dy", "1em")
-        .style("text-anchor", "middle")
-        .text("Weeks On Charts");
+    	audioSVG.append("g")
+	    .attr("class", "axis")
+	    .attr("transform", "translate(0," + (svgHeight - yPadding) + ")")
+	    .attr("id", "audioScatterXAxis")
+	    .call(xAxis); 
+
+	    //Adding the X - label  -- add margin.bottom to svgheight
+	    audioSVG.append("text")      
+	        .attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight) + ")")
+	        .style("text-anchor", "middle")
+	        .attr("id", "audioScatterXAxisLabel")
+	        .text(xScaleSelectedFeatureText); 
+	    
+	    //Adding the Y - axis
+	    
+	                 
+	    audioSVG.append("g")
+	    .attr("class", "axis")
+	    .attr("transform", "translate(" + xPadding + ",0)")
+	    .call(yAxis);
+
+	    //Adding Y - label - Change 5 to margin.left
+	    audioSVG.append("text")
+	        .attr("transform", "rotate(-90)")
+	        .attr("y",0 - 5)
+	        .attr("x",0 - (svgHeight / 2))
+	        .attr("dy", "1em")
+	        .style("text-anchor", "middle")
+	        .text("Weeks On Charts");
+    }
+    else{
+    	d3.select("#audioScatterXAxisLabel").text(xScaleSelectedFeatureText);
+    	d3.select("#audioScatterXAxis").call(xAxis);
+
+    }
+
+
+
+
 
 
 
@@ -204,11 +222,23 @@ function updateAudioScatter(hmap){
 
 					tooltip.style("left", (d3.event.pageX + 5) + "px")
                				.style("top", (d3.event.pageY - 28) + "px");
+
+
+               		let correspondingLine = document.getElementById("lineChart_"+d.trackKey);
+               		if(correspondingLine!=null){
+	               		correspondingLine.classList.add("lineChartLineHover");
+
+               		}
 				})
 				.on("mouseout", function(d){
 					tooltip.transition()
 	               .duration(500)
 	               .style("opacity", 0);
+
+	                let correspondingLine = document.getElementById("lineChart_"+d.trackKey);
+               		if(correspondingLine!=null){
+               			correspondingLine.classList.remove("lineChartLineHover");
+           			}
 				})
 				.on("click", function(d, i){
 					//console.log("clicked");

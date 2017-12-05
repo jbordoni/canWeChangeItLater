@@ -109,13 +109,17 @@ function updateLineChart(hmap){
 	}
 
 	dataList = [];
+	keysList = [];
 
 	for(var song in hmap){
 		if(hmap.hasOwnProperty(song)){
-			dataList.push(hmap[song]['positionList'])
+			//let ob
+			dataList.push(hmap[song]['positionList']);
+			keysList.push(hmap[song]['trackKey']);
+			//console.log(hmap[song])
 		}
 	}
-
+	console.log(keysList);
 	console.log(dataList);
 
 
@@ -124,15 +128,25 @@ function updateLineChart(hmap){
     .y(function(d) { return yScale(101-d); });
 
     var lines = audioSVGGroup.selectAll(".lineChartLine")
-     				.data(dataList, function(d){ return d; })
+     				.data(dataList, function(d){ return d.positionList; })
 
      				//want to retain original songs
      				
     lines.enter().append("path")
 		.attr("class", "lineChartLine")
 		.attr("d", valueline)
+		.attr("id", function(d, i){
+			//return i;
+			//console.log(i);
+			//console.log(keysList[i])
+			return "lineChart_"+keysList[i];
+		})
 		.on("mouseover", function(d){
-			console.log(d)
+			//console.log(d)
+			$(this).addClass("lineChartLineHover");
+		})
+		.on("mouseout", function(d){
+			$(this).removeClass("lineChartLineHover");
 		})
 
     lines.exit().remove()

@@ -36,5 +36,31 @@
   stroke-width: 2px;
 }
 
+.lineChartLineHover {
+  fill: none;
+  stroke: crimson!important;
+  stroke-width: 3px!important;
+}
+
+.bubbleDefault {
+  stroke-width:2px;
+  fill:#666666;
+  stroke:#f2de31;
+}
+
+.bubbleClicked { 
+
+  stroke:steelblue!important;
+  fill: #333333;
+  stroke-width:3px;
+}
+
+.bubbleHovered {
+
+  stroke:orange;
+  fill:#333333;
+  stroke-width:3px;
+
+}
 .tooltipTitle { 
 }

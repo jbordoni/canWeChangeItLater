@@ -59,7 +59,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
     })
     //.transition().duration(500);
    
-    dots.on("mouseover", function(d){
+    /*dots.on("mouseover", function(d){
 				//console.log("Inside Mouseover");
 				d3.select(this).attr('stroke',"orange")
 				d3.select(this).attr("fill", "#333333")
@@ -70,14 +70,85 @@ function updateBubbleMapData(countryValues, countryValuesList){
 				tooltip.html("Country: " + d.Country+
 							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
 				.style("left", (d3.event.pageX + 5) + "px")
-               .style("top", (d3.event.pageY - 28) + "px");})
+               .style("top", (d3.event.pageY - 28) + "px");
+               })
     .on("mouseout", function(d){
 				d3.select(this).attr('stroke',"yellow");
 				d3.select(this).attr("fill","#666666")
 				d3.select(this).attr("stroke-width", 1)
 				tooltip.transition()
                .duration(500)
-               .style("opacity", 0)});
+               .style("opacity", 0)});*/
+
+	dots.on("mouseover", function(d){
+				//console.log("Inside Mouseover");
+				if(!(this.classList.contains("clicked"))){
+					$(this).addClass("bubbleHovered");
+				}
+				
+				tooltip.transition()
+						.duration(200)
+						.style("opacity", .9);
+
+				tooltip.attr("id", "bubbleMapTooltip_"+d.Country);
+
+				//let countrySpanPart1 = "Country: ";
+				//countrySpanPart1.classList.add("")
+				let countrySpan = document.createElement("span");
+				countrySpan.innerHTML = d.Country + "<br/>"; 
+				countrySpan.classList.add("tooltipTitle");
+				//console.log(countrySpan);
+				//console.log(tooltip);
+
+				let subtitleSpanPart1 = document.createElement("span");
+				subtitleSpanPart1.classList.add("tooltipKey");
+				subtitleSpanPart1.innerHTML = selectedFeatureText+": ";
+
+				let subtitleSpanPart2 = document.createElement("span");
+				subtitleSpanPart2.classList.add("tooltipValue");
+				subtitleSpanPart2.innerHTML = parseFloat(countryValues[d.Code]).toFixed(2);
+
+				//subtitleSpanPart1.classList.add("tooltipSubtitle");
+				//subtitleSpanPart2.classList.add("tooltipSubtitle");
+
+				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Country);
+
+				while(tooltipDOM.firstChild){
+					tooltipDOM.removeChild(tooltipDOM.firstChild);
+				}
+
+				tooltipDOM.append(countrySpan);
+				tooltipDOM.append(subtitleSpanPart1);
+				tooltipDOM.append(subtitleSpanPart2);
+
+				//tooltip.html("Country: " + d.Country+
+				//			"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
+				tooltip.style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+	})
+	.on("mouseout", function(d){
+			//also remove clicked from all other circles
+			if(this.classList.contains("bubbleClicked")){
+				//do not change stroke attributes
+
+			}
+			else{
+				$(this).removeClass("bubbleHovered");
+			}
+			tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+	})
+	.on('click',function(d,i){
+		if(globalCurrentBubbleClickedId!=null){
+			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleClicked");
+			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
+		}
+		$(this).addClass("bubbleClicked")
+		globalCurrentBubbleClickedId = this.id;
+		globalCountryCode = d.Code;
+		filterSongsByCountry();
+		});
 
     var legendMinUpdated
     var legendMaxUpdated
@@ -194,11 +265,21 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 
     	//console.log("Checking div left:",continentDivStartX); 
 
-    	let continentXScale = d3.scaleLinear()
+    	if(i==2){
+    		let continentXScale = d3.scaleLinear()
+    						.domain([d3.min(xCoordinatesContainer[i]), d3.max(xCoordinatesContainer[i])])
+    						.range([continentDivStartX+continentDivXPadding, 
+    							continentDivStartX+continentDivWidth-2*continentDivXPadding]);
+    		xScales.push(continentXScale);
+    	}
+    	else{
+    		let continentXScale = d3.scaleLinear()
     						.domain([d3.min(xCoordinatesContainer[i]), d3.max(xCoordinatesContainer[i])])
     						.range([continentDivStartX+continentDivXPadding, 
     							continentDivStartX+continentDivWidth-continentDivXPadding]);
-    	xScales.push(continentXScale);
+    		xScales.push(continentXScale);
+    	}
+    	
 
     	if(i==1)
     	{
@@ -211,12 +292,17 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 			yScales[i]=continentYScale;
     	}
     	else{
-
+    		let factor = 0.8;
+    		let paddingFactor = 0;
+    		if(i==2){
+    			factor = 0.9;
+    			paddingFactor = 6;
+    		}
     		let continentYScale = d3.scaleLinear()
 	    						.domain([d3.min(yCoordinatesContainer[i]), d3.max(yCoordinatesContainer[i])])
 								.range([
-    							continentDivStartY+(0.8*continentDivHeight)-continentDivYPadding, 
-    							continentDivStartY]);
+    							continentDivStartY+(factor*continentDivHeight)-continentDivYPadding, 
+    							continentDivStartY+ paddingFactor*continentDivYPadding]);
 
 			yScales[i]=continentYScale;
 
@@ -238,7 +324,8 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.data(rawdata)
 	.enter()
 	.append("circle")
-	.attr("stroke", "yellow")
+	//.attr("class")
+	.classed("bubbleDefault", true)
     .attr("fill", "#666666")
     .attr("r",function(d){ 
     	//console.log(d.Code);
@@ -282,16 +369,14 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.on("mouseover", function(d){
 				//console.log("Inside Mouseover");
 				if(!(this.classList.contains("clicked"))){
-					d3.select(this).attr('stroke',"orange")
-					d3.select(this).attr("fill", "#333333")
-					d3.select(this).attr("stroke-width", 3)
+					$(this).addClass("bubbleHovered");
 				}
 				
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
 
-				tooltip.attr("id", "bubbleMap_"+d.Country);
+				tooltip.attr("id", "bubbleMapTooltip_"+d.Country);
 
 				//let countrySpanPart1 = "Country: ";
 				//countrySpanPart1.classList.add("")
@@ -312,7 +397,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 				//subtitleSpanPart1.classList.add("tooltipSubtitle");
 				//subtitleSpanPart2.classList.add("tooltipSubtitle");
 
-				let tooltipDOM = document.getElementById("bubbleMap_"+d.Country);
+				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Country);
 
 				while(tooltipDOM.firstChild){
 					tooltipDOM.removeChild(tooltipDOM.firstChild);
@@ -329,29 +414,26 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	})
 	.on("mouseout", function(d){
 			//also remove clicked from all other circles
-			if(this.classList.contains("clicked")){
+			if(this.classList.contains("bubbleClicked")){
 				//do not change stroke attributes
 
 			}
 			else{
-				d3.select(this).attr('stroke',"yellow");
-				d3.select(this).attr("stroke-width", 1)
-				d3.select(this).attr("fill","#666666")
+				$(this).removeClass("bubbleHovered");
 			}
 			tooltip.transition()
                .duration(500)
                .style("opacity", 0);
 	})
 	.on('click',function(d,i){
-		//call scatterplot
-		d3.select(this).attr('stroke',"steelblue")
-		d3.select(this).attr("fill", "#333333")
-		d3.select(this).attr("stroke-width", 3)
-		d3.select(this).attr("class", "clicked")
+		if(globalCurrentBubbleClickedId!=null){
+			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleClicked");
+			$("#"+globalCurrentBubbleClickedId).removeClass("bubbleHovered");	
+		}
+		$(this).addClass("bubbleClicked")
+		globalCurrentBubbleClickedId = this.id;
 		globalCountryCode = d.Code;
 		filterSongsByCountry();
-		//audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 
-    	//	"xdropdownScatter", "colordropdownScatter", "updateAudioFeatScatter");
 		});
 
 	var legendMinInitial = "0.1 <br > negative" 

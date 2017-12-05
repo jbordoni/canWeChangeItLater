@@ -98,11 +98,11 @@
               <div id="audioFeaturesScatterDiv">
 
                 <div class="dropdownMenuContainer">
-                  <div style="display: table-cell; width: 120;">
+                  <!--<div style="display: table-cell; width: 120;">
                     <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
                       <option val="weeksOnCharts">Weeks On Charts</option>
                     </select>
-                  </div>
+                  </div>-->
                   <div style="display: table-cell; width: 150;">
                     <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
                       <option value="valence">Valence</option>
@@ -180,6 +180,8 @@
   var audioFeaturesMapGlobal = {}
 
   var globalDataForAudioScatter = null; 
+
+  var globalCurrentBubbleClickedId = null;
 
 
   loadCountryData(); //load up complete data sync
