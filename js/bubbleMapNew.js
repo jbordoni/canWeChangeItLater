@@ -10,7 +10,7 @@ function loadSVGInBubbleMap(countryValues, countryValuesList){
 
     bubbleChart = d3.select('#bubbleMap')
     			.append('svg')
-    			.style("top", bubbleChartDiv.offsetTop-50+"px")
+    			.style("top", bubbleChartDiv.offsetTop+"px")
     			.style("left", bubbleChartDiv.offsetLeft+"px")
     			.attr("id", "bubbleMapSVG")
     			.attr("height", bubbleChartDivHeight)
@@ -174,7 +174,8 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     	//console.log(continentDivWidth);
     	let continentDivHeight = continentDiv.clientHeight;
     	let position = continentDiv.getBoundingClientRect();
-    	let continentDivStartX = parseInt(continentDiv.offsetLeft);
+    	let continentDivStartXInitial = parseInt(continentDiv.offsetLeft);
+    	let continentDivStartX = continentDivStartXInitial + (i*continentDivWidth);
     	let continentDivStartY = parseInt(continentDiv.offsetTop);
     	//console.log(continentDivStartX,continentDivStartX+continentDivWidth-2*continentDivPadding)
 
@@ -201,7 +202,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     		let continentYScale = d3.scaleLinear()
 	    						.domain([d3.min(yCoordinatesContainer[i]), d3.max(yCoordinatesContainer[i])])
 								.range([
-    							continentDivStartY+(0.7*continentDivHeight)-continentDivYPadding, 
+    							continentDivStartY+(0.8*continentDivHeight)-continentDivYPadding, 
     							continentDivStartY]);
 
 			yScales[i]=continentYScale;
@@ -267,22 +268,64 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 	.attr("id", function(d){return d.Country})
 	.on("mouseover", function(d){
 				//console.log("Inside Mouseover");
-				d3.select(this).attr('stroke',"orange")
-				d3.select(this).attr("fill", "#333333")
-				d3.select(this).attr("stroke-width", 3)
+				if(!(this.classList.contains("clicked"))){
+					d3.select(this).attr('stroke',"orange")
+					d3.select(this).attr("fill", "#333333")
+					d3.select(this).attr("stroke-width", 3)
+				}
+				
 				tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
-				tooltip.html("Country: " + d.Country+
-							"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
-				.style("left", (d3.event.pageX + 5) + "px")
+
+				tooltip.attr("id", "bubbleMap_"+d.Country);
+
+				//let countrySpanPart1 = "Country: ";
+				//countrySpanPart1.classList.add("")
+				let countrySpan = document.createElement("span");
+				countrySpan.innerHTML = d.Country + "<br/>"; 
+				countrySpan.classList.add("tooltipTitle");
+				//console.log(countrySpan);
+				//console.log(tooltip);
+
+				let subtitleSpanPart1 = document.createElement("span");
+				subtitleSpanPart1.classList.add("tooltipKey");
+				subtitleSpanPart1.innerHTML = selectedFeatureText+": ";
+
+				let subtitleSpanPart2 = document.createElement("span");
+				subtitleSpanPart2.classList.add("tooltipValue");
+				subtitleSpanPart2.innerHTML = parseFloat(countryValues[d.Code]).toFixed(2);
+
+				//subtitleSpanPart1.classList.add("tooltipSubtitle");
+				//subtitleSpanPart2.classList.add("tooltipSubtitle");
+
+				let tooltipDOM = document.getElementById("bubbleMap_"+d.Country);
+
+				while(tooltipDOM.firstChild){
+					tooltipDOM.removeChild(tooltipDOM.firstChild);
+				}
+
+				tooltipDOM.append(countrySpan);
+				tooltipDOM.append(subtitleSpanPart1);
+				tooltipDOM.append(subtitleSpanPart2);
+
+				//tooltip.html("Country: " + d.Country+
+				//			"<br/>"+selectedFeatureText+": "+(parseFloat(countryValues[d.Code]).toFixed(2)))
+				tooltip.style("left", (d3.event.pageX + 5) + "px")
                .style("top", (d3.event.pageY - 28) + "px");
 	})
 	.on("mouseout", function(d){
+			//also remove clicked from all other circles
+			if(this.classList.contains("clicked")){
+				//do not change stroke attributes
+
+			}
+			else{
 				d3.select(this).attr('stroke',"yellow");
-				d3.select(this).attr("fill","#666666")
 				d3.select(this).attr("stroke-width", 1)
-				tooltip.transition()
+				d3.select(this).attr("fill","#666666")
+			}
+			tooltip.transition()
                .duration(500)
                .style("opacity", 0);
 	})
@@ -291,6 +334,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 		d3.select(this).attr('stroke',"steelblue")
 		d3.select(this).attr("fill", "#333333")
 		d3.select(this).attr("stroke-width", 3)
+		d3.select(this).attr("class", "clicked")
 		globalCountryCode = d.Code;
 		filterSongsByCountry();
 		//audioFeaturesScatter.initiate("audioFeaturesScatterDiv", "ydropdownScatter", 

@@ -119,6 +119,7 @@ function filterSongsByCountry(){
 
 	//console.log(Object.keys(hmap).length);
 	//console.log(hmap);
+	globalDataForAudioScatter = hmap; 
 	updateAudioScatter(hmap);
 
 	//let selectedFeatureX = document.getElementById("xdropdownScatter").value;
