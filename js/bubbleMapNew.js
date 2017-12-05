@@ -102,7 +102,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
 
 				let subtitleSpanPart1 = document.createElement("span");
 				subtitleSpanPart1.classList.add("tooltipKey");
-				subtitleSpanPart1.innerHTML = selectedFeatureText+": ";
+				subtitleSpanPart1.innerHTML = "Average "+selectedFeatureText+": ";
 
 				let subtitleSpanPart2 = document.createElement("span");
 				subtitleSpanPart2.classList.add("tooltipValue");
@@ -391,7 +391,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 
 				let subtitleSpanPart1 = document.createElement("span");
 				subtitleSpanPart1.classList.add("tooltipKey");
-				subtitleSpanPart1.innerHTML = selectedFeatureText+": ";
+				subtitleSpanPart1.innerHTML = "Average "+selectedFeatureText+": ";
 
 				let subtitleSpanPart2 = document.createElement("span");
 				subtitleSpanPart2.classList.add("tooltipValue");
