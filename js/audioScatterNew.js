@@ -98,7 +98,7 @@ function updateAudioScatter(hmap){
     
     //Adding the X - axis 
 	var xAxis = d3.axisBottom()
-                   .scale(xScale);
+                   .scale(xScale).ticks(5);
 
     audioSVG.append("g")
     .attr("class", "axis")
