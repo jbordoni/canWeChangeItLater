@@ -29,6 +29,10 @@
 .axisLabelScatter {
 }
 
+.monthLabel {
+  font-size: 10px;
+}
+
 
 .lineChartLine {
   fill: none;
