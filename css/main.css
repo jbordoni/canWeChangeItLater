@@ -219,7 +219,7 @@ body {
 #bubble_map_panel{
 	text-align: left;
 	padding: 0 3.5%;
-	margin-bottom:5px;
+	margin-bottom:10px;
 	font-size: 0.4rem;
 }
 
@@ -241,6 +241,12 @@ body {
 	margin-bottom: 0;
 }
 
+#music_chart_container {
+	padding-right: 0;
+}
 
+#audio_features_container {
+	padding-left:0;
+}
 
 
