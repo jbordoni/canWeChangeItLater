@@ -98,7 +98,7 @@
                     </select>
                   </div>
                   <div style="display: table-cell; width: 150;">
-                    <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter">
+                    <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
                       <option value="valence">Valence</option>
                       <option value="energy">Energy</option>
                       <option value="liveness">Liveness</option>
@@ -110,7 +110,7 @@
                     </select>
                   </div>
                   <div style="display: table-cell; width: 150;">
-                    <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter">
+                    <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
                       <option value="none">None</option>
                       <option value="valence">Valence</option>
                       <option value="energy">Energy</option>
