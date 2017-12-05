@@ -127,9 +127,22 @@ function updateBubbleMapData(countryValues, countryValuesList){
 		legendData="Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity."
 	}
     	
-    document.getElementById("minValue").innerHTML = legendMinUpdated 
+    let minValueDOM = document.getElementById("minValue");
+    let maxValueDOM = document.getElementById("maxValue");
+    let legendTextDOM = document.getElementById("legendText");
+    if(minValueDOM!=null){
+    	minValueDOM.innerHTML=legendMinUpdated;
+    }
+    if(maxValueDOM!=null)
+    {
+    	maxValueDOM.innerHTML = legendMaxUpdated;
+    }
+    if(legendTextDOM!=null){
+    	legendTextDOM.innerHTML = legendData;
+    }
+    /*document.getElementById().innerHTML = legendMinUpdated 
 	document.getElementById("maxValue").innerHTML = legendMaxUpdated 
-	document.getElementById("legendText").innerHTML = legendData
+	document.getElementById("legendText").innerHTML = legendData*/
 
 }
 
@@ -343,10 +356,23 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 
 	var legendMinInitial = "0.1 <br > negative" 
 	var legendMaxInitial = "1.0 <br > positive"
-	document.getElementById("minValue").innerHTML = legendMinInitial 
+	/*document.getElementById("minValue").innerHTML = legendMinInitial 
 	document.getElementById("maxValue").innerHTML = legendMaxInitial
 	document.getElementById("legendText").innerHTML = "Valence measures the musical positiveness conveyed by a track"
-
+	*/
+	let minValueDOM = document.getElementById("minValue");
+    let maxValueDOM = document.getElementById("maxValue");
+    let legendTextDOM = document.getElementById("legendText");
+    if(minValueDOM!=null){
+    	minValueDOM.innerHTML=legendMinInitial;
+    }
+    if(maxValueDOM!=null)
+    {
+    	maxValueDOM.innerHTML = legendMaxInitial;
+    }
+    if(legendTextDOM!=null){
+    	legendTextDOM.innerHTML = "Valence measures the musical positiveness conveyed by a track";
+    }
 
 }
 
