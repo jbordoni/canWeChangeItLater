@@ -53,6 +53,7 @@ function updateLineChart(hmap){
 	let yPaddingForAxis = 30 
 
 	let marginRight = 20;
+	let marginTop = 20;
 
 	var xScale = d3.scaleLinear()
 				.range([0+2*xPaddingForAxis, svgWidth-marginRight])
@@ -60,11 +61,11 @@ function updateLineChart(hmap){
 
 	
 	var yScale = d3.scaleLinear()
-			.range([svgHeight-1.5*yPaddingForAxis, 0])
+			.range([svgHeight-1.5*yPaddingForAxis, marginTop])
 			.domain([0, 101]);
 
 	var yScaleForDisplay = d3.scaleLinear()
-			.range([svgHeight-1.5*yPaddingForAxis, 0])
+			.range([svgHeight-1.5*yPaddingForAxis, marginTop])
 			.domain([101, 0])
 
 	let yAxis = d3.axisLeft();
