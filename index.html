@@ -107,40 +107,47 @@
           </div>
           <div class="row" id="below_container_row">
             <div class="col-md-6" id="audio_features_container">
-              <div id="audioFeaturesScatterDiv">
 
-                <div class="dropdownMenuContainer">
-                  <!--<div style="display: table-cell; width: 120;">
-                    <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
-                      <option val="weeksOnCharts">Weeks On Charts</option>
-                    </select>
-                  </div>-->
-                  <div style="display: table-cell; width: 150;">
-                    <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
-                      <option value="valence">Valence</option>
-                      <option value="energy">Energy</option>
-                      <option value="liveness">Liveness</option>
-                      <option value="tempo">Tempo</option>
-                      <option value="speechiness">Speechiness</option>
-                      <option value="acousticness">Acousticness</option>
-                      <option value="danceability">Danceability</option>
-                      <option value="loudness">Loudness</option>
-                    </select>
+              <div id="audioFeaturesScatterDiv">
+                <div class="row" id="audio_features_panel">
+                  <div class="col-md-7 audio_features_title_area">
+                      <h2>Popular Song Features</h2>
+                      <p>What are the features of the most popular songs?</p>
                   </div>
-                  <div style="display: table-cell; width: 150;">
-                    <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
-                      <option value="none">None</option>
-                      <option value="valence">Valence</option>
-                      <option value="energy">Energy</option>
-                      <option value="liveness">Liveness</option>
-                      <option value="tempo">Tempo</option>
-                      <option value="speechiness">Speechiness</option>
-                      <option value="acousticness">Acousticness</option>
-                      <option value="danceability">Danceability</option>
-                      <option value="loudness">Loudness</option>
-                    </select>
+                  <div class="col-md-5">
+                    <!--<div style="display: table-cell; width: 120;">
+                      <label for="ydropdownScatter">Y-axis: </label><select id="ydropdownScatter">
+                        <option val="weeksOnCharts">Weeks On Charts</option>
+                      </select>
+                    </div>-->
+                    <div class="dropdownMenuContainer">
+                      <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
+                        <option value="valence">Valence</option>
+                        <option value="energy">Energy</option>
+                        <option value="liveness">Liveness</option>
+                        <option value="tempo">Tempo</option>
+                        <option value="speechiness">Speechiness</option>
+                        <option value="acousticness">Acousticness</option>
+                        <option value="danceability">Danceability</option>
+                        <option value="loudness">Loudness</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
+                        <option value="none">None</option>
+                        <option value="valence">Valence</option>
+                        <option value="energy">Energy</option>
+                        <option value="liveness">Liveness</option>
+                        <option value="tempo">Tempo</option>
+                        <option value="speechiness">Speechiness</option>
+                        <option value="acousticness">Acousticness</option>
+                        <option value="danceability">Danceability</option>
+                        <option value="loudness">Loudness</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
+
                 <!--<div style="display: table-cell; width: 150;">
                   <button id="updateAudioFeatScatter" onclick="testUpdate()">Update</button>
                 </div>-->

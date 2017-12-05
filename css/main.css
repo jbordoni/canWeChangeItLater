@@ -74,7 +74,7 @@
 #audioFeaturesScatterDiv {
 	
 	border-top: 7px solid crimson;
-	padding-top:5%;
+	padding-top:1.5%;
 	height:100%;
 	width: 100%;
 	
@@ -83,7 +83,7 @@
 #lifeOfMusicHitDiv {
 
 	border-top: 7px solid #f6931c;
-	padding-top:5%;
+	padding-top:1.5%;
 	height:100%;
 	width: 100%;
 	float:right;
@@ -134,9 +134,8 @@
 	position: absolute;
 }
 
-.dropdownMenuContainer { 
-
-	margin-left:10%;
+.dropdownMenuContainer{ 
+	bottom: 2px;
 	width:100%;
 }
 
@@ -247,6 +246,26 @@ body {
 
 #audio_features_container {
 	padding-left:0;
+}
+
+.audio_features_title_area p{
+	font-size: 0.7rem;
+	margin-bottom: 0;
+	line-height:1.15;
+}
+
+#audio_features_panel {
+	text-align: left;
+	padding: 0 3.5%;
+	margin-bottom: 5px;
+	font-size:0.4rem;
+	margin-top: 5px;
+}
+
+#audio_features_panel h2{
+	font-size:1.4rem;
+	margin-bottom:4px;
+	line-height: 0.95;
 }
 
 
