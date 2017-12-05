@@ -30,7 +30,7 @@
 	vertical-align: top;
 	margin-top:30px;
 	float:left;
-	margin-left:5%;
+	margin-left:15%;
 
 }
 
@@ -39,6 +39,7 @@
 	display: inline-block;
 	margin: 0 auto;
 	margin-top:30px;
+	margin-left:10%;
 }
 
 #divContainer {
@@ -189,7 +190,7 @@
 body {
 	height:100vh;
 	background: #e7e7e7;
-	font-family: Roboto;
+	font-family: 'Roboto';
 
 }
 
@@ -313,5 +314,17 @@ body {
 	font-size: 0.7rem;
 	margin-bottom: 0;
 	line-height: 1.15;
+}
+
+#audio_features_feature_descriptor{
+	font-size: 0.4rem;
+	text-align: left;
+	padding:0 3.5%;
+	line-height: 1.15;
+
+}
+
+#audio_features_feature_descriptor p{
+	margin-bottom: 0px;
 }
 
