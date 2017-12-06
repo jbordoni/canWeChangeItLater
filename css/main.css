@@ -150,7 +150,8 @@
 	position:static;
 	width:100%;
 	height:87%;
-	background-image: url("/basemap.svg");
+	background-image: url("/Expanded.svg");
+	background-size: contain;
 	background-position: center top;
 	background-repeat: no-repeat;
 	overflow:hidden;
@@ -202,6 +203,7 @@ body {
 
 #slider-range { 
 	height:400px;
+	background-color: #e7e7e7;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-active {
@@ -223,6 +225,10 @@ body {
 .ui-slider .ui-slider-handle:focus { 
 	outline:none;
 	outline-color: darkgray;
+}
+
+.ui-slider-handle{
+	transform: translateX(1px);
 }
 
 /*body {
