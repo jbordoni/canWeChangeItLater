@@ -133,7 +133,7 @@ function updateAudioScatter(hmap){
 	    audioSVG.append("text")
 	    	.attr("class", "axisLabelText")
 	        .attr("transform", "rotate(-90)")
-	        .attr("y",0 - 5)
+	        .attr("y",0)
 	        .attr("x",0 - (svgHeight / 2))
 	        .attr("dy", "1em")
 	        .style("text-anchor", "middle")

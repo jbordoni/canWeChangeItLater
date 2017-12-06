@@ -12,6 +12,8 @@ function clearLineChartLines(){
 
 }
 
+//$("#clear_music_chart_songs").click(function)
+
 function loadSVGInLineChart(){
 	let bubbleChartDiv = document.getElementById("lifeOfMusicHitDiv");
 
@@ -20,7 +22,7 @@ function loadSVGInLineChart(){
 
     let bubbleChartSVG = d3.select('#lifeOfMusicHitDiv')
     				.append("svg")
-					.attr("height", bubbleChartDivHeight)
+					.attr("height", 0.8 * bubbleChartDivHeight)
     				.attr("width", 0.95 * bubbleChartDivWidth)
     				.attr("id", "lineChartSVG");
 
