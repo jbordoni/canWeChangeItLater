@@ -9,7 +9,10 @@ function clearLineChartLines(){
 	while(svgDOMElement.firstChild){
 		svgDOMElement.firstChild.remove();
 	}
+}
 
+function clearButtonClicked(){
+	clearLineChartLines();
 }
 
 //$("#clear_music_chart_songs").click(function)
