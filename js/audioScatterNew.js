@@ -270,12 +270,15 @@ function updateAudioScatter(hmap){
                					//console.log(countryCodeLocal, "True");
                					$("#"+countryCodeLocal).addClass("countryWithRelativeHigher");
                				}
-               				else{
+               				else if(otherCountriesMap[countryCodeLocal]==d['weeksOnCharts'])
+               				{
                					$("#"+countryCodeLocal).addClass("countryWithRelativeEqual");
 
                				}
                			}
                		}
+
+               		$("#scatterplot_hover_legend").css("height",75);
 				})
 				.on("mouseout", function(d){
 
@@ -313,6 +316,8 @@ function updateAudioScatter(hmap){
                				}*/
                			}
                		}
+
+               		$("#scatterplot_hover_legend").css("height",0);
 				})
 				.on("click", function(d, i){
 					//console.log("clicked");
