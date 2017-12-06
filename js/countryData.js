@@ -83,7 +83,7 @@ function filterSongsByCountry(){
 						//console.log(weekChart[song]);
 						let obj = $.extend(true, {}, audioFeaturesMapGlobal[song])
 						//obj['weeksOnCharts'] = (-1*weekChart[song]['position']);
-						obj['weeksOnCharts'] = 0;
+						obj['weeksOnCharts'] = 1;
 						/*let completeSongName = weekChart[song]['songName'];
 						if(completeSongName.indexOf("\'")>=0 || completeSongName.indexOf("\"")>=0){
 							//console.log(completeSongName);
@@ -97,9 +97,11 @@ function filterSongsByCountry(){
 						}*/
 						obj['songName'] = weekChart[song]['songName'];
 						obj['artistName'] = weekChart[song]['artistName'];
+						//console.log(song);
 						obj['trackKey'] = song;
 						//obj['track']
 						hmap[song] = obj;
+						
 					}
 
 				}
@@ -133,6 +135,11 @@ function filterSongsByCountry(){
 			}
 			//console.log(otherCountriesWeekCount);
 			hmap[song]['otherCountriesWeekCount'] = otherCountriesWeekCount;
+			/*if(song=="7qiZfU4dY1lWllzX7mPBI3"){
+				console.log("Am i here?");
+				console.log(hmap[song]['otherCountriesWeekCount']);
+				console.log(hmap[song]['weeksOnCharts']);
+			}*/
 		}
 	}
 
