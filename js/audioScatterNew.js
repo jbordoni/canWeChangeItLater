@@ -287,7 +287,7 @@ function updateAudioScatter(hmap){
                		}
 
                		$("#scatterplot_hover_legend").css("height",75);
-               		$("#scatterplot_hover_legend").fadeIn("slow");
+               		//$("#scatterplot_hover_legend").fadeIn("slow");
                		
 				})
 				.on("mouseout", function(d){
@@ -329,8 +329,8 @@ function updateAudioScatter(hmap){
                			}
                		}
 
-               		//$("#scatterplot_hover_legend").css("height",0);
-               		$("#scatterplot_hover_legend").fadeOut(2000);
+               		$("#scatterplot_hover_legend").css("height",0);
+               		//$("#scatterplot_hover_legend").fadeOut(2000);
                		//$("#scatterplot_hover_legend").css("height", 0);
                		//console.log($("#scatterplot_hover_legend").style);
 				})
