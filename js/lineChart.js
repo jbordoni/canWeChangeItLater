@@ -11,6 +11,7 @@ function clearLineChartLines(){
 	}
 
 	globalClickedSongs = {};
+	selectedCircles = [];
 }
 
 function clearButtonClicked(){

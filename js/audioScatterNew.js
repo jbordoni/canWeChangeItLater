@@ -87,7 +87,7 @@ function updateAudioScatter(hmap){
 	let xPadding = 0.1*svgWidth; 
 	let yPadding = 0.1*svgHeight; 
 
-	let selectedCircles = [];
+	//let selectedCircles = [];
 
 	var tooltip = d3.select('body').append("div")	
 		    .attr("class", "scatterTooltip")				
@@ -402,6 +402,7 @@ function updateAudioScatter(hmap){
 					//console.log(globalClickedSongs);
 					if(selectedCircles.indexOf(d)==-1){
 						selectedCircles.push(d);
+						console.log(selectedCircles);
 						updateLineChart(selectedCircles);
 					}
 					//console.log(selectedCircles);
