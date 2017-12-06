@@ -254,12 +254,13 @@ body {
 	text-align: left;
 	padding: 0 3.5%;
 	margin-bottom:10px;
-	font-size: 0.4rem;
+	font-size: 0.3rem;
 }
 
 #bubble_map_panel h2{
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	margin-bottom: 0;
+
 }
 
 .feature_descriptor{
@@ -271,7 +272,7 @@ body {
 }
 
 .bubble_map_title_area p{
-	font-size:0.7rem;
+	font-size:0.6rem;
 	margin-bottom: 0;
 }
 
@@ -284,7 +285,7 @@ body {
 }
 
 .audio_features_title_area p{
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	margin-bottom: 0;
 	line-height:1.15;
 }
@@ -293,12 +294,12 @@ body {
 	text-align: left;
 	padding: 0 3.5%;
 	margin-bottom: 5px;
-	font-size:0.4rem;
+	font-size:0.3rem;
 	margin-top: 5px;
 }
 
 #audio_features_panel h2{
-	font-size:1.4rem;
+	font-size:1.3rem;
 	margin-bottom:4px;
 	line-height: 0.95;
 }
@@ -307,24 +308,24 @@ body {
 	text-align: left;
 	padding: 0 3.5%;
 	margin-bottom: 5px;
-	font-size:0.4rem;
+	font-size:0.3rem;
 	margin-top: 5px;
 }
 
 #music_chart_panel h2{
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	margin-bottom: 4px;
 	line-height: 0.95;
 }
 
 .music_chart_title_area p{
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	margin-bottom: 0;
 	line-height: 1.15;
 }
 
 #audio_features_feature_descriptor{
-	font-size: 0.4rem;
+	font-size: 0.3rem;
 	text-align: left;
 	padding:0 3.5%;
 	line-height: 1.15;
@@ -336,7 +337,7 @@ body {
 }
 
 #timelineHeader {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	text-align: left;
 	margin-bottom: 4px;
 	margin-top:6%;
@@ -345,7 +346,7 @@ body {
 
 #timelineDivInner p {
 	text-align: left;
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	line-height: 1.15;
 	margin-left:5%;
 	margin-right: 5%
@@ -383,7 +384,7 @@ select {
 }
 
 #country_selected_area h2{
-	font-size: 0.7rem;
+	font-size: 0.6rem;
 	color: #888888;
 	margin-bottom:2px;
 	padding-top:5%;
@@ -391,7 +392,7 @@ select {
 }
 
 #welcome_div h2{
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	margin-bottom: 8px;
 	line-height: 0.95;
 	font-weight: 500;
@@ -411,7 +412,7 @@ select {
 }
 #welcome_div p {
 	text-align: left;
-	font-size: 0.85rem;
+	font-size: 0.7rem;
 	line-height: 1.2;
 	font-weight: 300;
 	color: black;
