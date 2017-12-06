@@ -248,6 +248,7 @@ body {
 	margin-top:2%;
 	margin-left:0%;
 	margin-right: 0%;
+
 }
 
 #bubble_map_panel{
@@ -349,4 +350,18 @@ body {
 	line-height: 1.15;
 	margin-left:5%;
 	margin-right: 5%
+}
+
+#clear_music_chart_songs{
+	font-family: 'Roboto';
+	float:right;
+	font-weight: 300;
+	font-size: 0.8rem;
+	position:relative;
+	bottom:0px;
+}
+
+select {
+	background-color: rgb(1,16,21);
+	color:white;
 }

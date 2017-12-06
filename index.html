@@ -109,7 +109,7 @@
           </div>
           <div class="row" id="below_container_row" style="position:relative">
             <svg id="limiter_container" width="100%" height="100%" style="position:absolute; z-index:2; pointer-events: none">
-              <rect width="100%" height="100%" style="fill:rgba(1,16,21,.6); position:absolute; border-radius:3px;"/>
+              <rect width="100%" height="100%" style="fill:rgba(1,16,21,.6); position:absolute; rx:3px; ry:3px;"/>
               <h1 style="position:absolute; z-index:2; pointer-events:none; color:white; font-size:2.0rem; text-align:center; height:100%; width:80%; top:40%; left:10%; font-weight: 300;">Please select a country above to learn more about its popular music.</h1>
             </svg>
 
@@ -128,7 +128,7 @@
                       </select>
                     </div>-->
                     <div class="dropdownMenuContainer">
-                      <label for="xdropdownScatter">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
+                      <label for="xdropdownScatter" style="width:30px;">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
                         <option value="valence">Valence</option>
                         <option value="energy">Energy</option>
                         <option value="liveness">Liveness</option>
@@ -140,7 +140,7 @@
                       </select>
                     </div>
                     <div>
-                      <label for="colordropdownScatter">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
+                      <label for="colordropdownScatter" style="width:30px;">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
                         <option value="none">None</option>
                         <option value="valence">Valence</option>
                         <option value="energy">Energy</option>
@@ -177,7 +177,7 @@
                       <p>How did each song perform on the charts?</p>
                     </div>
                     <div class="col-md-5">
-
+                      <button class="btn btn-dark" id="clear_music_chart_songs">Clear Songs</button>
                     </div>
                   </div>
 
