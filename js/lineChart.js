@@ -177,6 +177,8 @@ function updateLineChart(hmap){
 			//console.log(d3.mouse(this))
 			//console.log(d);
 			//console.log(i);
+
+			$("#songCircle_"+keysList[i]).addClass("songCircleHovered");
 			
 			horizontalHover
 			.attr("id", "tooltipHoverHorizontal_"+i)
@@ -215,10 +217,13 @@ function updateLineChart(hmap){
 
 			//console.log(document.getElementById("tooltipHoverHorizontal_"+i));
 		})
-		.on("mouseout", function(d){
+		.on("mouseout", function(d, i){
 			$(this).removeClass("lineChartLineHover");
 			horizontalHover.style("opacity", 0);
 			tooltip.style("opacity", 0);
+
+
+			$("#songCircle_"+keysList[i]).removeClass("songCircleHovered");
 		})
 
 	/*focus.enter().append("circle")

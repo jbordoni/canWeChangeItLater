@@ -65,6 +65,12 @@
   stroke-width: 3px!important;
 }
 
+.songCircleHovered {
+  fill:steelblue!important;
+  stroke-width:3px;
+  stroke:black;
+}
+
 .bubbleDefault {
   stroke-width:2px;
   fill:#666666;
@@ -75,7 +81,7 @@
 
   stroke:steelblue!important;
   fill: #333333;
-  stroke-width:3px;
+  stroke-width:1.5px;
 }
 
 .bubbleHovered {

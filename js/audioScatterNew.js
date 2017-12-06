@@ -144,35 +144,59 @@ function updateAudioScatter(hmap){
     }
 
 
-
-
-
-
-
 	let colorValues = ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"]
+	//let colorValues = ["#fc8d59"];
+	let opacityValues = [0.16, 2*0.16, 3*0.16, 4*0.16, 5*0.16];
 
 	if(colorScaleSelectedFeatureText !="None"){
 		var colorScale = d3.scaleQuantize()
 						.range(colorValues)
 						.domain([d3.min(colorScaleValues), d3.max(colorScaleValues)]);
+
+		var opacityColorScale = d3.scaleQuantize()
+								.range(opacityValues)
+								.domain([d3.min(colorScaleValues), d3.max(colorScaleValues)]);
 	}
 
 	circles.enter().append("circle")
 				//.transition()
 				//.duration(300)
+				.attr("id", function(d){
+					//console.log(d['trackKey']);
+					return "songCircle_"+d['trackKey'];
+				})
+				.attr("class", function(d){
+					if(!(this.classList.contains("clicked"))){
+						return "songCircleDefault";
+					}
+				})
 				.style("fill", function(d){
 						if(colorScaleSelectedFeatureText !="None"){
 						return colorScale(d[colorScaleSelectedFeature]);
+						//return colorValues[0];
 					}
 					else{
 						//return "orange";
 						return colorValues[2]; //return median color
 					}
 				})
+				.style("opacity", function(d){
+					if(colorScaleSelectedFeatureText!="None"){
+						//return opacityColorScale(d[colorScaleSelectedFeature])
+						return 0.9
+					}
+					else{
+						return 0.9;
+					}
+				})
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
 				.attr("r", 5)
 				.on("mouseover", function(d){
+
+					//d3.select(this).style("fill", "steelblue");
+					$(this).addClass("songCircleHovered")
+
 					tooltip.transition()
 						.duration(200)
 						.style("opacity", .9);
@@ -231,6 +255,9 @@ function updateAudioScatter(hmap){
                		}
 				})
 				.on("mouseout", function(d){
+
+					$(this).removeClass("songCircleHovered");
+
 					tooltip.transition()
 	               .duration(500)
 	               .style("opacity", 0);
