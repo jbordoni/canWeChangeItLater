@@ -146,7 +146,7 @@ function filterSongsByCountry(){
 	for(var song in hmap){
 		if(hmap.hasOwnProperty(song)){
 			hmap[song]['positionList'] = []
-			for(var i=startMonthNoChart; i<=endMonthNoChart; i++){
+			for(var i=0; i<=39; i++){
 				let weekChart = weeklyChartsList[i]
 
 				if(song in weekChart){
