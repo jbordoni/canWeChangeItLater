@@ -112,6 +112,20 @@
   stroke-width:3px;
 
 }
+
+.countryWithRelativeLower {
+  fill:crimson!important;
+  opacity:0.7;
+}
+.countryWithRelativeHigher {
+  fill:green!important;
+  opacity:0.7
+}
+.countryWithRelativeEqual{
+  fill:gray!important;
+  opacity: 0.7
+}
+
 .tooltipTitle { 
   font-weight: 900;
 }

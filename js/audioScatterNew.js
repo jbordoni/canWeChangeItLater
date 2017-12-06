@@ -260,11 +260,17 @@ function updateAudioScatter(hmap){
                		for(var countryCodeLocal in otherCountriesMap){
                			if(otherCountriesMap.hasOwnProperty(countryCodeLocal)){
                				if(otherCountriesMap[countryCodeLocal]<d['weeksOnCharts']){
-               					console.log(countryCodeLocal, "False");
+               					//console.log(countryCodeLocal, "False");
+               					$("#"+countryCodeLocal).addClass("countryWithRelativeLower");
                				}
-               				else
+               				else if(otherCountriesMap[countryCodeLocal]>d['weeksOnCharts'])
                				{
-               					console.log(countryCodeLocal, "True");
+               					//console.log(countryCodeLocal, "True");
+               					$("#"+countryCodeLocal).addClass("countryWithRelativeHigher");
+               				}
+               				else{
+               					$("#"+countryCodeLocal).addClass("countryWithRelativeEqual");
+
                				}
                			}
                		}
@@ -281,6 +287,30 @@ function updateAudioScatter(hmap){
                		if(correspondingLine!=null){
                			correspondingLine.classList.remove("lineChartLineHover");
            			}
+
+           			let otherCountriesMap = d['otherCountriesWeekCount'];
+               		for(var countryCodeLocal in otherCountriesMap){
+               			if(otherCountriesMap.hasOwnProperty(countryCodeLocal)){
+               				$("#"+countryCodeLocal).removeClass("countryWithRelativeLower")
+               				$("#"+countryCodeLocal).removeClass("countryWithRelativeHigher")
+               				$("#"+countryCodeLocal).removeClass("countryWithRelativeEqual")
+
+               				//if($())
+               				/*if(otherCountriesMap[countryCodeLocal]<d['weeksOnCharts']){
+               					//console.log(countryCodeLocal, "False");
+               					$("#"+countryCodeLocal).addClass("countryWithRelativeLower");
+               				}
+               				else if(otherCountriesMap[countryCodeLocal]>d['weeksOnCharts'])
+               				{
+               					//console.log(countryCodeLocal, "True");
+               					$("#"+countryCodeLocal).addClass("countryWithRelativeHigher");
+               				}
+               				else{
+               					$("#"+countryCodeLocal).addClass("countryWithRelativeEqual");
+
+               				}*/
+               			}
+               		}
 				})
 				.on("click", function(d, i){
 					//console.log("clicked");
