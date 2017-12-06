@@ -193,6 +193,7 @@ function updateAudioScatter(hmap){
 						return 0.9;
 					}
 				})
+				//.transition()
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
 				.attr("r", 3)
