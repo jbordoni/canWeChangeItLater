@@ -169,9 +169,14 @@ function updateAudioScatter(hmap){
 					//console.log(d['trackKey']);
 					return "songCircle_"+d['trackKey'];
 				})
-				.attr("class", function(d){
-					if(!(this.classList.contains("audioScatterSongClicked"))){
-						return "songCircleDefault";
+				.classed("songCircleDefault", true)
+				.classed("audioScatterSongClicked", function(d){
+					if(globalClickedSongs[d['trackKey']]==1){
+						return true;
+					}
+					else
+					{
+						return false;
 					}
 				})
 				.style("fill", function(d){
@@ -201,6 +206,8 @@ function updateAudioScatter(hmap){
 
 					//d3.select(this).style("fill", "steelblue");
 					$(this).addClass("songCircleHovered")
+
+					d3.select(this).attr("r", 4);
 
 					tooltip.transition()
 						.duration(200)
@@ -285,6 +292,8 @@ function updateAudioScatter(hmap){
 
 					$(this).removeClass("songCircleHovered");
 
+					d3.select(this).attr("r", 3);
+
 					tooltip.transition()
 	               .duration(500)
 	               .style("opacity", 0);
@@ -325,6 +334,8 @@ function updateAudioScatter(hmap){
 					//d3.select(this).style("fill", "steelblue")
 					//d3.select(this).style("stroke", "black")
 					d3.select(this).attr("class", "audioScatterSongClicked")
+					globalClickedSongs[d.trackKey] = 1;
+					//console.log(globalClickedSongs);
 					if(selectedCircles.indexOf(d)==-1){
 						selectedCircles.push(d);
 						updateLineChart(selectedCircles);

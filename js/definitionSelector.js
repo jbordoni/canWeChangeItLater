@@ -12,7 +12,7 @@ definitions["Danceability"] = " describes how suitable a track is for dancing ba
 definitions["Loudness"] = " is the overall loudness of a track in decibels (dB)."
 
 $("#dropDownAudioFeatures").change(function(){
-	console.log("GOT HERE");
+	//console.log("GOT HERE");
 	var thisvalue = $(this).find("option:selected").text();
 	var definition = definitions[thisvalue];
 	//bubble_map_definition
@@ -21,7 +21,7 @@ $("#dropDownAudioFeatures").change(function(){
 });
 
 $("#xdropdownScatter").change(function(){
-	console.log("GOT HERE");
+	//console.log("GOT HERE");
 	var thisvalue = $(this).find("option:selected").text();
 	var definition = definitions[thisvalue];
 	//bubble_map_definition
@@ -29,7 +29,7 @@ $("#xdropdownScatter").change(function(){
 });
 
 $("#colordropdownScatter").change(function(){
-	console.log("GOT HERE");
+	//console.log("GOT HERE");
 	var thisvalue = $(this).find("option:selected").text();
 	if (thisvalue == "None"){
 		$("#scatterplot_color_definition").html("");

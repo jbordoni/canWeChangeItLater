@@ -9,6 +9,8 @@ function clearLineChartLines(){
 	while(svgDOMElement.firstChild){
 		svgDOMElement.firstChild.remove();
 	}
+
+	globalClickedSongs = {};
 }
 
 function clearButtonClicked(){
@@ -198,6 +200,7 @@ function updateLineChart(hmap){
 			//console.log(i);
 
 			$("#songCircle_"+keysList[i]).addClass("songCircleHovered");
+			d3.select("#songCircle_"+keysList[i]).attr("r", 4);
 			
 			horizontalHover
 			.attr("id", "tooltipHoverHorizontal_"+i)
@@ -252,6 +255,7 @@ function updateLineChart(hmap){
 
 
 			$("#songCircle_"+keysList[i]).removeClass("songCircleHovered");
+			d3.select("#songCircle_"+keysList[i]).attr("r", 3);
 		})
 
 	/*focus.enter().append("circle")
