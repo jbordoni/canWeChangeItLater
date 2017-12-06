@@ -392,7 +392,7 @@ select {
 	position: absolute;
 	text-align: center;
 	width:150px;
-	height:75px;
+	height:0px;
 	left:3%;
 	bottom:0;
 	background-color: white;
