@@ -8,8 +8,8 @@ function loadSVGInAudioScatter(){
 
     let bubbleChartSVG = d3.select('#audioFeaturesScatterDiv')
     				.append("svg")
-					.attr("height", 0.8* bubbleChartDivHeight)
-    				.attr("width", bubbleChartDivWidth)
+					.attr("height", 0.65* bubbleChartDivHeight)
+    				.attr("width", 0.9*bubbleChartDivWidth)
     				.attr("id", "audioSVG");
 
     //console.log(bubbleChartSVG);
@@ -114,7 +114,8 @@ function updateAudioScatter(hmap){
 	    .call(xAxis); 
 
 	    //Adding the X - label  -- add margin.bottom to svgheight
-	    audioSVG.append("text")      
+	    audioSVG.append("text")
+	    	.attr("class", "axisLabelText")      
 	        .attr("transform", "translate(" + (svgWidth / 2) + " ," + (svgHeight) + ")")
 	        .style("text-anchor", "middle")
 	        .attr("id", "audioScatterXAxisLabel")
@@ -130,6 +131,7 @@ function updateAudioScatter(hmap){
 
 	    //Adding Y - label - Change 5 to margin.left
 	    audioSVG.append("text")
+	    	.attr("class", "axisLabelText")
 	        .attr("transform", "rotate(-90)")
 	        .attr("y",0 - 5)
 	        .attr("x",0 - (svgHeight / 2))
@@ -191,7 +193,7 @@ function updateAudioScatter(hmap){
 				})
 				.attr("cx", function(d){return xScale(d[xScaleSelectedFeature]);})
 				.attr("cy", function(d){return yScale(d['weeksOnCharts']);})
-				.attr("r", 5)
+				.attr("r", 3)
 				.on("mouseover", function(d){
 
 					//d3.select(this).style("fill", "steelblue");
