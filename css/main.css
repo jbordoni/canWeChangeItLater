@@ -49,9 +49,10 @@
 #divContainer {
 
 
-	width: 100%;
+	width: 99%;
 	height:100%;
 	text-align: center;
+
 
 }
 
@@ -128,6 +129,7 @@
 	height:100%;
 	width:100%;
 	text-align: center;
+
 }
 
 #bubbleMapView{
@@ -140,6 +142,7 @@
 	border-radius: 3px;
 	margin-top:5px;
 	overflow: hidden;
+
 }
 
 #bubbleMap { 
@@ -244,7 +247,7 @@ body {
 	width:100%;
 	margin-top:2%;
 	margin-left:0%;
-	margin-right: 0%
+	margin-right: 0%;
 }
 
 #bubble_map_panel{
@@ -273,7 +276,7 @@ body {
 }
 
 #music_chart_container {
-	padding-right: 0;
+	padding-right: 0px;
 }
 
 #audio_features_container {
