@@ -45,7 +45,7 @@
             <h2 id="timelineHeader">Filter Time</h2>
             <p>Use the slider below to focus on a particular time or range of times.</p>
             <div id="timeline_title">
-              <span class="headingTwoText">Time Range <br> 2017</span>
+              <span class="headingTwoText" style="font-weight:700;">2017</span>
             </div>
             <div>
               <div id="sliderLabelsWrapper">
@@ -69,10 +69,8 @@
                       <h2>World Preferences</h2>
                       <p>What kinds of music do different countries prefer?</p>
                     </div>
-                    <div class="col-md-3">
-                      <p class="feature_descriptor" id="bubble_map_definition"><strong>Valence</strong> describes whether something is likely to make someone feel happy (positive valence) or sad (negative valence).</p>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
                       <div id="bubbleDropDownMenuContainer">
                         <div id="bubbleDropDown" style="display: table-cell; width: 120;">
                           <label for="dropDownAudioFeatures">Audio Features: </label>
@@ -104,6 +102,12 @@
                     <p id= "legendText"> </p>
                   </div>-->
                   <div id = "bubbleMap">
+
+                    <div class="feature_hidden">
+                      <h2>HOVER FOR MORE INFORMATION</h2>
+                      <h1>What is <strong id="currently_selected_bubble">Valence</strong>?</h1>
+                      <p class="feature_descriptor" id="bubble_map_definition"><strong>Valence</strong> describes whether something is likely to make someone feel happy (positive valence) or sad (negative valence).</p>
+                    </div>
         <!--                 <img src="basemap.svg" width="100%", height="95%"/> 
      -->          </div>
                   <div id="country_selected_area">
@@ -126,7 +130,7 @@
                 <div class="row" id="audio_features_panel">
                   <div class="col-md-7 audio_features_title_area">
                       <h2>Popular Song Features</h2>
-                      <p>What are the features of the most popular songs?</p>
+                      <p>What are the features of the most popular songs for <strong id="audio_features_country">country</strong>?</p>
                   </div>
                   <div class="col-md-5">
                     <!--<div style="display: table-cell; width: 120;">
@@ -135,7 +139,7 @@
                       </select>
                     </div>-->
                     <div class="dropdownMenuContainer">
-                      <label for="xdropdownScatter" style="width:30px;">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
+                      <label for="xdropdownScatter" style="width:50px;">X-axis: </label><select id="xdropdownScatter" onchange="updateKeyForAudioScatter()">
                         <option value="valence">Valence</option>
                         <option value="energy">Energy</option>
                         <option value="liveness">Liveness</option>
@@ -147,7 +151,7 @@
                       </select>
                     </div>
                     <div>
-                      <label for="colordropdownScatter" style="width:30px;">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
+                      <label for="colordropdownScatter" style="width:50px;">Color: </label><select id="colordropdownScatter" onchange="updateKeyForAudioScatter()">
                         <option value="none">None</option>
                         <option value="valence">Valence</option>
                         <option value="energy">Energy</option>
@@ -181,7 +185,7 @@
                   <div class="row" id="music_chart_panel">
                     <div class="col-md-7 music_chart_title_area">
                       <h2>Chart Performance</h2>
-                      <p>How did each song perform on the charts?</p>
+                      <p>How did each song perform on that country's charts?</p>
                     </div>
                     <div class="col-md-5">
                       <button class="btn btn-dark" id="clear_music_chart_songs" onclick="clearButtonClicked()">Clear Songs</button>

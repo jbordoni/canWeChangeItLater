@@ -260,7 +260,7 @@ body {
 	text-align: left;
 	padding: 0 3.5%;
 	margin-bottom:10px;
-	font-size: 0.3rem;
+	font-size: 0.8rem;
 }
 
 #bubble_map_panel h2{
@@ -270,15 +270,17 @@ body {
 }
 
 .feature_descriptor{
+	margin-top:10px;
+	text-align: left;
+	margin-bottom:6px;
+	font-size: 0.7rem;
 	margin-bottom:0;
 	line-height: 1.2;
-	bottom:2px;
-	position: absolute;
 
 }
 
 .bubble_map_title_area p{
-	font-size:0.6rem;
+	font-size:0.7rem;
 	margin-bottom: 0;
 }
 
@@ -291,7 +293,7 @@ body {
 }
 
 .audio_features_title_area p{
-	font-size: 0.6rem;
+	font-size: 0.7rem;
 	margin-bottom: 0;
 	line-height:1.15;
 }
@@ -325,7 +327,7 @@ body {
 }
 
 .music_chart_title_area p{
-	font-size: 0.6rem;
+	font-size: 0.7rem;
 	margin-bottom: 0;
 	line-height: 1.15;
 }
@@ -352,7 +354,7 @@ body {
 
 #timelineDivInner p {
 	text-align: left;
-	font-size: 0.6rem;
+	font-size: 0.65rem;
 	line-height: 1.15;
 	margin-left:5%;
 	margin-right: 5%
@@ -368,21 +370,55 @@ body {
 }
 
 select {
-	background-color: rgb(1,16,21);
+	background-color: #333333;
 	color:white;
+	font-size: 0.7rem;
 }
 
 #country_selected_area{
 	position: absolute;
 	vertical-align: middle;
 	min-width:15%;
-	min-height:9%;
+	min-height:5%;
 	left:50%;
 	transform: translateX(-50%);
 	bottom:0;
 	background-color: white;
 	border-radius: 3px 3px 0px 0px;
 	box-shadow: 0px -1px 10px #888888;
+}
+
+.feature_hidden{
+	position:absolute;
+	text-align: left;
+	width:23%;
+	height:40px;
+	right:0%;
+	top:20%;
+	background-color:white;
+	padding: 5px;
+	border-radius: 3px 0px 0px 3px;
+	box-shadow: 0px 3px 10px #888888;
+	z-index:2;
+	overflow: hidden;
+	transition: height 0.5s;
+  	-webkit-transition: height 0.5s;
+}
+
+.feature_hidden h2{
+	font-size: 0.6rem;
+	color: #888888;
+	margin-bottom:2px;
+	font-weight: 500;
+}
+
+.feature_hidden h1{
+	font-size: 0.8rem;
+	margin-bottom:0px;
+}
+
+.feature_hidden:hover{
+	height:110px;
 }
 
 #country_selected_area h1{
@@ -418,9 +454,13 @@ select {
 }
 #welcome_div p {
 	text-align: left;
-	font-size: 0.7rem;
+	font-size: 0.65rem;
 	line-height: 1.2;
 	font-weight: 300;
 	color: black;
 
+}
+
+label{
+	font-size: 0.7rem;
 }
