@@ -168,6 +168,10 @@ function updateLineChart(hmap){
 		    .attr("class", "hoverLine")				
 		    .style("opacity", 0);
 
+	var verticalHover = d3.select("body").append("div")	
+		    .attr("class", "hoverLineVertical")				
+		    .style("opacity", 0);
+
 	var tooltip = d3.select('body').append("div")	
 		    .attr("class", "lineChartTooltip")				
 		    .style("opacity", 0);
@@ -178,8 +182,7 @@ function updateLineChart(hmap){
 
 	var yAxisPositionXPosition = document.getElementById("lineChartXAxis").getBoundingClientRect().left; 
 	//console.log(yAxisPositionXPosition);
-
-
+	var xAxisPositionYPosition = document.getElementById("lineChartXAxis").getBoundingClientRect().top;
 
     lines.enter().append("path")
 		.attr("class", "lineChartLine")
@@ -194,7 +197,6 @@ function updateLineChart(hmap){
 			//console.log(d)
 			$(this).addClass("lineChartLineHover");
 			//console.log(d3.mouse(this))
-			console.log(d);
 			//console.log(i);
 
 			$("#songCircle_"+keysList[i]).addClass("songCircleHovered");
@@ -205,6 +207,14 @@ function updateLineChart(hmap){
 			.style("left", (yAxisPositionXPosition) + "px")
 			.style("top", (d3.event.pageY) + "px")
 			.style("width", (d3.event.pageX - yAxisPositionXPosition) + "px");
+
+			verticalHover
+			.attr("id", "tooltipHoverVertical_"+i)
+			.style("opacity", .9)
+			.style("left", (d3.event.pageX) + "px")
+			.style("top", (d3.event.pageY) + "px")
+			.style("height", (xAxisPositionYPosition - d3.event.pageY) + "px");
+
 
 
 			tooltip
@@ -239,6 +249,7 @@ function updateLineChart(hmap){
 		.on("mouseout", function(d, i){
 			$(this).removeClass("lineChartLineHover");
 			horizontalHover.style("opacity", 0);
+			verticalHover.style("opacity", 0);
 			tooltip.style("opacity", 0);
 
 

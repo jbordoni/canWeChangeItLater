@@ -62,6 +62,15 @@
   height:0.5px;
 }
 
+.hoverLineVertical { 
+
+  position: absolute;
+  pointer-events:none;
+  border-left:1px dashed steelblue;
+  background-color: none;
+  width:0.5px;
+}
+
 .axisLabelText {
   font-size: 0.7rem;
   color:#888888;
