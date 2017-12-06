@@ -273,15 +273,23 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     	if(i==2){
     		let continentXScale = d3.scaleLinear()
     						.domain([d3.min(xCoordinatesContainer[i]), d3.max(xCoordinatesContainer[i])])
-    						.range([continentDivStartX+continentDivXPadding, 
-    							continentDivStartX+continentDivWidth-2*continentDivXPadding]);
+    						.range([continentDivStartX+ 0.5*continentDivXPadding, 
+    							continentDivStartX+continentDivWidth-6*continentDivXPadding]);
     		xScales.push(continentXScale);
     	}
     	else{
+    		let xFactor = 1;
+    		let endFactor = 1
+    		if(i==0){
+    			xFactor = 4;
+    		}
+    		if(i==1){
+    			endFactor = 2;
+    		}
     		let continentXScale = d3.scaleLinear()
     						.domain([d3.min(xCoordinatesContainer[i]), d3.max(xCoordinatesContainer[i])])
-    						.range([continentDivStartX+continentDivXPadding, 
-    							continentDivStartX+continentDivWidth-continentDivXPadding]);
+    						.range([continentDivStartX + xFactor*continentDivXPadding, 
+    							continentDivStartX+continentDivWidth- endFactor*continentDivXPadding]);
     		xScales.push(continentXScale);
     	}
     	
@@ -297,10 +305,10 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 			yScales[i]=continentYScale;
     	}
     	else{
-    		let factor = 0.8;
+    		let factor = 0.7;
     		let paddingFactor = 0;
     		if(i==2){
-    			factor = 0.9;
+    			factor = 0.8;
     			paddingFactor = 6;
     		}
     		let continentYScale = d3.scaleLinear()
