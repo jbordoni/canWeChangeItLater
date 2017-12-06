@@ -8,7 +8,7 @@ function loadSVGInAudioScatter(){
 
     let bubbleChartSVG = d3.select('#audioFeaturesScatterDiv')
     				.append("svg")
-					.attr("height", bubbleChartDivHeight)
+					.attr("height", 0.8* bubbleChartDivHeight)
     				.attr("width", bubbleChartDivWidth)
     				.attr("id", "audioSVG");
 
