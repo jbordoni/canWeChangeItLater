@@ -70,6 +70,10 @@ function updateAudioScatter(hmap){
 		
 	}
 
+	/*console.log("Testing values");
+	console.log(d3.min(xScaleValues), d3.max(xScaleValues));
+	console.log(d3.min(colorScaleValues), d3.max(colorScaleValues));*/
+
 	var circles = audioSVGGroup.selectAll("circle")
 					.data(dataList, function(d) { return d ; })
 
@@ -91,7 +95,7 @@ function updateAudioScatter(hmap){
 
 	var xScale = d3.scaleLinear();
 		xScale.domain([d3.min(xScaleValues), d3.max(xScaleValues)])
-				.range([0+xPadding, svgWidth-xPadding]);
+				.range([0+xPadding, svgWidth-2*xPadding]);
 
 	var yScale = d3.scaleLinear()
 					.domain([d3.min(weekValues), d3.max(weekValues)])
@@ -139,6 +143,14 @@ function updateAudioScatter(hmap){
 	        .attr("dy", "1em")
 	        .style("text-anchor", "middle")
 	        .text("Weeks On Charts");
+
+	        
+    	audioSVG.append("g")
+    	.attr("class", "scatterLegend")
+    	.attr("id", "scatterLegendGroup")
+    	.attr("transform", "translate(" + (svgWidth - 1.5*xPadding) + ",0)")
+	        	//.append("circle")
+	        
     }
     else{
     	d3.select("#audioScatterXAxisLabel").text(xScaleSelectedFeatureText);
@@ -146,6 +158,7 @@ function updateAudioScatter(hmap){
 
     	d3.select("#audioScatterYAxis").call(yAxis);
     }
+
 
 
 	let colorValues = ["#fef0d9", "#fdcc8a", "#fc8d59", "#e34a33", "#b30000"]
@@ -157,9 +170,55 @@ function updateAudioScatter(hmap){
 						.range(colorValues)
 						.domain([d3.min(colorScaleValues), d3.max(colorScaleValues)]);
 
-		var opacityColorScale = d3.scaleQuantize()
+		//console.log((Math.abs(d3.max(colorScaleValues)) - Math.abs(d3.min(colorScaleValues)))/5);
+		//console.log(d3.min(colorScaleValues), d3.max(colorScaleValues));
+
+		/*var opacityColorScale = d3.scaleQuantize()
 								.range(opacityValues)
 								.domain([d3.min(colorScaleValues), d3.max(colorScaleValues)]);
+		*/
+
+		let quantileDiff = Math.abs(d3.max(colorScaleValues)-d3.min(colorScaleValues))/colorValues.length;
+
+		let legendGroup = d3.select("#scatterLegendGroup");
+		$("#scatterLegendGroup").empty();
+
+		legendGroup.append("rect")
+					.attr("fill", "none")
+					.attr("stroke", "darkgray")
+					.attr("stroke-width", 1)
+					.attr("x", 0)
+					.attr("y", 20)
+					.attr("width", 65)
+					.attr("height", 75);
+		
+		legendGroup.append("text")
+						.attr("class", "scatterLegendLabelHeading")
+						.attr("x", 5)
+						.attr("y", 30)
+						.text(colorScaleSelectedFeatureText)
+					
+
+		for(var colorIdx=0; colorIdx<colorValues.length; colorIdx++){
+			legendGroup.append("circle")
+						.attr("fill", function(){
+							return colorValues[colorIdx];
+						})
+						.attr("r", 3)
+						.attr("cx", 13)
+						.attr("cy", 40 + (colorIdx*10))
+						.attr("class", "scatterLegendCircle")
+
+			legendGroup.append("text")
+						.attr("class", "scatterLegendLabelText")
+						.attr("x", 25)
+						.attr("y", 41 + (colorIdx*10))
+						.text("≤ "+ 
+							parseFloat(d3.min(colorScaleValues) + (1+colorIdx)*quantileDiff).toFixed(3))
+		}
+	}
+	else {
+		$("#scatterLegendGroup").empty();
 	}
 
 	circles.enter().append("circle")

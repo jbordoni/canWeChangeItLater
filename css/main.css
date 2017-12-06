@@ -531,3 +531,11 @@ select {
 label{
 	font-size: 0.7rem;
 }
+
+.scatterLegendLabelText{
+	font-size: 0.5rem;
+}
+.scatterLegendLabelHeading{
+	font-size: 0.5rem;
+	font-weight: bold;
+}
