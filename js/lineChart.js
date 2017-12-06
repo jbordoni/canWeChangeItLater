@@ -50,6 +50,7 @@ function updateLineChart(hmap){
 	let audioSVGGroup = d3.select("#lineChartSVGGroup")
 
 	let audioSVGDOM = document.getElementById("lineChartSVG");
+	let lineChartSVGMain = d3.select("#lineChartSVG");
 
 	let svgWidth = $("#lineChartSVG").width();
 	let svgHeight = $("#lineChartSVG").height(); 
@@ -128,8 +129,8 @@ function updateLineChart(hmap){
 			//console.log(hmap[song])
 		}
 	}
-	console.log(keysList);
-	console.log(dataList);
+	//console.log(keysList);
+	//console.log(dataList);
 
 
 	var valueline = d3.line()
@@ -141,6 +142,26 @@ function updateLineChart(hmap){
 
      				//want to retain original songs
      				
+    /*var focus = lineChartSVG.append("g") 
+    .style("display", "none");*/
+
+    var horizontalHover = d3.select("body").append("div")	
+		    .attr("class", "hoverLine")				
+		    .style("opacity", 0);
+
+	var tooltip = d3.select('body').append("div")	
+		    .attr("class", "lineChartTooltip")				
+		    .style("opacity", 0);
+
+    //console.log(tooltip.getBoundingClientRect().height);
+
+	//console.log(horizontalHover);
+
+	var yAxisPositionXPosition = document.getElementById("lineChartXAxis").getBoundingClientRect().left; 
+	//console.log(yAxisPositionXPosition);
+
+
+
     lines.enter().append("path")
 		.attr("class", "lineChartLine")
 		.attr("d", valueline)
@@ -150,13 +171,46 @@ function updateLineChart(hmap){
 			//console.log(keysList[i])
 			return "lineChart_"+keysList[i];
 		})
-		.on("mouseover", function(d){
+		.on("mouseover", function(d, i){
 			//console.log(d)
 			$(this).addClass("lineChartLineHover");
+			//console.log(d3.mouse(this))
+			//console.log(d);
+			//console.log(i);
+			
+			horizontalHover
+			.attr("id", "tooltipHoverHorizontal_"+i)
+			.style("opacity", .9)
+			.style("left", (yAxisPositionXPosition) + "px")
+			.style("top", (d3.event.pageY) + "px")
+			.style("width", (d3.event.pageX - yAxisPositionXPosition) + "px");
+
+
+			tooltip
+			.style("opacity", .9)
+			
+			tooltip.attr("id", "lineChartTooltip_"+i);
+
+			let tooltipDOM = document.getElementById("lineChartTooltip_"+i)
+			let tooltipHeight = tooltipDOM.getBoundingClientRect().height
+			
+			tooltip.style("left", (d3.event.pageX) + "px")
+			.style("top", (d3.event.pageY - parseInt(tooltipHeight)) + "px")
+
+
+			//console.log(document.getElementById("tooltipHoverHorizontal_"+i));
 		})
 		.on("mouseout", function(d){
 			$(this).removeClass("lineChartLineHover");
+			horizontalHover.style("opacity", 0);
+			tooltip.style("opacity", 0);
 		})
+
+	/*focus.enter().append("circle")
+        .attr("class", "lineCircle")
+        .style("fill", "none")
+        .style("stroke", "blue")
+        .attr("r", 4);*/
 
     lines.exit().remove()
 

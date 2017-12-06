@@ -26,6 +26,25 @@
 	font-size:80%;
 }
 
+.lineChartTooltip {
+
+  position: absolute;
+  width: 15%;
+  height: 5%;
+  pointer-events: none;
+  background-color: #FFE900;
+  font-size:80%;
+}
+
+.hoverLine { 
+
+  position: absolute;
+  pointer-events:none;
+  border-top:1px dashed crimson;
+  background-color: none;
+  height:0.5px;
+}
+
 .axisLabelScatter {
 }
 
