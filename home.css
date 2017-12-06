@@ -135,9 +135,9 @@ h1,h2,h3,h4,h5{
 .bottom_renderings img{
 	width:100%;
 	padding:0 15%;
-	position: relative;
-	padding-top:50%;
-	transform:translateY(10%);
+	position: absolute;
+	bottom: 0px;
+	transform:translateY(-50%);
 }
 
 h1 strong{
