@@ -39,7 +39,20 @@ function updateBubbleMapData(countryValues, countryValuesList){
     					.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
     					.range([10, 30]);
 
-    				
+
+    var linearSizeLegend = d3.scaleLinear()
+						.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
+    					.range([10, 30]);
+
+	var legendSize = d3.legendSize()
+	.scale(linearSizeLegend)
+	.cells(3)
+	.shape('circle')
+	.shapePadding(15)
+	.labelOffset(20)
+	.orient('horizontal');
+
+	var legendOnMap = d3.select(".legendSize").call(legendSize);
 
     var tooltip = d3.select('body').append("div")	
 		    .attr("class", "bubbleMapTooltip")				
@@ -160,6 +173,58 @@ function updateBubbleMapData(countryValues, countryValuesList){
 			filterSongsByCountry();
 		}
 	});
+
+	var legendSVG = d3.select("#legendSVG");
+	while(document.getElementById("legendSVG").firstChild){
+		document.getElementById("legendSVG").firstChild.remove();
+	}
+
+	legendSVG.append("g")
+		.attr("id", "legendGroup")
+		  .attr("class", "legendSize")
+		  .attr("transform", "translate(35, 30)");
+	legendSVG.append("circle")
+		.attr("fill", "black")
+		.attr("r", radiusScale(d3.min(countryValuesList)))
+		.attr("cx", function(d, i){
+			console.log(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			console.log(radiusScale(d3.min(countryValuesList)));
+
+			//parseInt(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			return radiusScale(d3.min(countryValuesList)) + 20 ;
+		})
+		.attr("cy", function(d, i){
+			return 50;
+		})
+	legendSVG.append("text")
+			.attr("class", "legendSizeLabelText")
+			.attr("transform",
+	            "translate(" + (30) + " ," + 
+	                           (100) + ")")
+		      .style("text-anchor", "middle")
+		      .text(parseFloat(d3.min(countryValuesList)).toFixed(2));
+
+	legendSVG.append("circle")
+		.attr("fill", "black")
+		.attr("r", radiusScale(d3.max(countryValuesList)))
+		.attr("cx", function(d, i){
+			//console.log(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			//console.log(radiusScale(d3.max(countryValuesList)));
+
+			//parseInt(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			return 2*radiusScale(d3.min(countryValuesList)) + 80;
+		})
+		.attr("cy", function(d, i){
+			return 50;
+		})
+
+	legendSVG.append("text")
+			.attr("class", "legendSizeLabelText")
+			.attr("transform",
+	            "translate(" + (5*20) + " ," + 
+	                           (100) + ")")
+		      .style("text-anchor", "middle")
+		      .text(parseFloat(d3.max(countryValuesList)).toFixed(2));
 
     var legendMinUpdated
     var legendMaxUpdated
@@ -336,6 +401,75 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     var tooltip = d3.select('body').append("div")	
 		    .attr("class", "bubbleMapTooltip")				
 		    .style("opacity", 0);
+
+	
+	/*var linearSizeLegend = d3.scaleLinear()
+						.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
+    					.range([10, 30]);*/
+
+    var legendSVG = d3.select("#svgLegendContainerId")
+	    .append("svg")
+	    .attr("id", "legendSVG")
+	    .attr("width", document.getElementById("svgLegendContainerId").width)
+	    .attr("height", document.getElementById("svgLegendContainerId").height);
+	
+	legendSVG.append("g")
+		.attr("id", "legendGroup")
+		  .attr("class", "legendSize")
+		  .attr("transform", "translate(35, 30)");
+	legendSVG.append("circle")
+		.attr("fill", "black")
+		.attr("r", radiusScale(d3.min(countryValuesList)))
+		.attr("cx", function(d, i){
+			//parseInt(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			return radiusScale(d3.min(countryValuesList)) + 20 ;
+		})
+		.attr("cy", function(d, i){
+			return 50;
+		})
+	legendSVG.append("text")
+			.attr("class", "legendSizeLabelText")
+			.attr("transform",
+	            "translate(" + (30) + " ," + 
+	                           (100) + ")")
+		      .style("text-anchor", "middle")
+		      .text(parseFloat(d3.min(countryValuesList)).toFixed(2));
+
+	legendSVG.append("circle")
+		.attr("fill", "black")
+		.attr("r", radiusScale(d3.max(countryValuesList)))
+		.attr("cx", function(d, i){
+			//console.log(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			//console.log(radiusScale(d3.max(countryValuesList)));
+
+			//parseInt(document.getElementById("svgLegendContainerId").getBoundingClientRect().left)
+			return 2*radiusScale(d3.min(countryValuesList)) + 80;
+		})
+		.attr("cy", function(d, i){
+			return 50;
+		})
+
+	legendSVG.append("text")
+			.attr("class", "legendSizeLabelText")
+			.attr("transform",
+	            "translate(" + (5*20) + " ," + 
+	                           (100) + ")")
+		      .style("text-anchor", "middle")
+		      .text(parseFloat(d3.max(countryValuesList)).toFixed(2));
+
+	//dataForLegend = [d3.min(countryValuesList), d3.max(countryValuesList)];
+
+
+	/*var legendSize = d3.legendSize()
+	.scale(linearSizeLegend)
+	.cells(3)
+	.shape('circle')
+	.shapePadding(15)
+	.labelOffset(20)
+	.orient('horizontal');
+
+	var legendOnMap = d3.select(".legendSize").call(legendSize);*/
+
 
 		    
 
