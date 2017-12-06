@@ -192,8 +192,23 @@ function updateLineChart(hmap){
 			tooltip.attr("id", "lineChartTooltip_"+i);
 
 			let tooltipDOM = document.getElementById("lineChartTooltip_"+i)
-			let tooltipHeight = tooltipDOM.getBoundingClientRect().height
+			let tooltipHeight = tooltipDOM.getBoundingClientRect().height;
+
+			let songSpan = document.createElement("span");
+			songSpan.innerHTML = hmap[i]['songName'] + "<br/>"; 
+			songSpan.classList.add("tooltipTitle");
+
+			let artistSpan = document.createElement("span");
+			artistSpan.innerHTML = hmap[i]['artistName'] + "<br/>";
+			artistSpan.classList.add("tooltipSubtitle");
 			
+			while(tooltipDOM.firstChild){
+				tooltipDOM.removeChild(tooltipDOM.firstChild);
+			}
+
+			tooltipDOM.append(songSpan);
+			tooltipDOM.append(artistSpan);
+
 			tooltip.style("left", (d3.event.pageX) + "px")
 			.style("top", (d3.event.pageY - parseInt(tooltipHeight)) + "px")
 
