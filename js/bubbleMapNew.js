@@ -149,6 +149,11 @@ function updateBubbleMapData(countryValues, countryValuesList){
 		if(!(d.Code==globalCountryCode)){
 			//only call if different country is clicked
 			document.getElementById("country_selected_area_actual_text").innerHTML = d.Country;
+			
+			$("#limiter_container_text").remove();
+			$("#limiter_container_rect").remove();
+			$("#limiter_container").remove();
+
 			globalCurrentBubbleClickedId = this.id;
 			globalCountryCode = d.Code;
 			filterSongsByCountry();
