@@ -84,6 +84,17 @@ function filterSongsByCountry(){
 						let obj = $.extend(true, {}, audioFeaturesMapGlobal[song])
 						//obj['weeksOnCharts'] = (-1*weekChart[song]['position']);
 						obj['weeksOnCharts'] = 0;
+						/*let completeSongName = weekChart[song]['songName'];
+						if(completeSongName.indexOf("\'")>=0 || completeSongName.indexOf("\"")>=0){
+							//console.log(completeSongName);
+							let newString = completeSongName.replace("\"", "");
+							console.log(completeSongName);
+							console.log(newString);
+						}*/
+						/*else
+						{
+
+						}*/
 						obj['songName'] = weekChart[song]['songName'];
 						obj['artistName'] = weekChart[song]['artistName'];
 						obj['trackKey'] = song;
