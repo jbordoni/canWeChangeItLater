@@ -57,7 +57,7 @@
 
   position: absolute;
   pointer-events:none;
-  border-top:1px dashed crimson;
+  border-top:1px dashed steelblue;
   background-color: none;
   height:0.5px;
 }
@@ -76,14 +76,14 @@
 
 .lineChartLine {
   fill: none;
-  stroke: steelblue;
-  stroke-width: 2px;
+  stroke: crimson;
+  stroke-width: 1px;
 }
 
 .lineChartLineHover {
   fill: none;
-  stroke: crimson!important;
-  stroke-width: 3px!important;
+  stroke: steelblue!important;
+  stroke-width: 2px!important;
 }
 
 .songCircleHovered {

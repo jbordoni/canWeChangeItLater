@@ -79,9 +79,11 @@ function filterSongsByCountry(){
 			if(weekChart.hasOwnProperty(song)){
 				if(!(song in hmap)){
 					if(song in audioFeaturesMapGlobal)
-					{
+					{	
+						//console.log(weekChart[song]);
 						let obj = $.extend(true, {}, audioFeaturesMapGlobal[song])
-						obj['weeksOnCharts'] = 1;
+						//obj['weeksOnCharts'] = (-1*weekChart[song]['position']);
+						obj['weeksOnCharts'] = 0;
 						obj['songName'] = weekChart[song]['songName'];
 						obj['artistName'] = weekChart[song]['artistName'];
 						obj['trackKey'] = song;
@@ -91,9 +93,35 @@ function filterSongsByCountry(){
 
 				}
 				else{
-					hmap[song]['weeksOnCharts'] = hmap[song]['weeksOnCharts']+1
+					hmap[song]['weeksOnCharts'] = hmap[song]['weeksOnCharts']+1;
+					//hmap[song]['weeksOnCharts'] += (weekChart[song]['position']*-1)
 				}
 			}
+		}
+	}
+
+	for(var song in hmap){
+		let otherCountriesWeekCount = {};
+		if(hmap.hasOwnProperty(song)){
+			for(var countryCodeNew in weeklyCharts){
+				if(weeklyCharts.hasOwnProperty(countryCodeNew)){
+					if(countryCodeNew!=globalCountryCode){
+						let countryWeekCount = 0;
+						for(var i=startMonthNoChart; i<=endMonthNoChart; i++)
+						{
+							let weekChartNew = weeklyCharts[countryCodeNew][i];
+							if(hmap[song]['trackKey'] in weekChartNew){
+								countryWeekCount+=1;
+							}
+						}
+						otherCountriesWeekCount[countryCodeNew] = countryWeekCount;
+
+					}
+					
+				}
+			}
+			//console.log(otherCountriesWeekCount);
+			hmap[song]['otherCountriesWeekCount'] = otherCountriesWeekCount;
 		}
 	}
 
@@ -119,6 +147,7 @@ function filterSongsByCountry(){
 
 	//console.log(Object.keys(hmap).length);
 	//console.log(hmap);
+
 	globalDataForAudioScatter = hmap; 
 	updateAudioScatter(hmap);
 	clearLineChartLines();

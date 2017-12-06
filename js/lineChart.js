@@ -38,8 +38,8 @@ function loadSVGInLineChart(){
 
 function updateLineChart(hmap){
 
-	console.log("updating lineChart");
-	console.log(hmap);
+	//console.log("updating lineChart");
+	//console.log(hmap);
 
 	let startMonthNo = startMonthNoGlobal; 
 	let endMonthNo = endMonthNoGlobal;
@@ -74,6 +74,12 @@ function updateLineChart(hmap){
 				.range([0+2*xPaddingForAxis, svgWidth-marginRight])
 				.domain([0, weekList.length]);
 
+
+	var xScaleForDisplay = d3.scaleTime()
+					.range([0+2*xPaddingForAxis, svgWidth-marginRight])
+					.domain(d3.extent(globalWeekStringMap, function(d){
+						return parseWeek(d);
+					}));
 	
 	var yScale = d3.scaleLinear()
 			.range([svgHeight-1.5*yPaddingForAxis, marginTop])
@@ -88,7 +94,9 @@ function updateLineChart(hmap){
 		.tickValues([1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100])
 
  	let xAxis = d3.axisBottom()
- 	xAxis.scale(xScale);
+ 	xAxis.scale(xScaleForDisplay)
+ 		.tickFormat(d3.timeFormat("%b"))
+ 		.ticks(10);
 
  	//console.log(audioSVGDOM.childNodes);
 	if(document.getElementById("#lineChartYAxis")==null && document.getElementById("#lineChartXAxis")==null){
@@ -120,7 +128,7 @@ function updateLineChart(hmap){
 	            "translate(" + (svgWidth/2) + " ," + 
 	                           (svgHeight) + ")")
 		      .style("text-anchor", "middle")
-		      .text("Week");
+		      .text("Time");
 	}
 
 	dataList = [];
@@ -180,7 +188,7 @@ function updateLineChart(hmap){
 			//console.log(d)
 			$(this).addClass("lineChartLineHover");
 			//console.log(d3.mouse(this))
-			//console.log(d);
+			console.log(d);
 			//console.log(i);
 
 			$("#songCircle_"+keysList[i]).addClass("songCircleHovered");

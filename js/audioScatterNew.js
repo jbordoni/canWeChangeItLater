@@ -255,6 +255,19 @@ function updateAudioScatter(hmap){
 	               		correspondingLine.classList.add("lineChartLineHover");
 
                		}
+
+               		let otherCountriesMap = d['otherCountriesWeekCount'];
+               		for(var countryCodeLocal in otherCountriesMap){
+               			if(otherCountriesMap.hasOwnProperty(countryCodeLocal)){
+               				if(otherCountriesMap[countryCodeLocal]<d['weeksOnCharts']){
+               					console.log(countryCodeLocal, "False");
+               				}
+               				else
+               				{
+               					console.log(countryCodeLocal, "True");
+               				}
+               			}
+               		}
 				})
 				.on("mouseout", function(d){
 
