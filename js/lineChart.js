@@ -95,7 +95,7 @@ function updateLineChart(hmap){
 		   .call(yAxis);
 
 		d3.select("#lineChartSVG").append("text")
-			.attr("class", "axisLabelScatter")
+			.attr("class", "axisLabelText")
 	      .attr("transform", "rotate(-90)")
 	      .attr("y", 0)
 	      .attr("x",0 - (svgHeight / 2))
@@ -110,7 +110,7 @@ function updateLineChart(hmap){
 		    .call(xAxis);
 
 		d3.select("#lineChartSVG").append("text")
-			.attr("class", "axisLabelScatter")
+			.attr("class", "axisLabelText")
 			.attr("transform",
 	            "translate(" + (svgWidth/2) + " ," + 
 	                           (svgHeight) + ")")
