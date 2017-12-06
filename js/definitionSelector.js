@@ -16,6 +16,7 @@ $("#dropDownAudioFeatures").change(function(){
 	var thisvalue = $(this).find("option:selected").text();
 	var definition = definitions[thisvalue];
 	//bubble_map_definition
+	$("#currently_selected_bubble").html(thisvalue);
 	$("#bubble_map_definition").html("<strong>"+ thisvalue + "</strong>" + definition);
 });
 
