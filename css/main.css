@@ -388,6 +388,28 @@ select {
 	box-shadow: 0px -1px 10px #888888;
 }
 
+#scatterplot_hover_legend{
+	position: absolute;
+	text-align: center;
+	width:150px;
+	height:75px;
+	left:3%;
+	bottom:0;
+	background-color: white;
+	border-radius: 3px 3px 0px 0px;
+	box-shadow: 0px -1px 10px #888888;
+	overflow: hidden;
+	transition: height 0.5s;
+  	-webkit-transition: height 0.5s;
+}
+
+#scatterplot_hover_legend h2{
+	font-size: 0.6rem;
+	color: #888888;
+	margin-bottom:2px;
+	font-weight: 500;
+}
+
 .feature_hidden{
 	position:absolute;
 	text-align: left;
@@ -403,6 +425,10 @@ select {
 	overflow: hidden;
 	transition: height 0.5s;
   	-webkit-transition: height 0.5s;
+}
+
+#circles_legend{
+	height:45%;
 }
 
 .feature_hidden h2{
