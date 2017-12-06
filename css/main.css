@@ -25,11 +25,11 @@
 }
 
 #sliderLabelsWrapper { 
-	height:530px;;
+	height:400px;
 	width:20%;
 	display: inline-block;
 	vertical-align: top;
-	margin-top:30px;
+	margin-top:60px;
 	float:left;
 	margin-left:15%;
 
@@ -201,7 +201,7 @@ body {
 }
 
 #slider-range { 
-	height:530px;
+	height:400px;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-active {
