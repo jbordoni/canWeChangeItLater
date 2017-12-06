@@ -170,7 +170,7 @@ function updateAudioScatter(hmap){
 					return "songCircle_"+d['trackKey'];
 				})
 				.attr("class", function(d){
-					if(!(this.classList.contains("clicked"))){
+					if(!(this.classList.contains("audioScatterSongClicked"))){
 						return "songCircleDefault";
 					}
 				})
@@ -317,8 +317,8 @@ function updateAudioScatter(hmap){
 				.on("click", function(d, i){
 					//console.log("clicked");
 					//d3.select(this).style("fill", "steelblue")
-					d3.select(this).style("stroke", "black")
-					d3.select(this).attr("class", "clicked")
+					//d3.select(this).style("stroke", "black")
+					d3.select(this).attr("class", "audioScatterSongClicked")
 					if(selectedCircles.indexOf(d)==-1){
 						selectedCircles.push(d);
 						updateLineChart(selectedCircles);

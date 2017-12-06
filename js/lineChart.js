@@ -13,6 +13,12 @@ function clearLineChartLines(){
 
 function clearButtonClicked(){
 	clearLineChartLines();
+
+	$(".audioScatterSongClicked").each(function(d){
+		console.log(d);
+		console.log(this);
+		$("#"+this.id).removeClass("audioScatterSongClicked");
+	});
 }
 
 //$("#clear_music_chart_songs").click(function)

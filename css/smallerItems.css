@@ -86,9 +86,18 @@
   stroke-width: 2px!important;
 }
 
+.songCircleDefault {
+  stroke:none;
+}
+
 .songCircleHovered {
   fill:steelblue!important;
   stroke-width:3px;
+  stroke:black;
+}
+
+.audioScatterSongClicked {
+  stroke-width:1px;
   stroke:black;
 }
 
