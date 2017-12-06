@@ -127,6 +127,7 @@ function updateAudioScatter(hmap){
 	    audioSVG.append("g")
 	    .attr("class", "axis")
 	    .attr("transform", "translate(" + xPadding + ",0)")
+	    .attr("id", "audioScatterYAxis")
 	    .call(yAxis);
 
 	    //Adding Y - label - Change 5 to margin.left
@@ -143,6 +144,7 @@ function updateAudioScatter(hmap){
     	d3.select("#audioScatterXAxisLabel").text(xScaleSelectedFeatureText);
     	d3.select("#audioScatterXAxis").call(xAxis);
 
+    	d3.select("#audioScatterYAxis").call(yAxis);
     }
 
 
