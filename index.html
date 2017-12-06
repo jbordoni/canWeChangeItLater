@@ -67,7 +67,7 @@
                   <div class="row" id="bubble_map_panel">
                     <div class="col-md-6 bubble_map_title_area">
                       <h2>World Preferences</h2>
-                      <p>What kinds of music do different countries prefer?</p>
+                      <p>What kinds of music do different countries prefer? Use the dropdown to specify features.</p>
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
@@ -113,6 +113,12 @@
                   <div id="country_selected_area">
                     <h2>COUNTRY SELECTED</h2>
                     <h1 id="country_selected_area_actual_text">None</h1>
+                  </div>
+                  <div id="scatterplot_hover_legend">
+                    <h2 style="margin-bottom:1px; padding-top:3px;">RELATIVE POPULARITY</h2>
+                    <img id="circles_legend" src="circles_legend.svg"/>
+                    <h2 style="margin-bottom:1px;">LESS &nbsp&nbsp&nbsp SAME &nbsp&nbsp&nbsp MORE</h2>
+                    <h2>WEEKS ON CHARTS</h2>
                   </div>
                 </div>
               </div>
@@ -185,7 +191,7 @@
                   <div class="row" id="music_chart_panel">
                     <div class="col-md-7 music_chart_title_area">
                       <h2>Chart Performance</h2>
-                      <p>How did each song perform on that country's charts?</p>
+                      <p>How did each song perform on <strong id="charts_country">country</strong>'s charts?</p>
                     </div>
                     <div class="col-md-5">
                       <button class="btn btn-dark" id="clear_music_chart_songs" onclick="clearButtonClicked()">Clear Songs</button>
