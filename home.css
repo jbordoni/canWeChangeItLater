@@ -24,6 +24,7 @@
 	background-color: rgb(252,238,36);
 	height:95%;
 	overflow: hidden;
+	position:relative;
 }
 
 .background4{
@@ -110,7 +111,7 @@ h1,h2,h3,h4,h5{
 }
 
 .yellow_text_area h5{
-	margin-top: 10%;
+	margin-top: 8%;
 	color:black;
 	font-weight: 100;
 	text-align: left;
@@ -126,7 +127,7 @@ h1,h2,h3,h4,h5{
 
 .top_renderings img{
 	width:100%;
-	padding: 0 15%;
+	padding: 0 25%;
 	position: relative;
 	transform: translateY(-30%);
 	
@@ -134,16 +135,36 @@ h1,h2,h3,h4,h5{
 
 .bottom_renderings img{
 	width:100%;
-	padding:0 15%;
+	padding:0 25%;
 	position: relative;
-	padding-top:50%;
-	transform:translateY(10%);
+	transform: translateY(30%);
 }
 
 h1 strong{
 	font-size:84px;
 }
 
+#bottom_row{
+	width:100%;
+	height:20%;
+	position:absolute;
+	bottom:0;
+}
 
+
+#top_row{
+	width:100%;
+	height:20%;
+	position: absolute;
+	top:0;
+}
+
+#bottom_title_area{
+	position: absolute;
+	width:100%;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-60%);
+}
 
 
