@@ -54,9 +54,17 @@ function updateBubbleMapData(countryValues, countryValuesList){
 
 	var legendOnMap = d3.select(".legendSize").call(legendSize);
 
-    var tooltip = d3.select('body').append("div")	
+
+    /**/
+	if(document.getElementById("bubbleMapTooltipId")==null){
+		var tooltip = d3.select('body').append("div")	
 		    .attr("class", "bubbleMapTooltip")				
-		    .style("opacity", 0);
+		    .style("opacity", 0)
+		    .attr("id", "bubbleMapTooltipId");
+	}
+	else{
+		var tooltip = d3.select("#bubbleMapTooltipId");
+	}
 
 	let dots = bubbleChartSVGGroup.selectAll("circle")
 	.data(rawdataGlobal)
@@ -103,7 +111,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
 						.duration(200)
 						.style("opacity", .9);
 
-				tooltip.attr("id", "bubbleMapTooltip_"+d.Code);
+				//tooltip.attr("id", "bubbleMapTooltipId");
 
 				//let countrySpanPart1 = "Country: ";
 				//countrySpanPart1.classList.add("")
@@ -124,7 +132,7 @@ function updateBubbleMapData(countryValues, countryValuesList){
 				//subtitleSpanPart1.classList.add("tooltipSubtitle");
 				//subtitleSpanPart2.classList.add("tooltipSubtitle");
 
-				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Code);
+				let tooltipDOM = document.getElementById("bubbleMapTooltipId");
 
 				while(tooltipDOM.firstChild){
 					tooltipDOM.removeChild(tooltipDOM.firstChild);
@@ -398,9 +406,20 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
     					.domain([d3.min(countryValuesList),d3.max(countryValuesList)])
     					.range([10, 30]);
     
-    var tooltip = d3.select('body').append("div")	
+    /*if(document.getElementById("bubbleMapTooltipId")==null){
+		var tooltip = d3.select('body').append("div")	
 		    .attr("class", "bubbleMapTooltip")				
-		    .style("opacity", 0);
+		    .style("opacity", 0)
+		    .attr("id", "bubbleMapTooltipId");
+	}
+	else{
+		var tooltip = d3.select("#bubbleMapTooltipId");
+	}*/
+
+	var tooltip = d3.select('body').append("div")	
+		    .attr("class", "bubbleMapTooltip")				
+		    .style("opacity", 0)
+		    .attr("id", "bubbleMapTooltipId");
 
 	
 	/*var linearSizeLegend = d3.scaleLinear()
@@ -532,7 +551,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 						.duration(200)
 						.style("opacity", .9);
 
-				tooltip.attr("id", "bubbleMapTooltip_"+d.Code);
+				//tooltip.attr("id", "bubbleMapTooltip_"+d.Code);
 
 				//let countrySpanPart1 = "Country: ";
 				//countrySpanPart1.classList.add("")
@@ -553,7 +572,7 @@ function setupBubblesOnSVG(rawdata, countryValues, countryValuesList){
 				//subtitleSpanPart1.classList.add("tooltipSubtitle");
 				//subtitleSpanPart2.classList.add("tooltipSubtitle");
 
-				let tooltipDOM = document.getElementById("bubbleMapTooltip_"+d.Code);
+				let tooltipDOM = document.getElementById("bubbleMapTooltipId");
 
 				while(tooltipDOM.firstChild){
 					tooltipDOM.removeChild(tooltipDOM.firstChild);
