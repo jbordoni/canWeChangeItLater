@@ -89,9 +89,21 @@ function updateAudioScatter(hmap){
 
 	//let selectedCircles = [];
 
-	var tooltip = d3.select('body').append("div")	
+	if(document.getElementById("audioScatterTooltipId")==null)
+	{
+		var tooltip = d3.select('body').append("div")	
 		    .attr("class", "scatterTooltip")				
-		    .style("opacity", 0);
+		    .style("opacity", 0)
+		    .attr("id", "audioScatterTooltipId");
+	}
+	else{
+		var tooltip = d3.select("#audioScatterTooltipId")
+	}
+
+	/*var tooltip = d3.select('body').append("div")	
+		    .attr("class", "scatterTooltip")				
+		    .style("opacity", 0)
+		    .attr("id", "audioScatterTooltipId");*/
 
 	var xScale = d3.scaleLinear();
 		xScale.domain([d3.min(xScaleValues), d3.max(xScaleValues)])
@@ -272,7 +284,11 @@ function updateAudioScatter(hmap){
 						.duration(200)
 						.style("opacity", .9);
 
-					tooltip.attr("id", "audioScatter_"+d.trackKey);
+					//tooltip.attr("id", "audioScatter_"+d.trackKey);
+
+					//console.log("Testing scatter tooltip");
+					//console.log(d.songName, d.artistName)
+					//console.log()
 
 					let songTitleSpan = document.createElement("span");
 					songTitleSpan.innerHTML = d.songName + "<br/>";
@@ -300,7 +316,7 @@ function updateAudioScatter(hmap){
 						value2SpanPart2.innerHTML = d[colorScaleSelectedFeature] + "<br/>";
 						value2SpanPart2.classList.add("tooltipValue");
 					}
-					let tooltipDOM = document.getElementById("audioScatter_"+d.trackKey);
+					let tooltipDOM = document.getElementById("audioScatterTooltipId");
 
 					while(tooltipDOM.firstChild){
 						tooltipDOM.removeChild(tooltipDOM.firstChild);

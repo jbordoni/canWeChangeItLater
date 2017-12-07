@@ -173,10 +173,17 @@ function updateLineChart(hmap){
 		    .attr("class", "hoverLineVertical")				
 		    .style("opacity", 0);
 
-	var tooltip = d3.select('body').append("div")	
+	if(document.getElementById("lineChartTooltipId")==null){
+		var tooltip = d3.select('body').append("div")	
 		    .attr("class", "lineChartTooltip")				
-		    .style("opacity", 0);
+		    .style("opacity", 0)
+		    .attr("id", "lineChartTooltipId");
 
+	}
+	else{
+		var tooltip = d3.select("#lineChartTooltipId")
+	}
+	
     //console.log(tooltip.getBoundingClientRect().height);
 
 	//console.log(horizontalHover);
@@ -222,9 +229,9 @@ function updateLineChart(hmap){
 			tooltip
 			.style("opacity", .9)
 			
-			tooltip.attr("id", "lineChartTooltip_"+i);
+			//tooltip.attr("id", "lineChartTooltip_"+i);
 
-			let tooltipDOM = document.getElementById("lineChartTooltip_"+i)
+			let tooltipDOM = document.getElementById("lineChartTooltipId")
 			let tooltipHeight = tooltipDOM.getBoundingClientRect().height;
 
 			let songSpan = document.createElement("span");
